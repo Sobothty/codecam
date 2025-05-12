@@ -211,7 +211,7 @@ function renderCategoryContent(categoryId) {
                         </div>
                     </div>
                     
-                    <div class="flex flex-wrap gap-3">
+                    <div class="flex flex-wrap gap-3 pb-5">
                         <div class="bg-purple-100 text-purple-800 px-4 py-2 rounded-md flex items-center">
                             <span class="mr-2"><i class="fa-solid fa-book"></i></span> ${category.courses} មេរៀន
                         </div>

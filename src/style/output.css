@@ -298,9 +298,6 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-26 {
-    margin-top: calc(var(--spacing) * 26);
-  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -312,6 +309,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
@@ -390,9 +390,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-7 {
-    max-width: calc(var(--spacing) * 7);
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
@@ -653,14 +650,8 @@
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
   }
-  .pt-2 {
-    padding-top: calc(var(--spacing) * 2);
-  }
   .pt-26 {
     padding-top: calc(var(--spacing) * 26);
-  }
-  .pt-27 {
-    padding-top: calc(var(--spacing) * 27);
   }
   .pt-28 {
     padding-top: calc(var(--spacing) * 28);
@@ -670,6 +661,9 @@
   }
   .pr-6 {
     padding-right: calc(var(--spacing) * 6);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
@@ -726,14 +720,8 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .text-des-2 {
-    font-size: var(--text-des-2);
-  }
   .text-des-3 {
     font-size: var(--text-des-3);
-  }
-  .text-des-4 {
-    font-size: var(--text-des-4);
   }
   .text-des-5 {
     font-size: var(--text-des-5);
@@ -757,10 +745,6 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .font-extrabold {
-    --tw-font-weight: var(--font-weight-extrabold);
-    font-weight: var(--font-weight-extrabold);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
@@ -913,13 +897,6 @@
       }
     }
   }
-  .hover\:bg-yellow-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-yellow-700);
-      }
-    }
-  }
   .hover\:text-yellow-500 {
     &:hover {
       @media (hover: hover) {
@@ -943,6 +920,11 @@
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
+    }
+  }
+  .md\:mb-0 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 0);
     }
   }
   .md\:ml-auto {

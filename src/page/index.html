@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Hero Section</title>
     <link rel="stylesheet" href="../style/output.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -56,7 +58,10 @@
         class="absolute inset-0 bg-gradient-to-b from-background via-[#FFDFEF] to-[#F9FAFB] -z-10"
       ></div>
 
-      <section class="max-w-7xl m-auto pt-28 pb-16 rounded-md">
+      <section
+        class="max-w-7xl m-auto pt-28 px-10 md:px-0 pb-16 rounded-md"
+        data-aos="fade-up-right"
+      >
         <h2 class="text-3xl md:text-5xl font-bold text-purple-600 mt-10">
           ស្វែងរកមុខវិជ្ជាបច្ចេកវិទ្យា
         </h2>
@@ -81,7 +86,10 @@
       </section>
 
       <!-- Stats Section -->
-      <section class="max-w-7xl m-auto grid grid-cols-2 md:grid-cols-4 py-5">
+      <section
+        data-aos="fade-up-left"
+        class="max-w-7xl m-auto grid grid-cols-2 md:grid-cols-4 py-5"
+      >
         <div class="flex flex-col items-center text-center">
           <div class="bg-green-200 p-4 rounded-full mb-2">
             <i class="fas fa-graduation-cap text-2xl text-green-600"></i>
@@ -113,11 +121,16 @@
       </section>
 
       <h2
+        data-aos="zoom-in-up"
         class="text-heading-4 px-10 md:px-0 md:text-heading-2 text-primary font-semibold py-5"
       >
         កម្មវិធីសិក្សារដែលយើងមាន
       </h2>
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        class="px-10 md:px-0"
+      >
         <div class="container mx-auto">
           <!-- Category Cards -->
           <div
@@ -139,6 +152,7 @@
       <!-- TODO Learning card courses -->
       <div class="container mx-auto">
         <h2
+          data-aos="zoom-in-up"
           class="text-heading-4 px-10 md:px-0 md:text-heading-2 text-primary font-semibold py-5"
         >
           មេរៀនដែលកំពុងពេញនិយម
@@ -146,7 +160,7 @@
 
         <div
           id="courses-container"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-10 md:px-0"
         >
           <!-- Courses will be loaded here -->
           <div
@@ -162,10 +176,11 @@
           </div>
         </div>
       </div>
-      <div class="container mx-auto py-8">
+      <!-- TODO ISTAD -->
+      <div class="container mx-auto py-8 px-10 md:px-0">
         <div class="flex flex-col md:flex-row overflow-hidden pb-10">
           <!-- Left Side - Text Content -->
-          <div class="w-full md:w-1/2 pr-6 flex flex-col justify-center">
+          <div data-aos="fade-up-right" class="w-full md:w-1/2 pr-6 flex flex-col justify-center">
             <div class="mb-4">
               <div class="flex items-end gap-2">
                 <div class="py-32 px-2 bg-blue-600"></div>
@@ -177,7 +192,7 @@
               </p>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <h3 class="font-bold text-lg mb-2 text-heading-2">
                   Scholarship
@@ -196,7 +211,7 @@
               </div>
             </div>
 
-            <div class="mt-6">
+            <div class="mt-6 mb-5 md:mb-0">
               <a
                 href="#"
                 class="bg-yellow-500 text-des-3 text-white px-4 py-2 rounded-md hover:bg-yellow-600 font-medium transition duration-300"
@@ -207,7 +222,7 @@
           </div>
 
           <!-- Right Side - Image -->
-          <div class="w-full md:w-1/2">
+          <div data-aos="fade-up-left" class="w-full md:w-1/2">
             <img
               src="https://www.cstad.edu.kh/_next/image?url=https%3A%2F%2Flms-api.istad.co%2Fapi%2Fv1%2Fmedias%2Fview%2F2060c6bc-c32f-4071-b454-33ce57c40db9.jpg&w=3840&q=75"
               alt="STAD Group Photo"
@@ -282,13 +297,15 @@
           }
 
           card.innerHTML = `
-          <div class="relative">
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" class="relative">
             <img src="${course.imageUrl}" alt="${course.title}" class="w-full h-48 object-cover">
             <p class="absolute top-4 left-4 bg-green-400 hover:bg-green-500 text-gray-800 font-medium py-2 px-4 rounded-full transition-colors">
             ${course.status}
             </p>
           </div>
-          <div class="p-4">
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" class="p-4">
             <h2 class="text-xl font-bold mb-2">${course.title}</h2>
             <p class="text-gray-600 mb-4">${course.description}</p>
             <div class="flex items-center mb-4">
@@ -321,5 +338,10 @@
       });
     </script>
     <script src="../../util/techLearningPlatform.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
