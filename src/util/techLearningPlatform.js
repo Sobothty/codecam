@@ -3,6 +3,7 @@ const techCategories = [
   {
     id: "webdev",
     name: "Web Dev",
+    href:"./webdev.html",
     icon: "fa-solid fa-desktop text-blue-700 p-5 bg-blue-200 rounded-full",
     bgColor: "bg-blue-100",
     iconColor: "text-blue-600",
@@ -223,9 +224,9 @@ function renderCategoryContent(categoryId) {
                     </div>
                 </div>
                 
-                <button class="bg-secondary text-white hover:bg-yellow-500 font-bold py-3 px-6 rounded-md mt-4 w-full md:w-auto md:ml-auto md:block">
+                <a href="${category.href}" class="bg-secondary text-white hover:bg-yellow-500 font-medium py-2 px-4 rounded-md mt-4 w-full md:w-auto md:ml-auto md:block text-center">
                     ចាប់ផ្តើមរៀនឥឡូវ!
-                </button>
+                </a>
             `;
 }
 

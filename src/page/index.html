@@ -56,7 +56,7 @@
         class="absolute inset-0 bg-gradient-to-b from-background via-[#FFDFEF] to-[#F9FAFB] -z-10"
       ></div>
 
-      <section class="max-w-7xl m-auto pt-28 px-10 pb-16 rounded-md">
+      <section class="max-w-7xl m-auto pt-28 pb-16 rounded-md">
         <h2 class="text-3xl md:text-5xl font-bold text-purple-600 mt-10">
           ស្វែងរកមុខវិជ្ជាបច្ចេកវិទ្យា
         </h2>
@@ -162,10 +162,10 @@
           </div>
         </div>
       </div>
-      <div class="container mx-auto px-4 py-8">
-        <div class="flex flex-col md:flex-row overflow-hidden">
+      <div class="container mx-auto py-8">
+        <div class="flex flex-col md:flex-row overflow-hidden pb-10">
           <!-- Left Side - Text Content -->
-          <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
+          <div class="w-full md:w-1/2 pr-6 flex flex-col justify-center">
             <div class="mb-4">
               <div class="flex items-end gap-2">
                 <div class="py-32 px-2 bg-blue-600"></div>
@@ -182,16 +182,16 @@
                 <h3 class="font-bold text-lg mb-2 text-heading-2">
                   Scholarship
                 </h3>
-                <p class="text-sm text-gray-600">
-                  សូមចុងរៀនទូទៅរបស់សាកលវិទ្យាល័យ
+                <p class="text-des-5 text-gray-600">
+                  ផ្តល់ជូននៅអាហារូបករណ៍ ដល់ សិស្សានុសិស្សយ៉ាងច្រើន
                 </p>
               </div>
               <div>
                 <h3 class="font-bold text-lg mb-2 text-heading-2">
                   Short Course
                 </h3>
-                <p class="text-sm text-gray-600">
-                  ជម្រើសវគ្គខ្លីៗនៃកម្រិតបច្ចេកទេស
+                <p class="text-des-5 text-gray-600">
+                  ជំនាញខ្លីដែលអ្នកងាយស្រួលនៅក្នុងការ សិក្សារ
                 </p>
               </div>
             </div>
@@ -199,7 +199,7 @@
             <div class="mt-6">
               <a
                 href="#"
-                class="bg-yellow-500 text-white px-6 py-2 rounded-md hover:bg-yellow-600 transition duration-300"
+                class="bg-yellow-500 text-des-3 text-white px-4 py-2 rounded-md hover:bg-yellow-600 font-medium transition duration-300"
               >
                 ស្នើសុំបច្ចុប្បន្ន
               </a>
@@ -217,7 +217,7 @@
         </div>
 
         <!-- Navigation Arrows -->
-        <div class="flex justify-between mt-4">
+        <!-- <div class="flex justify-between mt-4">
           <button class="bg-blue-100 p-2 rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@
               />
             </svg>
           </button>
-        </div>
+        </div> -->
       </div>
     </main>
 
@@ -284,9 +284,9 @@
           card.innerHTML = `
           <div class="relative">
             <img src="${course.imageUrl}" alt="${course.title}" class="w-full h-48 object-cover">
-            <a href="course.html?id=${course.id}" class="absolute top-4 left-4 bg-green-400 hover:bg-green-500 text-gray-800 font-medium py-2 px-4 rounded-full transition-colors">
-              ការរៀនសូត្រ
-            </a>
+            <p class="absolute top-4 left-4 bg-green-400 hover:bg-green-500 text-gray-800 font-medium py-2 px-4 rounded-full transition-colors">
+            ${course.status}
+            </p>
           </div>
           <div class="p-4">
             <h2 class="text-xl font-bold mb-2">${course.title}</h2>
@@ -298,7 +298,7 @@
               <span class="text-gray-600">${course.rating}</span>
               <span class="text-gray-500 ml-2">(${course.reviewCount})</span>
             </div>
-            <a href="course.html?id=${course.id}" class="block w-full text-center bg-yellow-100 hover:bg-yellow-200 text-gray-800 font-medium py-2 px-4 rounded transition-colors">
+            <a href="course.html?id=${course.id}" class="block w-full text-center bg-secondary hover:bg-yellow-500 text-white font-medium py-2 px-4 rounded transition-colors">
               ចាប់ផ្តើមរៀនឥឡូវនេះ
             </a>
           </div>

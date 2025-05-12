@@ -3,6 +3,7 @@ const coursesData = [
   {
     id: "flutter-dev",
     title: "Flutter Developer",
+    status: "កម្រិតដំបូង",
     description:
       "Learn to build beautiful cross-platform mobile apps with Flutter",
     imageUrl:
@@ -57,6 +58,7 @@ const coursesData = [
   {
     id: "html-css",
     title: "HTML + CSS",
+    status: "កម្រិតដំបូង",
     description: "Master the fundamentals of web development with HTML and CSS",
     imageUrl:
       "https://futureteachinstitute.com/wp-content/uploads/2023/07/html-css-beginners.jpg",
@@ -110,6 +112,7 @@ const coursesData = [
   {
     id: "linux-commands",
     title: "Linux Commands",
+    status: "កម្រិតដំបូង",
     description: "Learn essential Linux commands for system administration",
     imageUrl:
       "https://cdn.slidesharecdn.com/ss_thumbnails/basiccommandsoflinux-161223121032-thumbnail.jpg?width=560&fit=bounds",
@@ -163,6 +166,7 @@ const coursesData = [
   {
     id: "spring-boot",
     title: "Spring Boot",
+    status: "កម្រិតដំបូង",
     description: "Build robust Java applications with Spring Boot framework",
     imageUrl:
       "https://www.devopsschool.com/blog/wp-content/uploads/2023/12/image-168.png",

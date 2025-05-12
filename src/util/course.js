@@ -161,7 +161,7 @@ function renderCourses() {
           <div class="relative">
             <img src="${course.imageUrl}" alt="${course.title}" class="w-full h-48 object-cover">
             <button class="course-btn absolute top-4 left-4 bg-green-400 hover:bg-green-500 text-gray-800 font-medium py-2 px-4 rounded-full transition-colors" data-id="${course.id}">
-              ការរៀនសូត្រ
+              ${course.status}
             </button>
           </div>
           <div class="p-4">
