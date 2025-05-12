@@ -5,7 +5,8 @@ const coursesData = [
     title: "Flutter Developer",
     description:
       "Learn to build beautiful cross-platform mobile apps with Flutter",
-    imageUrl: "https://via.placeholder.com/400x200?text=Flutter",
+    imageUrl:
+      "https://beecrowd.com/wp-content/uploads/2024/04/2022-06-23-Flutter.jpg",
     rating: 4.5,
     reviewCount: 2340,
     modules: [
@@ -57,7 +58,8 @@ const coursesData = [
     id: "html-css",
     title: "HTML + CSS",
     description: "Master the fundamentals of web development with HTML and CSS",
-    imageUrl: "https://via.placeholder.com/400x200?text=HTML+CSS",
+    imageUrl:
+      "https://futureteachinstitute.com/wp-content/uploads/2023/07/html-css-beginners.jpg",
     rating: 4.5,
     reviewCount: 2340,
     modules: [
@@ -109,7 +111,8 @@ const coursesData = [
     id: "linux-commands",
     title: "Linux Commands",
     description: "Learn essential Linux commands for system administration",
-    imageUrl: "https://via.placeholder.com/400x200?text=Linux",
+    imageUrl:
+      "https://cdn.slidesharecdn.com/ss_thumbnails/basiccommandsoflinux-161223121032-thumbnail.jpg?width=560&fit=bounds",
     rating: 4.5,
     reviewCount: 2340,
     modules: [
@@ -161,7 +164,8 @@ const coursesData = [
     id: "spring-boot",
     title: "Spring Boot",
     description: "Build robust Java applications with Spring Boot framework",
-    imageUrl: "https://via.placeholder.com/400x200?text=Spring+Boot",
+    imageUrl:
+      "https://www.devopsschool.com/blog/wp-content/uploads/2023/12/image-168.png",
     rating: 4.5,
     reviewCount: 2340,
     modules: [

@@ -16,6 +16,8 @@
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-yellow-600: oklch(68.1% 0.162 75.834);
+    --color-yellow-700: oklch(55.4% 0.135 66.442);
+    --color-yellow-800: oklch(47.6% 0.114 61.907);
     --color-green-100: oklch(96.2% 0.044 156.743);
     --color-green-200: oklch(92.5% 0.084 155.995);
     --color-green-400: oklch(79.2% 0.209 151.711);
@@ -74,11 +76,16 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary: #0f264d;
+    --color-secondary: #ffc107;
     --color-background: #f1f1f1;
     --text-heading-1: 40px;
     --text-heading-2: 36px;
+    --text-heading-3: 32px;
     --text-heading-4: 24px;
+    --text-heading-5: 20px;
     --text-des-3: 18px;
+    --text-des-4: 16px;
+    --text-des-5: 14px;
     --font-kantumruy: Kantumruy Pro, sans-serif;
   }
 }
@@ -285,6 +292,9 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -393,9 +403,6 @@
   .rotate-180 {
     rotate: 180deg;
   }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
   .animate-pulse {
     animation: var(--animate-pulse);
   }
@@ -417,11 +424,17 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -506,6 +519,9 @@
   .bg-blue-200 {
     background-color: var(--color-blue-200);
   }
+  .bg-blue-600 {
+    background-color: var(--color-blue-600);
+  }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
@@ -539,6 +555,9 @@
   .bg-red-200 {
     background-color: var(--color-red-200);
   }
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -550,6 +569,9 @@
   }
   .bg-yellow-400 {
     background-color: var(--color-yellow-400);
+  }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
   }
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
@@ -586,6 +608,9 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -612,6 +637,9 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .py-32 {
+    padding-block: calc(var(--spacing) * 32);
   }
   .pt-28 {
     padding-top: calc(var(--spacing) * 28);
@@ -648,6 +676,10 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -670,8 +702,14 @@
   .text-heading-1 {
     font-size: var(--text-heading-1);
   }
+  .text-heading-2 {
+    font-size: var(--text-heading-2);
+  }
   .text-heading-4 {
     font-size: var(--text-heading-4);
+  }
+  .text-heading-5 {
+    font-size: var(--text-heading-5);
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -740,6 +778,9 @@
   .text-red-600 {
     color: var(--color-red-600);
   }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -783,6 +824,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
   .hover\:bg-gray-100 {
     &:hover {
       @media (hover: hover) {
@@ -815,6 +860,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-yellow-500);
+      }
+    }
+  }
+  .hover\:bg-yellow-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-yellow-600);
       }
     }
   }
@@ -863,6 +915,11 @@
       display: none;
     }
   }
+  .md\:w-1\/2 {
+    @media (width >= 48rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
   .md\:w-80 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 80);
@@ -886,6 +943,11 @@
   .md\:grid-cols-4 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
     }
   }
   .md\:px-0 {
@@ -936,26 +998,6 @@
 }
 .course-card:hover {
   transform: translateY(-5px);
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-space-x-reverse {
   syntax: "*";
@@ -1082,6 +1124,10 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @keyframes pulse {
   50% {
     opacity: 0.5;
@@ -1090,11 +1136,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
@@ -1122,6 +1163,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-duration: initial;
     }
   }
 }

@@ -191,39 +191,39 @@ function renderCategoryContent(categoryId) {
 
   // Set content HTML
   contentSection.innerHTML = `
-                <h2 class="text-2xl font-bold text-indigo-700 mb-4">${category.title}</h2>
+                <h2 class="font-kantumruy text-2xl font-bold text-indigo-700 mb-4">${category.title}</h2>
                 
-                <p class="text-gray-700 mb-6">${category.description}</p>
+                <p class="text-gray-700 text-heading-5 py-2">${category.description}</p>
                 
                 <div class="mb-8">
-                    <h3 class="font-semibold mb-2 text-lg">មេរៀននៃវគ្គសិក្សា</h3>
-                    <ul class="pl-4 text-gray-700">
+                    <h3 class="font-semibold mb-2 text-xl">មេរៀននៃវគ្គសិក្សា</h3>
+                    <ul class="pl-4 text-des-3 text-gray-700">
                         ${topicListHTML}
                     </ul>
                 </div>
                 
                 <div class="flex flex-wrap justify-between items-center">
-                    <div class="flex items-center mb-4">
-                        <div class="flex">
-                            <span class="text-yellow-500 text-2xl">★★★★★</span>
-                            <span class="ml-2 font-bold">5.0</span>
+                    <div class="flex items-center">
+                        <div class="flex items-center gap-1">
+                            <span class="text-secondary text-2xl">★★★★★</span>
+                            <span class="ml-2 font-bold text-2xl">5.0</span>
                         </div>
                     </div>
                     
-                    <div class="flex flex-wrap gap-3 mb-4">
+                    <div class="flex flex-wrap gap-3">
                         <div class="bg-purple-100 text-purple-800 px-4 py-2 rounded-md flex items-center">
-                            <span class="mr-2">📚</span> ${category.courses} មេរៀន
+                            <span class="mr-2"><i class="fa-solid fa-book"></i></span> ${category.courses} មេរៀន
                         </div>
                         <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-md flex items-center">
-                            <span class="mr-2">🖥️</span> ${category.duration}
+                            <span class="mr-2"><i class="fa-solid fa-desktop"></i></span> ${category.duration}
                         </div>
                         <div class="bg-green-100 text-green-800 px-4 py-2 rounded-md flex items-center">
-                            <span class="mr-2">🕒</span> ${category.lessons} ម៉ោង
+                            <span class="mr-2"><i class="fa-regular fa-clock"></i></span> ${category.lessons} ម៉ោង
                         </div>
                     </div>
                 </div>
                 
-                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-6 rounded-md mt-4 w-full md:w-auto md:ml-auto md:block">
+                <button class="bg-secondary text-white hover:bg-yellow-500 font-bold py-3 px-6 rounded-md mt-4 w-full md:w-auto md:ml-auto md:block">
                     ចាប់ផ្តើមរៀនឥឡូវ!
                 </button>
             `;
