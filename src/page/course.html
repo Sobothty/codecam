@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        overflow: hidden;
+        height: 100vh;
+      }
+      .sidebar-item.active {
+        background-color: #e5edff;
+        border-left: 3px solid #3b82f6;
+      }
+      @media (max-width: 768px) {
+        .sidebar {
+          position: fixed;
+          left: -100%;
+          transition: left 0.3s ease;
+          z-index: 50;
+        }
+        .sidebar.open {
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex flex-col h-screen">
+    <header class="bg-white border-b p-4 flex items-center justify-between">
+      <h1 id="course-title" class="text-xl font-bold">Course Title</h1>
+      <div class="flex items-center gap-2">
+        <a
+          href="index.html"
+          class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+          >Back to Courses</a
+        >
+        <button
+          id="sidebar-toggle"
+          class="md:hidden p-2 rounded-md hover:bg-gray-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="flex flex-1 overflow-hidden">
+      <!-- Sidebar -->
+      <div
+        id="sidebar"
+        class="sidebar w-full md:w-80 bg-white border-r overflow-y-auto hidden md:block"
+      >
+        <div class="p-4 border-b">
+          <h2 id="sidebar-title" class="font-bold">Course Title</h2>
+          <p id="lesson-count" class="text-sm text-gray-500">
+            Loading lessons...
+          </p>
+        </div>
+        <div id="modules-container">
+          <!-- Modules will be loaded here -->
+          <div class="animate-pulse p-4">
+            <div class="h-8 bg-gray-300 rounded mb-4"></div>
+            <div class="h-6 bg-gray-300 rounded mb-2 ml-4"></div>
+            <div class="h-6 bg-gray-300 rounded mb-2 ml-4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <main class="flex-1 flex flex-col overflow-hidden">
+        <div class="relative pt-[56.25%] bg-black flex-1">
+          <div
+            id="video-container"
+            class="absolute inset-0 w-full h-full flex items-center justify-center"
+          >
+            <div class="text-white text-xl">
+              Select a lesson to start learning
+            </div>
+          </div>
+        </div>
+        <div class="p-4 bg-white">
+          <h1 id="video-title" class="text-xl font-bold mb-2">
+            Select a lesson
+          </h1>
+          <div class="flex items-center text-sm text-gray-500">
+            <span id="video-duration">0:00 / 0:00</span>
+            <div class="ml-auto flex space-x-2">
+              <button
+                id="prev-lesson"
+                class="p-2 hover:bg-gray-100 rounded-full"
+                disabled
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                id="next-lesson"
+                class="p-2 hover:bg-gray-100 rounded-full"
+                disabled
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Load data.js first -->
+    <script src="../data/data.js"></script>
+    <script>
+      // DOM Elements
+      const courseTitle = document.getElementById("course-title");
+      const sidebarTitle = document.getElementById("sidebar-title");
+      const lessonCount = document.getElementById("lesson-count");
+      const modulesContainer = document.getElementById("modules-container");
+      const videoContainer = document.getElementById("video-container");
+      const videoTitle = document.getElementById("video-title");
+      const videoDuration = document.getElementById("video-duration");
+      const prevLessonBtn = document.getElementById("prev-lesson");
+      const nextLessonBtn = document.getElementById("next-lesson");
+      const sidebarToggle = document.getElementById("sidebar-toggle");
+      const sidebar = document.getElementById("sidebar");
+
+      // Current state
+      let currentCourseId = null;
+      let currentLessonId = null;
+      let allLessons = [];
+
+      // Initialize the app
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get course ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const courseId = urlParams.get("id");
+        const lessonId = urlParams.get("lesson");
+
+        if (!courseId) {
+          window.location.href = "index.html";
+          return;
+        }
+
+        // Load the course
+        loadCourse(courseId, lessonId);
+
+        // Setup event listeners
+        setupEventListeners();
+      });
+
+      // Setup event listeners
+      function setupEventListeners() {
+        // Sidebar toggle for mobile
+        sidebarToggle.addEventListener("click", function () {
+          sidebar.classList.toggle("hidden");
+        });
+
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener("click", function (event) {
+          if (
+            window.innerWidth < 768 &&
+            !sidebar.contains(event.target) &&
+            !sidebarToggle.contains(event.target) &&
+            !sidebar.classList.contains("hidden")
+          ) {
+            sidebar.classList.add("hidden");
+          }
+        });
+      }
+
+      // Load a course
+      function loadCourse(courseId, initialLessonId) {
+        currentCourseId = courseId;
+        const course = coursesData.find((c) => c.id === courseId);
+
+        if (!course) {
+          alert("Course not found!");
+          window.location.href = "index.html";
+          return;
+        }
+
+        // Update course title
+        document.title = course.title + " - Learning";
+        courseTitle.textContent = course.title;
+        sidebarTitle.textContent = course.title;
+
+        // Count total lessons
+        allLessons = [];
+        course.modules.forEach((module) => {
+          module.lessons.forEach((lesson) => {
+            allLessons.push(lesson);
+          });
+        });
+
+        lessonCount.textContent = `${allLessons.length} lessons`;
+
+        // Render modules and lessons
+        renderModules(course, initialLessonId);
+
+        // Select first lesson if available and no specific lesson is requested
+        if (!initialLessonId && allLessons.length > 0) {
+          selectLesson(allLessons[0].id);
+        } else if (initialLessonId) {
+          selectLesson(initialLessonId);
+        }
+      }
+
+      // Render modules and lessons
+      function renderModules(course, initialLessonId) {
+        modulesContainer.innerHTML = "";
+
+        course.modules.forEach((module, moduleIndex) => {
+          const moduleElement = document.createElement("div");
+          moduleElement.className = "module border-b";
+
+          // Create module header
+          const moduleHeader = document.createElement("button");
+          moduleHeader.className =
+            "flex items-center justify-between w-full p-4 text-left font-medium hover:bg-gray-100";
+          moduleHeader.innerHTML = `
+          <div class="flex items-center">
+            <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-200 text-gray-700 mr-3">
+              ${moduleIndex + 1}
+            </div>
+            <span>${module.title}</span>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="module-toggle h-5 w-5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        `;
+
+          // Create lessons container
+          const lessonsContainer = document.createElement("div");
+          lessonsContainer.className = "lessons-container";
+
+          // Add lessons
+          module.lessons.forEach((lesson, lessonIndex) => {
+            const lessonElement = document.createElement("button");
+            lessonElement.className = `lesson-btn w-full flex items-center p-3 pl-12 hover:bg-gray-100 text-left ${
+              lesson.id === initialLessonId ? "sidebar-item active" : ""
+            }`;
+            lessonElement.setAttribute("data-id", lesson.id);
+            lessonElement.innerHTML = `
+            <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 mr-3">
+              ${lessonIndex + 1}
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="truncate">${lesson.title}</p>
+              <p class="text-xs text-gray-500">${lesson.duration}</p>
+            </div>
+          `;
+
+            // Add click event
+            lessonElement.addEventListener("click", function () {
+              selectLesson(lesson.id);
+
+              // Update URL without reloading
+              const newUrl = `course.html?id=${currentCourseId}&lesson=${lesson.id}`;
+              window.history.pushState({ path: newUrl }, "", newUrl);
+            });
+
+            lessonsContainer.appendChild(lessonElement);
+          });
+
+          moduleElement.appendChild(moduleHeader);
+          moduleElement.appendChild(lessonsContainer);
+          modulesContainer.appendChild(moduleElement);
+
+          // Toggle module expansion
+          moduleHeader.addEventListener("click", function () {
+            const icon = moduleHeader.querySelector(".module-toggle");
+            icon.classList.toggle("rotate-180");
+
+            const lessonsContainer = moduleHeader.nextElementSibling;
+            lessonsContainer.style.display =
+              lessonsContainer.style.display === "none" ? "block" : "none";
+          });
+        });
+      }
+
+      // Select a lesson
+      function selectLesson(lessonId) {
+        currentLessonId = lessonId;
+
+        // Find the lesson
+        let currentLesson = null;
+        const course = coursesData.find((c) => c.id === currentCourseId);
+
+        for (const module of course.modules) {
+          const lesson = module.lessons.find((l) => l.id === lessonId);
+          if (lesson) {
+            currentLesson = lesson;
+            break;
+          }
+        }
+
+        if (!currentLesson) return;
+
+        // Update active lesson
+        document.querySelectorAll(".lesson-btn").forEach((btn) => {
+          if (btn.getAttribute("data-id") === lessonId) {
+            btn.classList.add("sidebar-item", "active");
+          } else {
+            btn.classList.remove("sidebar-item", "active");
+          }
+        });
+
+        // Update video
+        videoContainer.innerHTML = `
+        <iframe 
+          src="https://www.youtube.com/embed/${currentLesson.videoId}" 
+          title="${currentLesson.title}" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          class="w-full h-full">
+        </iframe>
+      `;
+
+        // Update title and duration
+        videoTitle.textContent = currentLesson.title;
+        videoDuration.textContent = `0:00 / ${currentLesson.duration}`;
+
+        // Update navigation buttons
+        updateNavigation();
+
+        // Close sidebar on mobile
+        if (window.innerWidth < 768) {
+          sidebar.classList.add("hidden");
+        }
+      }
+
+      // Update navigation buttons
+      function updateNavigation() {
+        const currentIndex = allLessons.findIndex(
+          (lesson) => lesson.id === currentLessonId
+        );
+
+        // Previous button
+        if (currentIndex > 0) {
+          prevLessonBtn.disabled = false;
+          prevLessonBtn.classList.remove("opacity-50");
+          prevLessonBtn.onclick = function () {
+            selectLesson(allLessons[currentIndex - 1].id);
+
+            // Update URL without reloading
+            const newUrl = `course.html?id=${currentCourseId}&lesson=${
+              allLessons[currentIndex - 1].id
+            }`;
+            window.history.pushState({ path: newUrl }, "", newUrl);
+          };
+        } else {
+          prevLessonBtn.disabled = true;
+          prevLessonBtn.classList.add("opacity-50");
+          prevLessonBtn.onclick = null;
+        }
+
+        // Next button
+        if (currentIndex < allLessons.length - 1) {
+          nextLessonBtn.disabled = false;
+          nextLessonBtn.classList.remove("opacity-50");
+          nextLessonBtn.onclick = function () {
+            selectLesson(allLessons[currentIndex + 1].id);
+
+            // Update URL without reloading
+            const newUrl = `course.html?id=${currentCourseId}&lesson=${
+              allLessons[currentIndex + 1].id
+            }`;
+            window.history.pushState({ path: newUrl }, "", newUrl);
+          };
+        } else {
+          nextLessonBtn.disabled = true;
+          nextLessonBtn.classList.add("opacity-50");
+          nextLessonBtn.onclick = null;
+        }
+      }
+    </script>
+  </body>
+</html>
