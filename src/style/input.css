@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
+@theme {
+  /* todo Color */
+  --color-primary: #0f264d;
+  --color-secondary: #ffc107;
+  --color-background: #f1f1f1;
 
+  /*todo Font Size */
+  /* Heading */
+  --text-heading-1: 40px;
+  --text-heading-2: 36px;
+  --text-heading-3: 32px;
+  --text-heading-4: 24px;
+  --text--heading-5: 20px;
+  /* Description */
+  --text-des-1: 24px;
+  --text-des-2: 20px;
+  --text-des-3: 18px;
+  --text-des-4: 16px;
+  --text-des-5: 14px;
+  --text-des-6: 12px;
 
+  /* todo Font Family */
+  --font-kantumruy: Kantumruy Pro;
+}
