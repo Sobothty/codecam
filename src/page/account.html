@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Account</title>
+  </head>
+  <body class="bg-gray-100 space-y-3">
+    <header
+      class="flex items-center justify-between bg-white px-5 md:px-22 shadow-sm"
+    >
+      <a href="../../index.html"
+        ><img class="w-1/4 md:w-[15%]" src="../../public/logo.png" alt="logo"
+      /></a>
+      <a href="../../index.html"
+        ><button
+          class="flex items-center gap-2 text-[var(--color-secondary)] font-medium border border-[var(--color-secondary)] rounded-sm py-1 px-4 hover:text-white hover:bg-[var(--color-secondary)]"
+        >
+          <i class="fa-solid fa-right-from-bracket"></i>Logout</button
+      ></a>
+    </header>
+    <main class="flex justify-center">
+      <section
+        class="bg-white w-3/4 grid content-center grid-cols-1 md:grid-cols-2 place-items-center gap-8 py-10 px-6 md:space-y-0 rounded-md"
+      >
+        <div class="space-y-4 md:space-y-14 lg:space-y-5">
+          <div class="bg-amber-50 rounded-md w-full relative">
+            <img class="w-full" src="../../public/profile.png" alt="profile" />
+            <div class="absolute top-3 left-3">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+          </div>
+          <button
+            class="flex items-center justify-center gap-2 w-full text-[var(--color-secondary)] font-medium border border-[var(--color-secondary)] rounded-sm py-2 px-6 hover:text-white hover:bg-[var(--color-secondary)]"
+          >
+            <i class="fa-solid fa-upload"></i><span>Upload Picture</span>
+          </button>
+        </div>
+        <div class="w-full lg:px-10">
+          <div class="space-y-2 md:space-y-2 ld:space-y-4 mb-5">
+            <div class="space-y-2">
+              <p>Name :</p>
+              <input
+                disabled
+                class="input w-full border border-gray-200 bg-gray-100 focus:outline-[var(--color-secondary)] text-gray-700 py-1 px-4 rounded-sm disabled:cursor-not-allowed"
+                type="text"
+                value="Jonh Doe"
+              />
+            </div>
+            <div class="space-y-2">
+              <p>Email :</p>
+              <input
+                disabled
+                class="input w-full border border-gray-200 bg-gray-100 focus:outline-[var(--color-secondary)] text-gray-700 py-1 px-4 rounded-sm disabled:cursor-not-allowed"
+                type="text"
+                value="jonhdoe31@gmail.com"
+              />
+            </div>
+            <div class="space-y-2">
+              <p>Phone Number :</p>
+              <input
+                disabled
+                class="input w-full border border-gray-200 bg-gray-100 focus:outline-[var(--color-secondary)] text-gray-700 py-1 px-4 rounded-sm disabled:cursor-not-allowed"
+                type="text"
+                value="096735802"
+              />
+            </div>
+            <div class="space-y-2">
+              <p>Address :</p>
+              <input
+                disabled
+                class="input w-full border border-gray-200 bg-gray-100 focus:outline-[var(--color-secondary)] text-gray-700 py-1 px-4 rounded-sm disabled:cursor-not-allowed"
+                type="text"
+                value="Phnom Penh"
+              />
+            </div>
+          </div>
+          <button
+            id="edit-button"
+            class="flex items-center justify-center gap-2 w-full text-[var(--color-secondary)] font-medium border border-[var(--color-secondary)] rounded-sm py-2 px-6 hover:text-white hover:bg-[var(--color-secondary)]"
+          >
+            <i class="fa-solid fa-pen"></i><span>Edit</span>
+          </button>
+          <div class="flex items-center gap-2">
+            <button
+              id="cancel-button"
+              class="hidden w-2/4 text-[var(--color-secondary)] font-medium border border-[var(--color-secondary)] rounded-sm py-2 px-6 hover:text-white hover:bg-[var(--color-secondary)]"
+            >
+              Cancel
+            </button>
+            <button
+              id="finish-button"
+              class="hidden w-2/4 text-[var(--color-secondary)] font-medium border border-[var(--color-secondary)] rounded-sm py-2 px-6 hover:text-white hover:bg-[var(--color-secondary)]"
+            >
+              Finish
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../util/account.js"></script>
+  </body>
+</html>
