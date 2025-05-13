@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style/output.css" />
+    <title>About</title>
+  </head>
+  <body class="font-kantumruy">
+    <header class="bg-white shadow-md fixed w-full z-10">
+      <div
+        class="container mx-auto flex items-center justify-between px-4 py-4"
+      >
+        <div class="flex items-center gap-2">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+            alt="Logo"
+            class="w-6 h-6"
+          />
+          <h1 class="text-lg font-bold text-yellow-500">សូមស្វាគមន៍</h1>
+        </div>
+        <nav class="hidden md:flex items-center space-x-6 font-semibold">
+          <a href="#" class="text-black hover:text-yellow-500">Home</a>
+          <a href="#" class="text-yellow-500">Courses</a>
+          <a href="#" class="text-black hover:text-yellow-500">Blog</a>
+          <a href="#" class="text-black hover:text-yellow-500">About</a>
+          <a href="#" class="text-black hover:text-yellow-500">Contact</a>
+          <div
+            class="bg-yellow-400 text-white w-8 h-8 flex items-center justify-center rounded-full"
+          >
+            <i class="fas fa-user"></i>
+          </div>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="#" class="block py-2">Home</a>
+        <a href="#" class="block py-2 text-yellow-500">Courses</a>
+        <a href="#" class="block py-2">Blog</a>
+        <a href="#" class="block py-2">About</a>
+        <a href="#" class="block py-2">Contact</a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="relative w-full min-h-screen bg-primary overflow-hidden">
+          <!-- developer image -->
+          <div class="absolute left-20 bottom-10 z-10 w-2/5 max-w-xl">
+            <img
+              src="/asset/developer.png"
+              alt="Programmer illustration"
+              class="w-full h-auto"
+            />
+          </div>
+          <!-- Main Content -->
+          <div class="container mx-auto px-4 py-6 relative z-10">
+            <div class="flex flex-col items-end text-white pt-45 mx-20 p-20">
+              <div class="flex flex-col items-center">
+                <!-- Khmer Title -->
+                <h1 class="text-[64px] font-semibold mb-1 text-center">
+                  អំពីយើង
+                </h1>
+
+                <!-- Khmer Subtitle -->
+                <p class="text-xl items-center text-center">
+                  គេហទំព័រ
+                  <span class="text-yellow-400">កូដខេម</span> សូមស្វាគមន៍
+                </p>
+
+                <!-- Developer Text -->
+                <p class="text-lg mb-6">developer ទាំងអស់យ៉ាងកក់ក្តៅ</p>
+
+                <!-- Buttons -->
+                <div class="flex items-center space-x-4">
+                  <button
+                    class="bg-white text-secondary px-6 py-2 rounded-md border-2 border-gray-500 text-des-2 hover:bg-secondary hover:text-white"
+                  >
+                    ចាប់ផ្តើមសិក្សា
+                  </button>
+
+                  <button class="flex items-center text-white">
+                    <div
+                      class="bg-white border-5 border-secondary border-r-transparent rounded-full p-2 mr-2"
+                    >
+                      <div class="w-8 h-8 flex items-center justify-center">
+                        <div
+                          class="w-0 h-0 border-t-8 border-t-transparent border-l-10 border-l-black border-b-8 border-b-transparent ml-1"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="text-des-2">ស្វែងរកបន្ថែម</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wavy Pattern -->
+          <div class="absolute bottom-0 left-0 right-0 w-full">
+            <img
+              src="/asset/wavy.png"
+              class="w-full h-auto"
+              alt="Wave pattern"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="m-12 py-[100px]">
+        <div class="max-w-6xl mx-auto border-4 border-secondary rounded-[50px] py-16">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-start">
+              <!-- Left Section -->
+              <div
+                class="w-full text-center md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 p-12"
+              >
+                <h2 class="text-6xl font-extrabold">
+                  <span class="text-secondary">WHO</span>
+                  <span class="text-primary">WE ARE</span>
+                </h2>
+                <h3 class="text-heading-2 mt-2">
+                  <span class="text-secondary">តើ</span>
+                  <span class="text-primary">ពួកយើងជានរណា</span>
+                </h3>
+              </div>
+
+              <!-- Purple Divider (Visible on medium screens and up) -->
+              <div
+                class="hidden md:block bg-secondary w-1 mx-4 self-stretch"
+              ></div>
+
+              <!-- Right Section -->
+              <div class="w-full​ ​md:w-1/2 pl-0 md:pl-8 p-6">
+                <p class="text-des-1 text-center leading-relaxed mb-1">
+                  ពួកយើងគឺជាសិស្សមកពីវិទ្យាស្ថាន ISTAD
+                </p>
+                <p class="text-des-1 text-center leading-relaxed mb-1">
+                  ដែលបានសហការក្រុមក្នុងការធ្វើ Mini-Project
+                </p>
+                <p class="text-des-1 text-center leading-relaxed mb-1">
+                  របស់យើងឱ្យទៅជាគេហទំព័រមួយ
+                </p>
+                <p class="text-des-1 text-center leading-relaxed">
+                  សម្រាប់អ្នកចាប់ផ្តើមក្នុងវិស័យបច្ចេកវិទ្យាថ្មីៗនេះ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container mx-auto px-12 py-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Card - Green -->
+            <div class="rounded-xl overflow-hidden shadow-lg">
+              <!-- Card Header -->
+              <div class="bg-emerald-500 p-6 flex justify-between items-center">
+                <h3 class="text-white text-2xl font-bold">គោលបំណងរបស់យើង</h3>
+                <svg
+                  class="w-8 h-8 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  />
+                </svg>
+              </div>
+
+              <!-- Card Body -->
+              <div class="bg-white p-6 border-l-4 border-emerald-500">
+                <p class="text-gray-800 leading-relaxed text-des-2">
+                  គោលបំណងរបស់យើងគឺបង្កើតវេទិកាមួយដែលមានអត្ថប្រយោជន៍និងងាយស្រួលប្រើដើម្បីឱ្យអ្នករៀនអាចស្វែងយល់ពីមុខងាររចនាគេហទំព័រ
+                  មុខជំនាញវិទ្យាសាស្ត្រទិន្នន័យ និងជំនាញបច្ចេកវិទ្យាផ្សេងៗទៀត
+                  តាមរយោៈការអនុវត្តជាក់ស្តែងជាមួយនឹង modern tools
+                  ជាច្រើនចាំបាច់​ ។
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Card - Purple -->
+            <div class="rounded-xl overflow-hidden shadow-lg">
+              <!-- Card Header -->
+              <div class="bg-purple-500 p-6 flex justify-between items-center">
+                <h3 class="text-white text-2xl font-bold">បេសកម្មរបស់យើង</h3>
+                <svg
+                  class="w-8 h-8 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <!-- Target/bullseye element -->
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="9"
+                    stroke="currentColor"
+                    fill="none"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="6"
+                    stroke="currentColor"
+                    fill="none"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="3"
+                    stroke="currentColor"
+                    fill="none"
+                  />
+                  <circle cx="12" cy="12" r="1" fill="currentColor" />
+
+                  <!-- Arrow pointing to target -->
+                  <path d="M4 4L8 8" stroke="currentColor" stroke-width="2" />
+                  <path
+                    d="M3 4.5L4.5 3L7 5.5L5.5 7L3 4.5z"
+                    fill="currentColor"
+                  />
+
+                  <!-- Flag element (mission accomplished) -->
+                  <path d="M19 5v4l-3-2l3-2z" fill="currentColor" />
+                  <line
+                    x1="19"
+                    y1="3"
+                    x2="19"
+                    y2="10"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+
+              <!-- Card Body -->
+              <div class="bg-white text-des-2 p-6 border-l-4 border-purple-500">
+                <p class="text-gray-800 leading-relaxed mb-4">
+                  បេសកម្មរបស់ពួកយើងគឺជួយឱ្យអ្នកដែលចាប់ផ្តើមរៀនកូដដំបូងៗមានមូលដ្ឋានគ្រឺះរឹងមាំអំពីបច្ចេកវិទ្យាដោយផ្តល់នូវ៖
+                </p>
+                <ul class="list-disc pl-6 text-gray-800">
+                  <li class="mb-2">មេរៀនកូដ តាមរយៈ វីឌីដេអូ</li>
+                  <li class="mb-2">Real-world Projects</li>
+                  <li class="mb-2">Supportive learning environment</li>
+                  <li>ឯកសារមេរៀនជាច្រើន ។</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h2 class="text-center text-heading-1 font-semibold text-primary mb-6">
+        ណែនាំដោយ
+      </h2>
+      <section class="py-14 px-4">
+        <div class="mx-auto max-w-6xl bg-gray-100 rounded-xl p-6">
+          <div
+            class="w-full md:w-1/2 flex items-center space-y-6  md:space-x-8"
+          >
+            <!-- Profile Image with Border -->
+            <div
+              class="relative w-80 h-80 rounded-full mb-6 flex items-center justify-center border-4 border-emerald-500"
+            >
+              <img
+                src="/asset/cher davan (1).png"
+                alt="Instructor Photo"
+                class="w-65 h-65 rounded-full object-cover"
+              />
+            </div>
+
+            <!-- Info Section -->
+            <div class="text-center md:text-left flex-1">
+              <h3 class="text-2xl font-bold text-gray-800">
+                លោកគ្រូ <span class="text-emerald-500">អ៊ីង ដាវ៉ាន់</span>
+              </h3>
+              <p class="text-gray-400 mt-1">
+                Frontend និង Cyber Security Instructor
+              </p>
+              <p class="text-gray-400">នៅ ISTAD</p>
+
+              <button
+                class="mt-4 bg-emerald-400 text-white font-semibold px-6 py-2 rounded-lg hover:bg-emerald-500 transition"
+              >
+                ព័ត៌មានបន្ថែម
+              </button>
+
+              <!-- Social Icons -->
+              <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+                  <i class="fab fa-youtube fa-lg"></i>
+                </a>
+                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+    </main>
+    <footer></footer>
+    <!-- Font Awesome for Icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
