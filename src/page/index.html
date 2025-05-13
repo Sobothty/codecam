@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Hero Section</title>
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="font-kantumruy bg-gray-50">
+    <!-- Navbar -->
+    <header class="fixed w-full z-10">
+      <div
+        class="container mx-auto flex items-center justify-between px-4 py-4"
+      >
+        <div class="flex items-center gap-2">
+          <img src="../../public/logo.png" alt="Logo" class="w-20 h-20" />
+        </div>
+        <nav
+          class="hidden md:flex items-center space-x-6 font-semibold text-xl"
+        >
+          <a href="#" class="text-black hover:text-yellow-500">ទំព័រដើម</a>
+          <a href="#" class="text-yellow-500">មេរៀន</a>
+          <a href="#" class="text-black hover:text-yellow-500">ប្លុក</a>
+          <a href="#" class="text-black hover:text-yellow-500">អំពីយើង</a>
+          <a href="#" class="text-black hover:text-yellow-500">ទំនាក់ទំនង</a>
+          <div
+            class="bg-yellow-400 text-white w-8 h-8 flex items-center justify-center rounded-full"
+          >
+            <i class="fas fa-user"></i>
+          </div>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="#" class="block py-2">ទំព័រដើម</a>
+        <a href="#" class="block py-2 text-yellow-500">មេរៀន</a>
+        <a href="#" class="block py-2">ប្លុក</a>
+        <a href="#" class="block py-2">អំពីយើង</a>
+        <a href="#" class="block py-2">ទំនាក់ទំនង</a>
+      </div>
+    </header>
+
+    <main class="max-w-7xl m-auto">
+      <!-- Hero Section -->
+      <!-- Test Graduin -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-background via-[#FFDFEF] to-[#F9FAFB] -z-10"
+      ></div>
+
+      <section class="max-w-7xl m-auto pt-28 px-10 pb-16 rounded-md">
+        <h2 class="text-3xl md:text-5xl font-bold text-purple-600 mt-10">
+          ស្វែងរកមុខវិជ្ជាបច្ចេកវិទ្យា
+        </h2>
+        <h3 class="text-2xl md:text-3xl my-7 text-black">សម្រាប់រៀននៅទីនេះ</h3>
+        <p class="text-gray-700 max-w-xl mb-6 leading-relaxed text-des-3">
+          យើងនឹងផ្តល់ជូននៅការសិក្សាររៀនសូត្រដ៏ល្អដល់អ្នកទាំងអស់គ្នាដូចជាមេរៀនដែលបានរៀបចំយ៉ាងល្អ
+          តាមរយះវីឌីអូនិងលំហាត់ក៏ដូចជាកិច្ចការងារដែលដាក់ឱ្យអ្នកទាំងអស់គ្នាអនុវត្តបន្ថែមទៀត
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input
+            type="text"
+            placeholder="ស្វែងរកមុខវិជ្ជារៀននៅទីនេះ"
+            class="px-4 py-2 rounded-md border border-gray-300 w-full sm:w-80"
+          />
+          <button
+            class="cursor-pointer bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-5 py-2 rounded-md shadow"
+          >
+            ស្វែងរក
+          </button>
+        </div>
+      </section>
+      <!-- <h2
+        class="text-heading-4 px-10 md:px-0 md:text-heading-2 text-primary font-semibold py-5"
+      >
+        កម្មេវិធីសិក្សារដែលមាន
+      </h2> -->
+
+      <!-- Stats Section -->
+      <section class="max-w-7xl m-auto grid grid-cols-2 md:grid-cols-4 py-5">
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-green-200 p-4 rounded-full mb-2">
+            <i class="fas fa-graduation-cap text-2xl text-green-600"></i>
+          </div>
+          <p class="text-lg font-bold">300+</p>
+          <p class="text-gray-600">វគ្គសិក្សា</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-purple-200 p-4 rounded-full mb-2">
+            <i class="fas fa-users text-2xl text-purple-600"></i>
+          </div>
+          <p class="text-lg font-bold">20,000+</p>
+          <p class="text-gray-600">សិស្ស</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-red-200 p-4 rounded-full mb-2">
+            <i class="fas fa-video text-2xl text-red-600"></i>
+          </div>
+          <p class="text-lg font-bold">10,000+</p>
+          <p class="text-gray-600">វីដេអូ</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-blue-200 p-4 rounded-full mb-2">
+            <i class="fas fa-users-cog text-2xl text-blue-600"></i>
+          </div>
+          <p class="text-lg font-bold">1,00,000+</p>
+          <p class="text-gray-600">អ្នកប្រើប្រាស់</p>
+        </div>
+      </section>
+
+      <h2
+        class="text-heading-4 px-10 md:px-0 md:text-heading-2 text-primary font-semibold py-5"
+      >
+        កម្មេវិធីសិក្សារដែលមាន
+      </h2>
+      <section>
+        <div class="container mx-auto px-4 py-8">
+          <!-- Category Cards -->
+          <div
+            class="status grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8"
+          >
+            <!-- Cards will be inserted here by JavaScript -->
+          </div>
+
+          <!-- Content Section -->
+          <div
+            id="content-section"
+            class="bg-white rounded-lg shadow-md p-6 mb-8"
+          >
+            <!-- Dynamic content will be inserted here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO Learning card courses -->
+      <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Programming Courses</h1>
+
+        <div
+          id="courses-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+        >
+          <!-- Courses will be loaded here -->
+          <div
+            class="animate-pulse bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <div class="h-48 bg-gray-300"></div>
+            <div class="p-4">
+              <div class="h-6 bg-gray-300 rounded mb-2"></div>
+              <div class="h-4 bg-gray-300 rounded mb-4"></div>
+              <div class="h-4 bg-gray-300 rounded mb-4 w-1/2"></div>
+              <div class="h-10 bg-gray-300 rounded"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Load data.js first -->
+    <script src="../data/data.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const coursesContainer = document.getElementById("courses-container");
+
+        // Clear loading placeholder
+        coursesContainer.innerHTML = "";
+
+        // Render all courses
+        coursesData.forEach((course) => {
+          const card = document.createElement("div");
+          card.className =
+            "course-card bg-white rounded-lg shadow-md overflow-hidden";
+
+          // Generate star rating HTML
+          let starsHtml = "";
+          for (let i = 1; i <= 5; i++) {
+            const starClass =
+              i <= Math.floor(course.rating)
+                ? "text-yellow-400"
+                : "text-gray-300";
+            starsHtml += `<svg class="w-5 h-5 ${starClass}" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>`;
+          }
+
+          card.innerHTML = `
+          <div class="relative">
+            <img src="${course.imageUrl}" alt="${course.title}" class="w-full h-48 object-cover">
+            <a href="course.html?id=${course.id}" class="absolute top-4 left-4 bg-green-400 hover:bg-green-500 text-gray-800 font-medium py-2 px-4 rounded-full transition-colors">
+              ការរៀនសូត្រ
+            </a>
+          </div>
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">${course.title}</h2>
+            <p class="text-gray-600 mb-4">${course.description}</p>
+            <div class="flex items-center mb-4">
+              <div class="flex mr-2">
+                ${starsHtml}
+              </div>
+              <span class="text-gray-600">${course.rating}</span>
+              <span class="text-gray-500 ml-2">(${course.reviewCount})</span>
+            </div>
+            <a href="course.html?id=${course.id}" class="block w-full text-center bg-yellow-100 hover:bg-yellow-200 text-gray-800 font-medium py-2 px-4 rounded transition-colors">
+              ចាប់ផ្តើមរៀនឥឡូវនេះ
+            </a>
+          </div>
+        `;
+
+          coursesContainer.appendChild(card);
+        });
+      });
+    </script>
+
+    <!-- Mobile Menu Script -->
+    <script src="../util/techLearningPlatform.js"></script>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+    <script src="../../util/techLearningPlatform.js"></script>
+  </body>
+</html>
