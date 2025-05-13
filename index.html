@@ -6,146 +6,196 @@
     <title>CodeCam</title>
     <link rel="stylesheet" href="./src/style/output.css" />
     <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="font-kantumruy bg-background dark:bg-primary">
-    <header>
-      <nav class="bg-background dark:bg-primary sticky w-full h-auto z-20 top-0 start-0 border-gray-600 dark:border-gray-600">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./public/icon/logo.png" class="h-20" alt="Flowbite Logo">
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button type="button" class="text-heading-5 text-secondary dark:text-primary bg-primary hover:bg-secondary hover:text-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-4 py-2 mx-2 text-center dark:bg-secondary dark:hover:bg-secondary dark:hover:text-white dark:focus:ring-primary">Log In</button>
-            <button type="button" class="text-heading-5 text-secondary dark:text-primary bg-primary hover:bg-secondary hover:text-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-4 py-2 mx-2 text-center dark:bg-secondary dark:hover:bg-secondary dark:hover:text-white dark:focus:ring-primary">Sign In</button>
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
+    <!-- TODO header -->
+    <header
+      id="navbar"
+      class="fixed w-full z-10 backdrop-blur-sm transition-all duration-300 px-10 xl:px-0"
+    >
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <!-- Logo + Navlist (Left) -->
+        <div class="flex items-center space-x-8">
+          <img src="../../public/icon/logo.png" alt="Logo" class="w-16 h-16" />
+          <nav
+            class="hidden md:flex items-center space-x-6 font-semibold text-lg"
+          >
+            <a href="/" class="text-yellow-500 hover:text-yellow-500"
+              >ទំព័រដើម</a
+            >
+            <a href="./src/page/index.html" class="text-white">មេរៀន</a>
+            <a href="#" class="text-white hover:text-yellow-500">ប្លុក</a>
+            <a href="#" class="text-white hover:text-yellow-500">អំពីយើង</a>
+            <a
+              href="./src/page/contact.html"
+              class="text-white hover:text-yellow-500"
+              >ទំនាក់ទំនង</a
+            >
+          </nav>
+        </div>
+
+        <!-- Right Side Login Button -->
+        <div class="hidden md:block">
+          <button
+            class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+          >
+            ចូលគណនីយ
           </button>
         </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Cousres</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
-            </li>
-            <li> 
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
-            </li>
-            <li>
-              <a href="./src/page/contact.html" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-            </li>
-          </ul>
-        </div>
-        </div>
-      </nav>
-    </header>
-    <!-- main -->
-    <main>
-           <div class="text-background bg-primary dark:bg-background dark:text-primary rounded-xl p-4 md-m-5 m-5 md:p-10 flex flex-col md:flex-row gap-6 max-w-5xl w-full mx-auto">
-      
-      <!-- Text Section -->
-      <div class="flex-1 space-y-4">
-        <h1 class="text-heading-1 md:text-heading-3 font-semibold mb-10">
-          បង្កើនជំនាញរបស់អ្នក<br />
-          ដោយសិក្សាតាមអ៊ីនធឺណេតជាមួយ<span class="text-secondary">CodeCam</span>
-        </h1>
-        <p class="text-heading-5 md:text-base mb-10">
-          <span class="text-secondary font-semibold">CodeCam</span>
-          គឺជាផ្តល់ការបណ្តុះបណ្តាលជាសាកលដែលមានមូលដ្ឋានដែលមានជំនាញក្នុងវគ្គបណ្តុះបណ្តាលដែលមានការទទួលស្គាល់ និងតាមតម្រូវការ
-        </p>
-        <button class="bg-secondary text-black font-semibold py-2 px-4 rounded-lg hover:bg-primary hover:text-secondary transition mb-10">
-          ចាប់ផ្ដើមសិក្សាឥឡូវនេះ
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl text-black">
+          <i class="fas fa-bars"></i>
         </button>
       </div>
 
-      <!-- Illustration Section -->
-      <div class="flex-1 flex items-center justify-center">
-        <img src="./public/image/virtual study session_ young man studying remotely.png" alt="Student studying" class="-{100px} max-w-sm">
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden px-4 pb-4 space-y-2 font-semibold text-lg"
+      >
+        <a href="/" class="block">ទំព័រដើម</a>
+        <a href="./src/page/index.html" class="block text-yellow-500">មេរៀន</a>
+        <a href="#" class="block">ប្លុក</a>
+        <a href="#" class="block">អំពីយើង</a>
+        <a href="./src/page/contact.html" class="block">ទំនាក់ទំនង</a>
+        <button
+          class="w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500 transition"
+        >
+          ចូលគណនីយ
+        </button>
       </div>
+    </header>
+    <!-- main -->
+    <main class="pt-32">
+      <div
+        class="text-background bg-primary dark:bg-background dark:text-primary rounded-xl md:p-10 flex flex-col md:flex-row gap-6 max-w-5xl w-full mx-auto"
+      >
+        <!-- Text Section -->
+        <div class="flex-1 space-y-4">
+          <h1 class="text-heading-1 md:text-heading-3 font-semibold mb-10">
+            បង្កើនជំនាញរបស់អ្នក<br />
+            ដោយសិក្សាតាមអ៊ីនធឺណេតជាមួយ<span class="text-secondary"
+              >CodeCam</span
+            >
+          </h1>
+          <p class="text-heading-5 md:text-base mb-10">
+            <span class="text-secondary font-semibold">CodeCam</span>
+            គឺជាផ្តល់ការបណ្តុះបណ្តាលជាសាកលដែលមានមូលដ្ឋានដែលមានជំនាញក្នុងវគ្គបណ្តុះបណ្តាលដែលមានការទទួលស្គាល់
+            និងតាមតម្រូវការ
+          </p>
+          <button
+            class="bg-secondary text-black font-semibold py-2 px-4 rounded-lg hover:bg-primary hover:text-secondary transition mb-10"
+          >
+            ចាប់ផ្ដើមសិក្សាឥឡូវនេះ
+          </button>
+        </div>
 
+        <!-- Illustration Section -->
+        <div class="flex-1 flex items-center justify-center">
+          <img
+            src="./public/image/virtual study session_ young man studying remotely.png"
+            alt="Student studying"
+            class="-{100px} max-w-sm"
+          />
+        </div>
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="text-heading-5 text-primary dark:text-white px-6 py-10">
-    <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-sm">
-      
-      <!-- Logo Column -->
-      <div class="flex flex-col items-start">
-        <div class="flex items-center gap-2">
-          <!-- Replace with your actual logo -->
-          <img src="./public/icon/logo.png" alt="logo" class="w-25 h-25 rotate-[-20deg]">
+    <footer class="bg-primary text-heading-5 text-white px-6 py-10">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-sm"
+      >
+        <!-- Logo Column -->
+        <div class="flex flex-col items-start">
+          <div class="flex items-center gap-2">
+            <!-- Replace with your actual logo -->
+            <img
+              src="../../public/icon/logo.png"
+              alt="logo"
+              class="w-25 h-25 rotate-[-20deg]"
+            />
+          </div>
+        </div>
+
+        <!-- Explore -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Explore
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">ទំព័រដើម</a></li>
+            <li><a href="#">អំពីយើង</a></li>
+            <li><a href="#">មេរៀន</a></li>
+            <li><a href="#">ប្លុក</a></li>
+            <li><a href="#">ទំនាក់ទំនង</a></li>
+          </ul>
+        </div>
+
+        <!-- Course -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Course
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">មេរៀនទាំងអស់</a></li>
+            <li><a href="#">មេរៀនចុងក្រោយ</a></li>
+            <li><a href="#">មេរៀនកំពុងពេញនិយម</a></li>
+          </ul>
+        </div>
+
+        <!-- Category -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Category
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">អ្នកអភិវឌ្ឍន៍វេបសាយ</a></li>
+            <li><a href="#">អ្នកអភិវឌ្ឍន៍កម្មវិធីទូរសព្ទ</a></li>
+            <li><a href="#">មើលថែ Server</a></li>
+            <li><a href="#">ប្រព័ន្ធសុវត្ថិភាព</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Contact Us
+          </h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope"></i>
+              <span>codecam@istad.tech</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>+855 23 880 880</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span>ផេក - CodeCam</span>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <!-- Explore -->
-      <div>
-        <h3 class="text-secondary text-heading-4 font-semibold mb-2">Explore</h3>
-        <ul class="space-y-1">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Course</a></li>
-          <li><a href="#">Blogs</a></li>
-        </ul>
-      </div>
+      <!-- line -->
+      <div class="border-t border-gray-600 my-6"></div>
 
-      <!-- Course -->
-      <div>
-        <h3 class="text-secondary text-heading-4 font-semibold mb-2">Course</h3>
-        <ul class="space-y-1">
-          <li><a href="#">All Course</a></li>
-          <li><a href="#">Latest Course</a></li>
-          <li><a href="#">Popular Course</a></li>
-        </ul>
-      </div>
+      <!-- Copyright -->
+      <p class="text-center text-xs text-gray-400">
+        Copyright © CodeCam 2025. All rights reserved
+      </p>
+    </footer>
 
-      <!-- Category -->
-      <div>
-        <h3 class="text-secondary text-heading-4 font-semibold mb-2">Category</h3>
-        <ul class="space-y-1">
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Mobile App Development</a></li>
-          <li><a href="#">DevOps</a></li>
-          <li><a href="#">Cyber Security</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Us -->
-      <div>
-        <h3 class="text-secondary text-heading-4 font-semibold mb-2">Contact Us</h3>
-        <ul class="space-y-2">
-          <li class="flex items-center gap-2">
-            <i class="fa-solid fa-envelope"></i>
-            <span>codecam@istad.tech</span> 
-          </li>
-          <li class="flex items-center gap-2">
-            <i class="fa-solid fa-phone"></i>
-            <span>+855 23 880 880</span> 
-          </li>
-          <li class="flex items-center gap-2">
-            <span>ផេក - CodeCam</span> 
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- line -->
-    <div class="border-t border-gray-600 my-6"></div>
-
-    <!-- Copyright -->
-    <p class="text-center text-xs text-gray-400">Copyright © CodeCam 2025. All rights reserved</p>
-  </footer>
-
-
-  <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="./src/util/header.js"></script>
   </body>
 </html>

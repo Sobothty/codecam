@@ -9,8 +9,8 @@ menuBtn.addEventListener("click", () => {
 // Add blur background on scroll
 window.addEventListener("scroll", () => {
   if (window.scrollY > 10) {
-    navbar.classList.add("bg-white/70", "backdrop-blur-lg");
+    navbar.classList.add("backdrop-blur-lg");
   } else {
-    navbar.classList.remove("bg-white/70", "backdrop-blur-lg");
+    navbar.classList.remove("backdrop-blur-lg");
   }
 });
