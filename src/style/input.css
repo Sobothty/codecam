@@ -42,3 +42,6 @@
 .course-card:hover {
   transform: translateY(-5px);
 }
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
