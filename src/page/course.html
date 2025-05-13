@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Learning</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       body {
         overflow: hidden;
@@ -12,7 +19,7 @@
       }
       .sidebar-item.active {
         background-color: #e5edff;
-        border-left: 3px solid #3b82f6;
+        border-left: 3px solid #0f264d;
       }
       @media (max-width: 768px) {
         .sidebar {
@@ -34,8 +41,8 @@
         <a
           href="index.html"
           class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
-          >Back to Courses</a
-        >
+          ><i class="fa-solid fa-arrow-left"></i
+        ></a>
         <button
           id="sidebar-toggle"
           class="md:hidden p-2 rounded-md hover:bg-gray-100"
@@ -93,9 +100,7 @@
           </div>
         </div>
         <div class="p-4 bg-white">
-          <h1 id="video-title" class="text-xl font-bold mb-2">
-            Select a lesson
-          </h1>
+          <h1 id="video-title" class="text-xl font-bold">Select a lesson</h1>
           <div class="flex items-center text-sm text-gray-500">
             <span id="video-duration">0:00 / 0:00</span>
             <div class="ml-auto flex space-x-2">
@@ -283,7 +288,7 @@
             </div>
             <div class="flex-1 min-w-0">
               <p class="truncate">${lesson.title}</p>
-              <p class="text-xs text-gray-500">${lesson.duration}</p>
+              <p class="text-xs text-gray-500">${lesson.des}</p>
             </div>
           `;
 
@@ -356,7 +361,7 @@
 
         // Update title and duration
         videoTitle.textContent = currentLesson.title;
-        videoDuration.textContent = `0:00 / ${currentLesson.duration}`;
+        videoDuration.textContent = `${currentLesson.des}`;
 
         // Update navigation buttons
         updateNavigation();

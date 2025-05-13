@@ -112,8 +112,8 @@ const techCategories = [
     lessons: 121,
   },
   {
-    id: "cybersecurity",
-    name: "Cybersecurity",
+    id: "springboot",
+    name: "Spring Boot",
     icon: "fa-solid fa-leaf text-green-900 p-5 rounded-full bg-green-200", //<i class=""></i>
     bgColor: "bg-green-400",
     iconColor: "text-yellow-600",
