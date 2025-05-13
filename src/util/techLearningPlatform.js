@@ -3,6 +3,7 @@ const techCategories = [
   {
     id: "webdev",
     name: "Web Dev",
+    href: "./webdev.html",
     icon: "fa-solid fa-desktop text-blue-700 p-5 bg-blue-200 rounded-full",
     bgColor: "bg-blue-100",
     iconColor: "text-blue-600",
@@ -25,6 +26,7 @@ const techCategories = [
   {
     id: "mobile",
     name: "Mobile",
+    href: "#",
     icon: "fa-solid fa-mobile-screen text-red-600 px-6 py-5 bg-red-200 rounded-full", //<i class=""></i>
     bgColor: "bg-red-100",
     iconColor: "text-red-600",
@@ -47,6 +49,7 @@ const techCategories = [
   {
     id: "datascience",
     name: "Data Science",
+    href: "#",
     icon: "fa-solid fa-layer-group text-green-600 p-5 rounded-full bg-green-200", //<i class=""></i>
     bgColor: "bg-green-100",
     iconColor: "text-green-600",
@@ -69,6 +72,7 @@ const techCategories = [
   {
     id: "aiml",
     name: "AI & ML",
+    href: "#",
     icon: "fa-solid fa-dice-d20 text-purple-600 p-5 rounded-full bg-purple-200",
     bgColor: "bg-purple-100",
     iconColor: "text-purple-600",
@@ -91,6 +95,7 @@ const techCategories = [
   {
     id: "devops",
     name: "DevOps",
+    href: "#",
     icon: "fa-solid fa-hard-drive text-yellow-600 p-5 rounded-full bg-yellow-200",
     bgColor: "bg-yellow-100",
     iconColor: "text-yellow-600",
@@ -111,8 +116,9 @@ const techCategories = [
     lessons: 121,
   },
   {
-    id: "cybersecurity",
-    name: "Cybersecurity",
+    id: "springboot",
+    name: "Spring Boot",
+    href: "#",
     icon: "fa-solid fa-leaf text-green-900 p-5 rounded-full bg-green-200", //<i class=""></i>
     bgColor: "bg-green-400",
     iconColor: "text-yellow-600",
@@ -191,41 +197,41 @@ function renderCategoryContent(categoryId) {
 
   // Set content HTML
   contentSection.innerHTML = `
-                <h2 class="text-2xl font-bold text-indigo-700 mb-4">${category.title}</h2>
+                <h2 class="font-kantumruy text-2xl font-bold text-indigo-700 mb-4">${category.title}</h2>
                 
-                <p class="text-gray-700 mb-6">${category.description}</p>
+                <p class="text-gray-700 text-heading-5 py-2">${category.description}</p>
                 
                 <div class="mb-8">
-                    <h3 class="font-semibold mb-2 text-lg">មេរៀននៃវគ្គសិក្សា</h3>
-                    <ul class="pl-4 text-gray-700">
+                    <h3 class="font-semibold mb-2 text-xl">មេរៀននៃវគ្គសិក្សា</h3>
+                    <ul class="pl-4 text-des-3 text-gray-700">
                         ${topicListHTML}
                     </ul>
                 </div>
                 
                 <div class="flex flex-wrap justify-between items-center">
-                    <div class="flex items-center mb-4">
-                        <div class="flex">
-                            <span class="text-yellow-500 text-2xl">★★★★★</span>
-                            <span class="ml-2 font-bold">5.0</span>
+                    <div class="flex items-center">
+                        <div class="flex items-center gap-1">
+                            <span class="text-secondary text-2xl">★★★★★</span>
+                            <span class="ml-2 font-bold text-2xl">5.0</span>
                         </div>
                     </div>
                     
-                    <div class="flex flex-wrap gap-3 mb-4">
+                    <div class="flex flex-wrap gap-3 pb-5">
                         <div class="bg-purple-100 text-purple-800 px-4 py-2 rounded-md flex items-center">
-                            <span class="mr-2">📚</span> ${category.courses} មេរៀន
+                            <span class="mr-2"><i class="fa-solid fa-book"></i></span> ${category.courses} មេរៀន
                         </div>
                         <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-md flex items-center">
-                            <span class="mr-2">🖥️</span> ${category.duration}
+                            <span class="mr-2"><i class="fa-solid fa-desktop"></i></span> ${category.duration}
                         </div>
                         <div class="bg-green-100 text-green-800 px-4 py-2 rounded-md flex items-center">
-                            <span class="mr-2">🕒</span> ${category.lessons} ម៉ោង
+                            <span class="mr-2"><i class="fa-regular fa-clock"></i></span> ${category.lessons} ម៉ោង
                         </div>
                     </div>
                 </div>
                 
-                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-6 rounded-md mt-4 w-full md:w-auto md:ml-auto md:block">
+                <a href="${category.href}" class="bg-secondary text-white hover:bg-yellow-500 font-medium py-2 px-4 rounded-md mt-4 w-full md:w-auto md:ml-auto md:block text-center">
                     ចាប់ផ្តើមរៀនឥឡូវ!
-                </button>
+                </a>
             `;
 }
 

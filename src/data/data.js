@@ -3,11 +3,14 @@ const coursesData = [
   {
     id: "flutter-dev",
     title: "Flutter Developer",
+    status: "កម្រិតដំបូង",
+    student: "2,230",
     description:
-      "Learn to build beautiful cross-platform mobile apps with Flutter",
-    imageUrl: "https://via.placeholder.com/400x200?text=Flutter",
-    rating: 4.5,
-    reviewCount: 2340,
+      "រៀនបង្កើតកម្មវិធីទូរស័ព្ទដែលប្រើប្រាស់រវៀងប្រព៏ន្ធផ្សេងគ្នាជាមួយនឹង Flutter",
+    imageUrl:
+      "https://beecrowd.com/wp-content/uploads/2024/04/2022-06-23-Flutter.jpg",
+    rating: 3.0,
+    reviewCount: 2230,
     modules: [
       {
         id: "flutter-basics",
@@ -16,19 +19,19 @@ const coursesData = [
           {
             id: "flutter-intro",
             title: "Introduction to Flutter",
-            duration: "45 mins",
+            des: "នៅក្នុងមេរៀននេះយើងនឹងរៀនអំពីការណែនាំឱ្យស្គាល់អំពី Spring boot និងការ Setup IDE",
             videoId: "fq4N0hgOWzU",
           },
           {
             id: "dart-basics",
             title: "Dart Programming Basics",
-            duration: "30 mins",
+            des: "ការស្គាល់អំពី Variable, Condition",
             videoId: "5rtujDjt50I",
           },
           {
             id: "flutter-widgets",
             title: "Flutter Widgets",
-            duration: "35 mins",
+            des: "ការរៀបចំ layout",
             videoId: "b_sQ9bMltGU",
           },
         ],
@@ -40,13 +43,13 @@ const coursesData = [
           {
             id: "state-management",
             title: "State Management",
-            duration: "40 mins",
+            des: "ការរៀបចំ State ដែលមានច្រើននៅពេលយើងទាញយកនៅ data ពី API",
             videoId: "3tm-R7ymwhc",
           },
           {
             id: "flutter-animations",
             title: "Flutter Animations",
-            duration: "35 mins",
+            des: "ការរៀបចំនៅ Animation",
             videoId: "txLvvlooT20",
           },
         ],
@@ -56,10 +59,14 @@ const coursesData = [
   {
     id: "html-css",
     title: "HTML + CSS",
-    description: "Master the fundamentals of web development with HTML and CSS",
-    imageUrl: "https://via.placeholder.com/400x200?text=HTML+CSS",
-    rating: 4.5,
-    reviewCount: 2340,
+    status: "កម្រិតខ្ពស់",
+    student: "15,230",
+    description:
+      "គ្រប់គ្រងមូលដ្ឋានគ្រឹះនៃការអភិវឌ្ឍន៍គេហទំព័រជាមួយ HTML និង CSS",
+    imageUrl:
+      "https://futureteachinstitute.com/wp-content/uploads/2023/07/html-css-beginners.jpg",
+    rating: 4,
+    reviewCount: 234340,
     modules: [
       {
         id: "html-basics",
@@ -68,14 +75,38 @@ const coursesData = [
           {
             id: "html-intro",
             title: "Introduction to HTML",
-            duration: "30 mins",
-            videoId: "qz0aGYrrlhU",
+            des: "តើអ្វីជាHTML?",
+            videoId: "WXHoHeU_LWg",
           },
           {
             id: "html-elements",
-            title: "HTML Elements & Structure",
-            duration: "35 mins",
-            videoId: "UB1O30fR-EE",
+            title: "Editorសម្រាប់សរសេរ HTML",
+            des: "ការ setup នៅ Edito ​សម្រាប់សរសេរHTML",
+            videoId: "w1Fx4GAKOqM",
+          },
+          {
+            id: "html-editor",
+            title: "Basic HTML",
+            des: "មកស្គាល់អំពីBasic​ Tag និង​ HTML​ Document ",
+            videoId: "nYhu1BbHfuQ",
+          },
+          {
+            id: "html-basic",
+            title: "Element HTML",
+            des: "មកស្គាល់អំពីElementរបស់ភាសាHTML",
+            videoId: "49jS2goXT6U",
+          },
+          {
+            id: "html-attribute",
+            title: "Attribute HTML",
+            des: "មកស្គាល់អំពីAttributeរបស់ភាសាHTML",
+            videoId: "ibWfd7buEpU",
+          },
+          {
+            id: "html-format-tage",
+            title: "Format HTML",
+            des: "តើអ្វីជាHTML Format​ Tag?",
+            videoId: "5OrVuFy7DWo",
           },
         ],
       },
@@ -84,22 +115,16 @@ const coursesData = [
         title: "CSS Fundamentals",
         lessons: [
           {
-            id: "css-intro",
-            title: "Introduction to CSS",
-            duration: "30 mins",
-            videoId: "yfoY53QXEnI",
+            id: "css-pseudo-class",
+            title: "Pseudo Class Selector",
+            des: "Pseudo Class Selector",
+            videoId: "ZUqoIFGW9HQ",
           },
           {
             id: "css-layout",
-            title: "CSS Layout & Positioning",
-            duration: "40 mins",
-            videoId: "K74l26pE4YA",
-          },
-          {
-            id: "css-flexbox",
-            title: "CSS Flexbox",
-            duration: "35 mins",
-            videoId: "JJSoEo8JSnc",
+            title: "CSS Layout & Responsive",
+            des: "សរសេរកូដ HTML និង CSS ដើម្បីធ្វើ Responsive",
+            videoId: "Rc2WHMEafNM",
           },
         ],
       },
@@ -108,10 +133,14 @@ const coursesData = [
   {
     id: "linux-commands",
     title: "Linux Commands",
-    description: "Learn essential Linux commands for system administration",
-    imageUrl: "https://via.placeholder.com/400x200?text=Linux",
-    rating: 4.5,
-    reviewCount: 2340,
+    status: "កម្រិតដំបូង",
+    student: "230",
+    description:
+      "រៀនអំពីការប្រើប្រាស់ commend linux សំខាន់ៗសម្រាប់ការគ្រប់គ្រងប្រព័ន្ធ",
+    imageUrl:
+      "https://cdn.slidesharecdn.com/ss_thumbnails/basiccommandsoflinux-161223121032-thumbnail.jpg?width=560&fit=bounds",
+    rating: 4,
+    reviewCount: 40,
     modules: [
       {
         id: "linux-basics",
@@ -120,19 +149,19 @@ const coursesData = [
           {
             id: "linux-intro",
             title: "Introduction to Linux",
-            duration: "30 mins",
+            des: "30 mins",
             videoId: "ROjZy1WbCIA",
           },
           {
             id: "file-system",
             title: "Linux File System",
-            duration: "25 mins",
+            des: "25 mins",
             videoId: "HbgzrKJvDRw",
           },
           {
             id: "basic-commands",
             title: "Basic Linux Commands",
-            duration: "40 mins",
+            des: "40 mins",
             videoId: "CpTfQ-q6MPU",
           },
         ],
@@ -144,13 +173,13 @@ const coursesData = [
           {
             id: "shell-scripting",
             title: "Shell Scripting",
-            duration: "45 mins",
+            des: "45 mins",
             videoId: "GtovwKDemnI",
           },
           {
             id: "system-admin",
             title: "System Administration",
-            duration: "50 mins",
+            des: "50 mins",
             videoId: "1hvVcEhcbLM",
           },
         ],
@@ -160,32 +189,41 @@ const coursesData = [
   {
     id: "spring-boot",
     title: "Spring Boot",
-    description: "Build robust Java applications with Spring Boot framework",
-    imageUrl: "https://via.placeholder.com/400x200?text=Spring+Boot",
-    rating: 4.5,
-    reviewCount: 2340,
+    status: "កម្រិតខ្ពស់",
+    student: "234,900",
+    description: "រៀនង និងបង្កើតកម្មវិធីជាមួយនឹង Spring Boot framework",
+    imageUrl:
+      "https://www.devopsschool.com/blog/wp-content/uploads/2023/12/image-168.png",
+    rating: 5,
+    reviewCount: 452340,
     modules: [
       {
         id: "spring-basics",
         title: "Spring Boot Basics",
         lessons: [
           {
-            id: "spring-intro",
+            id: "spring-intro1",
             title: "Introduction to Spring Boot",
-            duration: "40 mins",
-            videoId: "9SGDpanrc8U",
+            des: "Getting started with Spring Framework part 1",
+            videoId: "jCCTO-Bb1A8",
           },
           {
-            id: "spring-mvc",
-            title: "Spring MVC",
-            duration: "35 mins",
-            videoId: "Ke7Vn8CeBwc",
+            id: "spring-intro2",
+            title: "Introduction to Spring Boot",
+            des: "Getting started with Spring Framework part 2",
+            videoId: "HRMrjbL-B8Y",
           },
           {
-            id: "spring-data",
-            title: "Spring Data JPA",
-            duration: "45 mins",
-            videoId: "8SGI_XS5OPw",
+            id: "spring-core1",
+            title: "Spring Core",
+            des: "Spring Core Technologies - Dependency Injection Part 1",
+            videoId: "EFFna8ruX-A",
+          },
+          {
+            id: "spring-core2",
+            title: "Spring Core",
+            des: "Spring Core Technologies - Dependency Injection Part 2",
+            videoId: "g73FlWfuV9k",
           },
         ],
       },
@@ -195,15 +233,15 @@ const coursesData = [
         lessons: [
           {
             id: "spring-security",
-            title: "Spring Security",
-            duration: "50 mins",
-            videoId: "her_7pa0vrg",
+            title: "RESTful Security",
+            des: "រៀនអំពីការរៀបចំ Security",
+            videoId: "zISbdYhzYmk",
           },
           {
             id: "spring-rest",
-            title: "RESTful APIs with Spring",
-            duration: "45 mins",
-            videoId: "sdDDuQuX2sc",
+            title: "RESTful Security with Spring",
+            des: "RESTful Security with Spring",
+            videoId: "cNuZ1ZrLPXc",
           },
         ],
       },
