@@ -3,7 +3,7 @@ const techCategories = [
   {
     id: "webdev",
     name: "Web Dev",
-    href:"./webdev.html",
+    href: "./webdev.html",
     icon: "fa-solid fa-desktop text-blue-700 p-5 bg-blue-200 rounded-full",
     bgColor: "bg-blue-100",
     iconColor: "text-blue-600",
@@ -26,6 +26,7 @@ const techCategories = [
   {
     id: "mobile",
     name: "Mobile",
+    href: "#",
     icon: "fa-solid fa-mobile-screen text-red-600 px-6 py-5 bg-red-200 rounded-full", //<i class=""></i>
     bgColor: "bg-red-100",
     iconColor: "text-red-600",
@@ -48,6 +49,7 @@ const techCategories = [
   {
     id: "datascience",
     name: "Data Science",
+    href: "#",
     icon: "fa-solid fa-layer-group text-green-600 p-5 rounded-full bg-green-200", //<i class=""></i>
     bgColor: "bg-green-100",
     iconColor: "text-green-600",
@@ -70,6 +72,7 @@ const techCategories = [
   {
     id: "aiml",
     name: "AI & ML",
+    href: "#",
     icon: "fa-solid fa-dice-d20 text-purple-600 p-5 rounded-full bg-purple-200",
     bgColor: "bg-purple-100",
     iconColor: "text-purple-600",
@@ -92,6 +95,7 @@ const techCategories = [
   {
     id: "devops",
     name: "DevOps",
+    href: "#",
     icon: "fa-solid fa-hard-drive text-yellow-600 p-5 rounded-full bg-yellow-200",
     bgColor: "bg-yellow-100",
     iconColor: "text-yellow-600",
@@ -114,6 +118,7 @@ const techCategories = [
   {
     id: "springboot",
     name: "Spring Boot",
+    href: "#",
     icon: "fa-solid fa-leaf text-green-900 p-5 rounded-full bg-green-200", //<i class=""></i>
     bgColor: "bg-green-400",
     iconColor: "text-yellow-600",

@@ -240,7 +240,7 @@ const coursesData = [
           {
             id: "spring-rest",
             title: "RESTful Security with Spring",
-            des: "45 mins",
+            des: "RESTful Security with Spring",
             videoId: "cNuZ1ZrLPXc",
           },
         ],

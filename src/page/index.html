@@ -13,44 +13,60 @@
     />
   </head>
   <body class="font-kantumruy bg-gray-50">
-    <!-- Navbar -->
-    <header class="fixed w-full z-10">
-      <div
-        class="container mx-auto flex items-center justify-between px-4 py-4"
-      >
-        <div class="flex items-center gap-2">
-          <img src="../../public/logo.png" alt="Logo" class="w-20 h-20" />
-        </div>
-        <nav
-          class="hidden md:flex items-center space-x-6 font-semibold text-xl"
-        >
-          <a href="#" class="text-black hover:text-yellow-500">ទំព័រដើម</a>
-          <a href="#" class="text-yellow-500">មេរៀន</a>
-          <a href="#" class="text-black hover:text-yellow-500">ប្លុក</a>
-          <a href="#" class="text-black hover:text-yellow-500">អំពីយើង</a>
-          <a href="#" class="text-black hover:text-yellow-500">ទំនាក់ទំនង</a>
-          <div
-            class="bg-yellow-400 text-white w-8 h-8 flex items-center justify-center rounded-full"
+    <!-- TODO Navbar -->
+    <header
+      id="navbar"
+      class="fixed w-full z-10 backdrop-blur-sm transition-all duration-300 px-10 xl:px-0"
+    >
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <!-- Logo + Navlist (Left) -->
+        <div class="flex items-center space-x-8">
+          <img src="../../public/icon/logo.png" alt="Logo" class="w-16 h-16" />
+          <nav
+            class="hidden md:flex items-center space-x-6 font-semibold text-lg"
           >
-            <i class="fas fa-user"></i>
-          </div>
-        </nav>
+            <a href="#" class="text-black hover:text-yellow-500">ទំព័រដើម</a>
+            <a href="#" class="text-yellow-500">មេរៀន</a>
+            <a href="#" class="text-black hover:text-yellow-500">ប្លុក</a>
+            <a href="#" class="text-black hover:text-yellow-500">អំពីយើង</a>
+            <a href="#" class="text-black hover:text-yellow-500">ទំនាក់ទំនង</a>
+          </nav>
+        </div>
+
+        <!-- Right Side Login Button -->
+        <div class="hidden md:block">
+          <button
+            class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+          >
+            ចូលគណនីយ
+          </button>
+        </div>
+
         <!-- Mobile Menu Button -->
-        <button id="menu-btn" class="md:hidden text-xl">
+        <button id="menu-btn" class="md:hidden text-2xl text-black">
           <i class="fas fa-bars"></i>
         </button>
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
-        <a href="#" class="block py-2">ទំព័រដើម</a>
-        <a href="#" class="block py-2 text-yellow-500">មេរៀន</a>
-        <a href="#" class="block py-2">ប្លុក</a>
-        <a href="#" class="block py-2">អំពីយើង</a>
-        <a href="#" class="block py-2">ទំនាក់ទំនង</a>
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden px-4 pb-4 space-y-2 font-semibold text-lg"
+      >
+        <a href="#" class="block">ទំព័រដើម</a>
+        <a href="#" class="block text-yellow-500">មេរៀន</a>
+        <a href="#" class="block">ប្លុក</a>
+        <a href="#" class="block">អំពីយើង</a>
+        <a href="#" class="block">ទំនាក់ទំនង</a>
+        <button
+          class="w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500 transition"
+        >
+          ចូលគណនីយ
+        </button>
       </div>
     </header>
 
+    <!-- TODO Main Content -->
     <main class="max-w-7xl m-auto">
       <!-- Hero Section -->
       <!-- Test Graduin -->
@@ -59,7 +75,7 @@
       ></div>
 
       <section
-        class="max-w-7xl m-auto pt-28 px-10 md:px-0 pb-16 rounded-md"
+        class="max-w-7xl m-auto pt-28 px-10 xl:px-0 pb-16 rounded-md"
         data-aos="fade-up-right"
       >
         <h2 class="text-3xl md:text-5xl font-bold text-purple-600 mt-10">
@@ -122,14 +138,14 @@
 
       <h2
         data-aos="zoom-in-up"
-        class="text-heading-4 px-10 md:px-0 md:text-heading-2 text-primary font-semibold py-5"
+        class="text-heading-4 px-10 xl:px-0 md:text-heading-2 text-primary font-semibold py-5"
       >
         កម្មវិធីសិក្សារដែលយើងមាន
       </h2>
       <section
         data-aos="fade-up"
         data-aos-duration="3000"
-        class="px-10 md:px-0"
+        class="px-10 xl:px-0"
       >
         <div class="container mx-auto">
           <!-- Category Cards -->
@@ -153,14 +169,14 @@
       <div class="container mx-auto">
         <h2
           data-aos="zoom-in-up"
-          class="text-heading-4 px-10 md:px-0 md:text-heading-2 text-primary font-semibold py-5"
+          class="text-heading-4 px-10 xl:px-0 md:text-heading-2 text-primary font-semibold py-5"
         >
           មេរៀនដែលកំពុងពេញនិយម
         </h2>
 
         <div
           id="courses-container"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-10 md:px-0"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-10 xl:px-0"
         >
           <!-- Courses will be loaded here -->
           <div
@@ -177,7 +193,7 @@
         </div>
       </div>
       <!-- TODO ISTAD -->
-      <div class="container mx-auto py-8 px-10 md:px-0">
+      <div class="container mx-auto py-8 px-10 xl:px-0">
         <div class="flex flex-col md:flex-row overflow-hidden pb-10">
           <!-- Left Side - Text Content -->
           <div
@@ -272,6 +288,92 @@
       </div>
     </main>
 
+    <!-- TODO Footer -->
+    <footer class="text-heading-5 text-primary px-6 py-10">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-sm"
+      >
+        <!-- Logo Column -->
+        <div class="flex flex-col items-start">
+          <div class="flex items-center gap-2">
+            <!-- Replace with your actual logo -->
+            <img
+              src="../../public/icon/logo.png"
+              alt="logo"
+              class="w-25 h-25 rotate-[-20deg]"
+            />
+          </div>
+        </div>
+
+        <!-- Explore -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Explore
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">ទំព័រដើម</a></li>
+            <li><a href="#">អំពីយើង</a></li>
+            <li><a href="#">មេរៀន</a></li>
+            <li><a href="#">ប្លុក</a></li>
+            <li><a href="#">ទំនាក់ទំនង</a></li>
+          </ul>
+        </div>
+
+        <!-- Course -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Course
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">All Course</a></li>
+            <li><a href="#">Latest Course</a></li>
+            <li><a href="#">Popular Course</a></li>
+          </ul>
+        </div>
+
+        <!-- Category -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Category
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Mobile App Development</a></li>
+            <li><a href="#">DevOps</a></li>
+            <li><a href="#">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Contact Us
+          </h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope"></i>
+              <span>codecam@istad.tech</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>+855 23 880 880</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span>ផេក - CodeCam</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- line -->
+      <div class="border-t border-gray-600 my-6"></div>
+
+      <!-- Copyright -->
+      <p class="text-center text-xs text-gray-400">
+        Copyright © CodeCam 2025. All rights reserved
+      </p>
+    </footer>
+
     <!-- Load data.js first -->
     <script src="../data/data.js"></script>
     <script>
@@ -302,7 +404,9 @@
           card.innerHTML = `
           <div data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" class="relative">
-            <img src="${course.imageUrl}" alt="${course.title}" class="w-full h-48 object-cover">
+            <img src="${course.imageUrl}" alt="${
+            course.title
+          }" class="w-full h-48 object-cover">
             <p class="absolute top-4 left-4 bg-green-400 hover:bg-green-500 text-gray-800 font-medium py-2 px-4 rounded-full transition-colors">
             ${course.status}
             </p>
@@ -322,7 +426,9 @@
                 (${course.reviewCount.toLocaleString()})
               </span>
             </div>
-            <a href="course.html?id=${course.id}" class="block w-full text-center bg-secondary hover:bg-yellow-500 text-white font-medium py-2 px-4 rounded transition-colors">
+            <a href="course.html?id=${
+              course.id
+            }" class="block w-full text-center bg-secondary hover:bg-yellow-500 text-white font-medium py-2 px-4 rounded transition-colors">
               ចាប់ផ្តើមរៀនឥឡូវនេះ
             </a>
           </div>
@@ -335,15 +441,7 @@
 
     <!-- Mobile Menu Script -->
     <script src="../util/techLearningPlatform.js"></script>
-
-    <script>
-      const menuBtn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
+    <script src="../util/header.js"></script>
     <script src="../../util/techLearningPlatform.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
