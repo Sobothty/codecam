@@ -11,129 +11,68 @@
     <title>Blog Categories</title>
   </head>
   <body class="font-(family-name:--font-kantumruy)">
-    <header class="w-full px-4 sm:px-6 md:px-10 py-2">
-      <div
-        id="navbar-container"
-        class="flex justify-between items-center text-primary max-w-[1440px] mx-auto"
-      >
-        <div id="logo-brand">
-          <img
-            src="/public/icon/logo.png"
-            class="h-20 md:h-24 object-cover"
-            alt="Logo"
-          />
+    <header
+      id="navbar"
+      class="fixed w-full z-10 backdrop-blur-sm transition-all duration-300 px-10 xl:px-0"
+    >
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <!-- Logo + Navlist (Left) -->
+        <div class="flex items-center space-x-8">
+          <img src="../../public/icon/logo.png" alt="Logo" class="w-16 h-16" />
+          <nav
+            class="hidden md:flex items-center space-x-6 font-semibold text-lg"
+          >
+            <a href="../../index.html" class="text-black hover:text-yellow-500"
+              >ទំព័រដើម</a
+            >
+            <a href="./index.html" class="text-black hover:text-yellow-500"
+              >មេរៀន</a
+            >
+            <a href="./blog.html" class="text-yellow-500">ប្លុក</a>
+            <a href="#" class="text-black hover:text-yellow-500">អំពីយើង</a>
+            <a href="./contact.html" class="text-black hover:text-yellow-500"
+              >ទំនាក់ទំនង</a
+            >
+          </nav>
         </div>
 
-        <!-- Desktop Navigation -->
-        <nav id="navbar" class="hidden md:block">
-          <ul
-            class="flex items-center justify-between text-primary gap-6 md:gap-12 xl:gap-20 font-semibold text-lg"
+        <!-- Right Side Login Button -->
+        <div class="hidden md:block">
+          <a href="./signin.html"
+            ><button
+              class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+            >
+              ចូលគណនីយ
+            </button></a
           >
-            <li>
-              <a
-                href="/"
-                class="hover:text-amber-500 transition-colors duration-300"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="./courses.html"
-                class="hover:text-amber-500 transition-colors duration-300"
-                >Course</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:text-amber-500 transition-colors duration-300"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:text-amber-500 transition-colors duration-300"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:text-amber-500 transition-colors duration-300"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <div class="flex items-center gap-4">
-          <div
-            id="account"
-            class="rounded-full text-center w-8 h-8 bg-amber-500 pt-1 hover:bg-amber-600 transition-colors duration-300"
-          >
-            <a href="../page/account.html"
-              ><i class="fa-solid fa-user" style="color: #ffffff"></i
-            ></a>
-          </div>
-
-          <!-- Mobile menu button - now positioned to the right with transition -->
-          <button
-            id="mobile-menu-button"
-            class="md:hidden text-primary focus:outline-none transition-transform duration-300 ease-in-out"
-          >
-            <i class="fa-solid fa-bars text-2xl"></i>
-          </button>
         </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl text-black">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
 
-      <!-- Mobile Navigation Menu with Tailwind transitions -->
+      <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden mt-4 pb-2 overflow-hidden transition-all duration-300 ease-in-out transform opacity-0 scale-95"
+        class="md:hidden hidden px-4 pb-4 space-y-2 font-semibold text-lg"
       >
-        <nav>
-          <ul class="flex flex-col space-y-4 text-primary font-semibold">
-            <li>
-              <a
-                href=""
-                class="block py-1 hover:text-amber-500 transition-colors duration-300"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="block py-1 hover:text-amber-500 transition-colors duration-300"
-                >Course</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="block py-1 hover:text-amber-500 transition-colors duration-300"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="block py-1 hover:text-amber-500 transition-colors duration-300"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="block py-1 hover:text-amber-500 transition-colors duration-300"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <a href="/" class="block">ទំព័រដើម</a>
+        <a href="./index.html" class="block">មេរៀន</a>
+        <a href="./blog.html" class="block text-yellow-500">ប្លុក</a>
+        <a href="#" class="block">អំពីយើង</a>
+        <a href="./contact.html" class="block">ទំនាក់ទំនង</a>
+        <a href="./signin.html"
+          ><button
+            class="w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500 transition"
+          >
+            ចូលគណនីយ
+          </button></a
+        >
       </div>
     </header>
-    <main>
+    <main class="pt-32">
       <section class="mx-10 md:mx-[100px]">
         <a
           href="../page/blogCategory.html"
@@ -151,7 +90,9 @@
         >ដែលកំពុងពេញនិយម
       </h2>
       <section class="relative overflow-hidden mt-10 mx-10 md:mx-[100px]">
-        <div class="slide grid grid-cols-1 md:grid-cols-2 place-items-center gap-8">
+        <div
+          class="slide grid grid-cols-1 md:grid-cols-2 place-items-center gap-8"
+        >
           <img src="../../public/image/image 7.png" alt="" class="w-full" />
           <div class="space-y-2">
             <h4 class="text-(length:--text-2xl) font-(--font-weight-medium)">
@@ -181,7 +122,9 @@
             </div>
           </div>
         </div>
-        <div class="slide hidden grid grid-cols-1 md:grid-cols-2 place-items-center gap-8">
+        <div
+          class="slide hidden grid grid-cols-1 md:grid-cols-2 place-items-center gap-8"
+        >
           <img
             src="../../public/image/javaCourse.png"
             alt=""
@@ -214,7 +157,9 @@
             </div>
           </div>
         </div>
-        <div class="slide hidden grid grid-cols-1 md:grid-cols-2 place-items-center gap-8">
+        <div
+          class="slide hidden grid grid-cols-1 md:grid-cols-2 place-items-center gap-8"
+        >
           <img
             src="../../public/image/web-design.jpg"
             alt=""
@@ -247,7 +192,9 @@
             </div>
           </div>
         </div>
-        <div class="slide hidden grid grid-cols-1 md:grid-cols-2 place-items-center gap-8">
+        <div
+          class="slide hidden grid grid-cols-1 md:grid-cols-2 place-items-center gap-8"
+        >
           <img
             src="../../public/image/sqlcourse.jpg"
             alt=""
@@ -313,7 +260,11 @@
         <div class="md:flex gap-10">
           <div class="md:w-3/4 space-y-6">
             <div class="lg:flex items-center gap-6">
-              <img src="../../public/image/image 6.png" class="w-full mb-2 lg:mb-0" alt="" />
+              <img
+                src="../../public/image/image 6.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
               <div class="space-y-2">
                 <h5
                   class="text-(length:--text-xl) font-(--font-weight-semibold)"
@@ -346,7 +297,11 @@
               </div>
             </div>
             <div class="lg:flex items-center gap-6">
-              <img src="../../public/image/image 5.png" class="w-full mb-2 lg:mb-0" alt="" />
+              <img
+                src="../../public/image/image 5.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
               <div class="space-y-2">
                 <h5
                   class="text-(length:--text-xl) font-(--font-weight-semibold)"
@@ -379,7 +334,11 @@
               </div>
             </div>
             <div class="lg:flex items-center gap-6">
-              <img src="../../public/image/image 4.png" class="w-full mb-2 lg:mb-0" alt="" />
+              <img
+                src="../../public/image/image 4.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
               <div class="space-y-2">
                 <h5
                   class="text-(length:--text-xl) font-(--font-weight-semibold)"
@@ -412,7 +371,11 @@
               </div>
             </div>
             <div class="lg:flex items-center gap-6">
-              <img src="../../public/image/image 2.png" class="w-full mb-2 lg:mb-0" alt="" />
+              <img
+                src="../../public/image/image 2.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
               <div class="space-y-2">
                 <h5
                   class="text-(length:--text-xl) font-(--font-weight-semibold)"
@@ -445,7 +408,11 @@
               </div>
             </div>
             <div class="lg:flex items-center gap-6">
-              <img src="../../public/image/image 3.png" class="w-full mb-2 lg:mb-0" alt="" />
+              <img
+                src="../../public/image/image 3.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
               <div class="space-y-2">
                 <h5
                   class="text-(length:--text-xl) font-(--font-weight-semibold)"
@@ -486,307 +453,291 @@
             </div>
           </div>
           <div>
-            <span class="text-(length:--text-3xl) font-(--font-weight-semibold) text-[var(--color-primary)]">Discover More</span>
-            <div class="grid grid-cols-2 space-y-4 border-2 border-black rounded-2xl pl-4 lg:pl-8 py-6">
-              <div class="flex items-center gap-2"
-                ><img src="../../public/image/html.png" alt="html" class="w-1/4" /><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">HTML</span></div
-              >
-              <div class="flex items-center gap-2"><img src="../../public/image/css.png" alt="css" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">CSS</span></div>
-              <div class="flex items-center gap-2"
-                ><img src="../../public/image/javascript.png" alt="js" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Java Script</span></div
-              >
-              <div class="flex items-center gap-2"><img src="../../public/image/php.png" alt="php" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">PHP</span></div>
-              <div class="flex items-center gap-2"
-                ><img src="../../public/image/java.png" alt="java" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Java</span></div
-              >
-              <div class="flex items-center gap-2"><img src="../../public/image/cSharp.png" alt="c#" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">C#</span></div>
-              <div class="flex items-center gap-2"><img src="../../public/image/c.png" alt="c" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">C</span></div>
-              <div class="flex items-center gap-2"v><img src="../../public/image/c++.png" alt="c++" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Python</span></div>
-              <div class="flex items-center gap-2"
-                ><img
+            <span
+              class="text-(length:--text-3xl) font-(--font-weight-semibold) text-[var(--color-primary)]"
+              >Discover More</span
+            >
+            <div
+              class="grid grid-cols-2 space-y-4 border-2 border-black rounded-2xl pl-4 lg:pl-8 py-6"
+            >
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/html.png"
+                  alt="html"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >HTML</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/css.png"
+                  alt="css"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >CSS</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/javascript.png"
+                  alt="js"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Java Script</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/php.png"
+                  alt="php"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >PHP</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/java.png"
+                  alt="java"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Java</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/cSharp.png"
+                  alt="c#"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >C#</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/c.png"
+                  alt="c"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >C</span
+                >
+              </div>
+              <div class="flex items-center gap-2" v>
+                <img
+                  src="../../public/image/c++.png"
+                  alt="c++"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Python</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
                   src="../../public/image/python.png"
-                  alt="python" class="w-1/4"
-                /><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Python</span></div
-              >
-              <div class="flex items-center gap-2"
-                ><img
+                  alt="python"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Python</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
                   src="../../public/image/swift.png"
-                  alt="swift" class="w-1/4"
-                /><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">SWift</span></div
-              >
-              <div class="flex items-center gap-2"
-                ><img src="../../public/image/nodeJs.png" alt="nodeJs" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Node
-                Js</span></div
-              >
-              <div class="flex items-center gap-2"
-                ><img
+                  alt="swift"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >SWift</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/nodeJs.png"
+                  alt="nodeJs"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Node Js</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
                   src="../../public/image/kotlin.png"
-                  alt="kotlin" class="w-1/4"
-                /><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Kotlin</span></div
-              >
-              <div class="flex items-center gap-2"
-                ><img src="../../public/image/typescript.png" alt="html" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Type
-                Script</span></div
-              >
-              <div class="flex items-center gap-2"
-                ><img src="../../public/image/ruby.png" alt="ruby" class="w-1/4"/><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Ruby</span></div
-              >
-              <div class="flex items-center gap-2"
-                ><img
+                  alt="kotlin"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Kotlin</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/typescript.png"
+                  alt="html"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Type Script</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/ruby.png"
+                  alt="ruby"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Ruby</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
                   src="../../public/image/react.png"
-                  alt="react" class="w-1/4"
-                /> <span class="font-(--font-weight-medium) font-(family-name:--font-sans)">React</span></div
-              >
-              <div class="flex items-center gap-2"
-                ><img src="../../public/image/Vue.png" alt="vue" class="w-1/4"/> <span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Vue Js</span></div
-              >
-              <div class="flex items-center gap-2"
-                ><img
+                  alt="react"
+                  class="w-1/4"
+                />
+                <span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >React</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="../../public/image/Vue.png" alt="vue" class="w-1/4" />
+                <span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Vue Js</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
                   src="../../public/image/postgres.png"
-                  alt="postgres" class="w-1/4"
-                /><span class="font-(--font-weight-medium) font-(family-name:--font-sans)">Postgres</span></div
-              >
+                  alt="postgres"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Postgres</span
+                >
+              </div>
               <div class="flex items-center gap-2">
                 <img
                   src="../../public/image/mySql.png"
-                  alt="mySql" class="w-1/4"
-                /> <span class="font-(--font-weight-medium) font-(family-name:--font-sans)">MySQL</span>
-                </div
+                  alt="mySql"
+                  class="w-1/4"
+                />
+                <span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >MySQL</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 col-span-2 pr-6"
               >
-              <div class="flex items-center justify-center gap-2 col-span-2 pr-6">
-                <span>មើលភាសាទាំងអស់់</span> <i class="fa-solid fa-arrow-down"></i>
+                <span>មើលភាសាទាំងអស់់</span>
+                <i class="fa-solid fa-arrow-down"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <img src="../../public/image/divi-line 1.png" class="w-full mb-5" alt="">
+      <img
+        src="../../public/image/divi-line 1.png"
+        class="w-full mb-5"
+        alt=""
+      />
     </main>
-    <footer class="bg-[#0F264D] text-white">
+    <footer class="bg-primary text-heading-5 text-white px-6 py-10">
       <div
-        class="container mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 md:py-16"
+        class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-sm"
       >
-        <!-- Main Footer Content -->
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8"
-        >
-          <!-- Logo and Brand -->
-          <div
-            class="mb-4 sm:mb-0 col-span-1 sm:col-span-2 md:col-span-1 flex justify-center sm:justify-start"
-          >
-            <div
-              class="flex flex-col items-center sm:items-start transition-all duration-300"
-            >
-              <img
-                src="/public/icon/logo.png"
-                alt="Logo"
-                class="h-32 sm:h-36 md:h-40 md:h-44 object-cover transition-transform duration-300 hover:scale-105"
-              />
-            </div>
-          </div>
-
-          <!-- Explore Links -->
-          <div class="mb-6 sm:mb-0">
-            <h2
-              class="text-orange-400 text-xl sm:text-lg font-semibold mb-3 sm:mb-4 text-center sm:text-left"
-            >
-              Explore
-            </h2>
-            <ul class="space-y-2 text-center sm:text-left">
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >About us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >Course</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >Blogs</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Course Links -->
-          <div class="mb-6 sm:mb-0">
-            <h2
-              class="text-orange-400 text-xl sm:text-lg font-semibold mb-3 sm:mb-4 text-center sm:text-left"
-            >
-              Course
-            </h2>
-            <ul class="space-y-2 text-center sm:text-left">
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >All Course</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >Latest Course</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >Popular Course</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Category Links -->
-          <div class="mb-6 sm:mb-0">
-            <h2
-              class="text-orange-400 text-xl sm:text-lg font-semibold mb-3 sm:mb-4 text-center sm:text-left"
-            >
-              Category
-            </h2>
-            <ul class="space-y-2 text-center sm:text-left">
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >Web Development</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >Mobile App Development</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >DevOps</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300 inline-block"
-                  >Cyber Security</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Contact Us -->
-          <div class="col-span-1 sm:col-span-2 md:col-span-1">
-            <h2
-              class="text-orange-400 text-xl sm:text-lg font-semibold mb-3 sm:mb-4 text-center sm:text-left"
-            >
-              Contact Us
-            </h2>
-            <ul class="space-y-3">
-              <li
-                class="flex items-center gap-2 justify-center sm:justify-start"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-orange-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-                <a
-                  href="mailto:codecam@istad.tech"
-                  class="hover:text-orange-400 transition duration-300"
-                  >codecam@istad.tech</a
-                >
-              </li>
-              <li
-                class="flex items-center gap-2 justify-center sm:justify-start"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-orange-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                <a
-                  href="tel:+85523880880"
-                  class="hover:text-orange-400 transition duration-300"
-                  >+855 23 880 880</a
-                >
-              </li>
-              <li
-                class="flex items-center gap-2 justify-center sm:justify-start"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-orange-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-                  />
-                </svg>
-                <a
-                  href="#"
-                  class="hover:text-orange-400 transition duration-300"
-                  ><span class="font-kantumruy">កូដខេម</span> - CodeCam</a
-                >
-              </li>
-            </ul>
+        <!-- Logo Column -->
+        <div class="flex flex-col items-start">
+          <div class="flex items-center gap-2">
+            <!-- Replace with your actual logo -->
+            <img
+              src="../../public/icon/logo.png"
+              alt="logo"
+              class="w-25 h-25 rotate-[-20deg]"
+            />
           </div>
         </div>
 
-        <!-- Divider -->
-        <div class="border-t border-gray-700 my-6 sm:my-8"></div>
+        <!-- Explore -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Explore
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">ទំព័រដើម</a></li>
+            <li><a href="#">អំពីយើង</a></li>
+            <li><a href="#">មេរៀន</a></li>
+            <li><a href="#">ប្លុក</a></li>
+            <li><a href="#">ទំនាក់ទំនង</a></li>
+          </ul>
+        </div>
 
-        <!-- Copyright -->
-        <div class="text-center text-sm">
-          <p class="transition-all duration-300">
-            Copyright©<span class="font-kantumruy">កូដខេម</span> 2025. All right
-            reserved
-          </p>
+        <!-- Course -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Course
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">មេរៀនទាំងអស់</a></li>
+            <li><a href="#">មេរៀនចុងក្រោយ</a></li>
+            <li><a href="#">មេរៀនកំពុងពេញនិយម</a></li>
+          </ul>
+        </div>
+
+        <!-- Category -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Category
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">អ្នកអភិវឌ្ឍន៍វេបសាយ</a></li>
+            <li><a href="#">អ្នកអភិវឌ្ឍន៍កម្មវិធីទូរសព្ទ</a></li>
+            <li><a href="#">មើលថែ Server</a></li>
+            <li><a href="#">ប្រព័ន្ធសុវត្ថិភាព</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Contact Us
+          </h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope"></i>
+              <span>codecam@istad.tech</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>+855 23 880 880</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span>ផេក - CodeCam</span>
+            </li>
+          </ul>
         </div>
       </div>
+
+      <!-- line -->
+      <div class="border-t border-gray-600 my-6"></div>
+
+      <!-- Copyright -->
+      <p class="text-center text-xs text-gray-400">
+        Copyright © CodeCam 2025. All rights reserved
+      </p>
     </footer>
     <script>
       let slideIndex = 0;
@@ -810,5 +761,6 @@
         slides[slideIndex].classList.remove("hidden");
       }
     </script>
+    <script src="../util/header.js"></script>
   </body>
 </html>
