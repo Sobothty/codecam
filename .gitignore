@@ -31,3 +31,6 @@ yarn-error.log*
 
 # Coverage reports
 coverage/
+
+#Css
+src/styles/output.css
