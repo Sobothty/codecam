@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Put this inside <head> -->
+    <script
+      src="https://kit.fontawesome.com/edf3b8acef.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-kantumruy">
+    <header
+      id="navbar"
+      class="fixed w-full z-10 backdrop-blur-sm transition-all duration-300 px-10 xl:px-0"
+    >
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <!-- Logo + Navlist (Left) -->
+        <div class="flex items-center space-x-8">
+          <img src="../../public/icon/logo.png" alt="Logo" class="w-16 h-16" />
+          <nav
+            class="hidden md:flex items-center space-x-6 font-semibold text-lg"
+          >
+            <a href="../../index.html" class="text-black hover:text-yellow-500"
+              >ទំព័រដើម</a
+            >
+            <a href="./index.html" class="text-yellow-500">មេរៀន</a>
+            <a href="./blog.html" class="text-black hover:text-yellow-500"
+              >ប្លុក</a
+            >
+            <a href="#" class="text-black hover:text-yellow-500">អំពីយើង</a>
+            <a href="./contact.html" class="text-black hover:text-yellow-500"
+              >ទំនាក់ទំនង</a
+            >
+          </nav>
+        </div>
+
+        <!-- Right Side Login Button -->
+        <div class="hidden md:block">
+          <button
+            class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+          >
+            ចូលគណនីយ
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl text-black">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden px-4 pb-4 space-y-2 font-semibold text-lg"
+      >
+        <a href="/" class="block">ទំព័រដើម</a>
+        <a href="./index.html" class="block text-yellow-500">មេរៀន</a>
+        <a href="#" class="block">ប្លុក</a>
+        <a href="#" class="block">អំពីយើង</a>
+        <a href="./contact.html" class="block">ទំនាក់ទំនង</a>
+        <button
+          class="w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500 transition"
+        >
+          ចូលគណនីយ
+        </button>
+      </div>
+    </header>
+    <main class="max-w-7xl m-auto mb-20">
+      <!-- Hero section -->
+      <div class="relative pt-25">
+        <div
+          class="w-full font-kantumruy h-auto flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-[120px] py-10 lg:py-[40px] bg-primary gap-10"
+        >
+          <!-- Text Section -->
+          <div
+            class="w-full md:w-[50%] flex flex-col gap-5 text-start md:text-left"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+          >
+            <h1 class="text-[24px] md:text-heading-2 text-white">
+              ប្លុកយើងផ្តោតលើចំណេះដឹងកម្មវិធី សម្រាប់អ្នកចាប់ផ្តើម
+              និងពង្រឹងជំនាញ ក្នុងការអភិវឌ្ឍន៍គម្រោងជាក់ស្តែង
+            </h1>
+            <p class="text-base md:text-heading-5 text-white">
+              អានអត្ថបទថ្មីៗ ដើម្បីចាប់ផ្តើម និងពង្រឹងជំនាញរបស់
+              អ្នកប្លុកសម្រាប់រៀនភាសាកម្មវិធីផ្សេងៗជាមួយមាតិកា គុណភាពខ្ពស់។
+            </p>
+            <a
+              href=""
+              class="text-[#FFC107] self-start md:self-start text-des-1 bg-white mb-6 lg:mb-14 py-2.5 px-5 rounded-[10px] border-t border-l border-r border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+            >
+              ចាប់ផ្តើមសិក្សា
+            </a>
+          </div>
+
+          <!-- Image Section -->
+          <div
+            class="w-full md:w-[50%] flex justify-center"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+          >
+            <img
+              src="../../public/blog/image 1.png"
+              alt=""
+              class="w-[80%] md:w-full"
+            />
+          </div>
+        </div>
+
+        <!-- Background Decoration -->
+        <img
+          src="../../public/blog/module-pattern-1 1.png"
+          class="absolute lg:-bottom-16 -bottom-8 w-full"
+          alt=""
+        />
+      </div>
+
+      <!--Content-->
+      <div class="py-[80px]">
+        <div class="flex items-center flex-col lg:flex-row justify-between">
+          <img
+            src="../../public/blog/module-img2 1.png"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+            alt=""
+          />
+          <div
+            class="w-[50%] flex flex-col gap-[20px]"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+          >
+            <p class="text-des-2 text-secondary">Core java</p>
+            <h2 class="text-[40px] font-bold">សិក្សាអំពី Java</h2>
+            <p class="text-des-1 font-normal">
+              គឺជាភាសាសរសេរកម្មវិធីដ៏ពេញនិយមបំផុតដែលត្រូវបានប្រើប្រាស់ទូទាំងពិភពលោក។ការបង្រៀនដែលមានគុណភាពរបស់យើងនឹងជួយអ្នកឱ្យរៀនវាតាមរបៀបងាយស្រួល។
+            </p>
+            <div class="flex gap-5 md:flex-row flex-col">
+              <a
+                href=""
+                class="text-[#FFC107] self-start inline-block text-des-1 bg-white py-[10px] px-[20px] rounded-[10px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                ចាប់ផ្តើមសិក្សា
+              </a>
+              <a
+                href=""
+                class="text-[#FFC107] self-start inline-block text-des-1 bg-white py-[10px] px-[20px] rounded-[10px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                មើលប្លុកទាំងអស់
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col-reverse items-center py-[80px] lg:flex-row justify-between"
+        >
+          <div
+            class="w-[50%] flex flex-col gap-[20px]"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+          >
+            <p class="text-des-2 text-secondary">Algorithm</p>
+            <h2 class="text-[40px] font-bold">អនុវត្តក្បួនដោះស្រាយ</h2>
+            <p class="text-des-1 font-normal">
+              ស្វែងយល់ពីរចនាសម្ព័ន្ធទិន្នន័យ និងក្បួនដោះស្រាយជាមួយនឹង 100+
+              សំណួរសរសេរកម្មវិធី។
+              បង្កើនជំនាញក្នុងការគ្រប់គ្រងបញ្ហានិងអភិវឌ្ឍវិធីសាស្រ្តគិតដោយប្រកបដោយប្រសិទ្ធភាព។
+            </p>
+            <div class="flex gap-5 md:flex-row flex-col">
+              <a
+                href=""
+                class="text-[#FFC107] self-start inline-block text-des-1 bg-white py-[10px] px-[20px] rounded-[10px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                ចាប់ផ្តើមសិក្សា
+              </a>
+              <a
+                href=""
+                class="text-[#FFC107] self-start inline-block text-des-1 bg-white py-[10px] px-[20px] rounded-[10px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                មើលប្លុកទាំងអស់
+              </a>
+            </div>
+          </div>
+          <img
+            src="../../public/blog/module-img3 1.png"
+            data-aos="fade-up-left"
+            alt=""
+          />
+        </div>
+        <!---->
+        <div
+          class="flex items-center py-[80px] flex-col lg:flex-row justify-between"
+        >
+          <img
+            src="../../public/blog/image 9.png"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+            alt=""
+          />
+          <div
+            class="w-[50%] flex flex-col gap-[20px]"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+          >
+            <p class="text-des-2 text-secondary">Spring MVC</p>
+            <h2 class="text-[40px] font-bold">សិក្សាអំពី Spring</h2>
+            <p class="text-des-1 font-normal">
+              Springជាក្របខ័ណ្ឌប្រភពបើកចំហដែលត្រូវបានបង្កើតឡើងដើម្បីដោះស្រាយភាពស្មុគស្មាញនៃការអភិវឌ្ឍន៍កម្មវិធីសហគ្រាស។
+              រៀននិទាឃរដូវជាមួយនឹងការបង្រៀនមួយជំហានម្តង ៗ ។
+            </p>
+            <div class="flex gap-5 md:flex-row flex-col">
+              <a
+                href=""
+                class="text-[#FFC107] self-start inline-block text-des-1 bg-white py-[10px] px-[20px] rounded-[10px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                ចាប់ផ្តើមសិក្សា
+              </a>
+              <a
+                href=""
+                class="text-[#FFC107] self-start inline-block text-des-1 bg-white py-[10px] px-[20px] rounded-[10px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                មើលប្លុកទាំងអស់
+              </a>
+            </div>
+          </div>
+        </div>
+        <!---->
+        <div
+          class="flex flex-col-reverse items-center py-[80px] lg:flex-row justify-between"
+        >
+          <div
+            class="w-[50%] flex flex-col gap-[20px]"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+          >
+            <p class="text-des-2 text-secondary">សំណួរសម្ភាសន៍</p>
+            <h2 class="text-[40px] font-bold">សំណួរសម្ភាសន៍</h2>
+            <p class="text-des-1 font-normal">
+              តើ​អ្នក​កំពុង​ត្រៀម​ខ្លួន​សម្រាប់​ការ​សម្ភាសន៍​ឬ?
+              សំណួរសំភាសន៍ប្រកបដោយគុណភាពរបស់យើងនឹងជួយអ្នកក្នុងការសំភាសន៍កម្មវិធី
+              ។
+            </p>
+            <div class="flex gap-5 md:flex-row flex-col">
+              <a
+                href=""
+                class="text-[#FFC107] self-start inline-block text-des-1 bg-white py-[10px] px-[20px] rounded-[10px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                ចាប់ផ្តើមសិក្សា
+              </a>
+              <a
+                href=""
+                class="text-[#FFC107] self-start inline-block text-des-1 bg-white py-[10px] px-[20px] rounded-[10px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                មើលប្លុកទាំងអស់
+              </a>
+            </div>
+          </div>
+          <img
+            src="../../public/blog/module-img5 1.png"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-start md:flex-row md:items-center md:justify-between gap-4 px-4 sm:px-6 lg:px-0 py-[40px]"
+      >
+        <h2
+          class="text-heading-1 font-bold"
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+        >
+          អត្ថបទពេញនិយម
+        </h2>
+        <a
+          href=""
+          class="text-[#FFC107] inline-block text-des-1 bg-white py-[10px] px-[20px] rounded-[10px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+          data-aos="fade-up-left"
+          data-aos-duration="1000"
+        >
+          មើលប្លុកទាំងអស់
+        </a>
+      </div>
+      <div class="">
+        <!-- Blog Cards-->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4 sm:px-6 lg:px-0"
+        >
+          <div
+            class="bg-primary rounded-[20px] shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-1000 ease-in-out"
+            data-aos="fade-up"
+          >
+            <div class="relative">
+              <img
+                src="../../public/blog/2-01-2 1.png"
+                class="rounded-t-[20px] w-full"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-3 left-4 hover:text-[#FFC107] text-[12px] hover:bg-white py-[2px] px-[10px] rounded-[20px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] text-white bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                ការអភិវឌ្ឍន៍គេហទំព័រ
+              </div>
+            </div>
+            <div
+              class="py-[20px] px-[20px] flex flex-col gap-[15px] text-white text-des-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h2 class="text-heading-4 line-clamp-1">
+                ផែនការអភិវឌ្ឍន៍គេហទំព័រ
+              </h2>
+              <p class="text-des-4 font-[250] line-clamp-2">
+                ការអភិវឌ្ឍន៍គេហទំព័រ
+                គឺជាដំណើរការដែលពាក់ព័ន្ធនឹងការបង្កើតគេហទំព័រ។
+                សូមក្រឡេកមើលពីរបៀបដែលគេហទំព័រ
+              </p>
+              <div class="flex items-center justify-between text-secondary">
+                <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+                <a class="hover:underline" href="blogdetail.html"
+                  >អានបន្ថែម <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-primary rounded-[20px] shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-1000 ease-in-out"
+            data-aos="fade-up"
+          >
+            <div class="relative">
+              <img
+                src="../../public/blog/webpc-passthru 7.png"
+                class="rounded-t-[20px] w-full"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-3 left-4 hover:text-[#FFC107] text-[12px] hover:bg-white py-[2px] px-[10px] rounded-[20px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] text-white bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                សំណួរសម្ភាសន៍
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="py-[20px] px-[20px] flex flex-col gap-[15px] text-white text-des-6"
+            >
+              <h2 class="text-heading-4 line-clamp-1">
+                សំណួរសម្ភាសន៍ Core Java
+              </h2>
+              <p class="text-des-4 font-[250] line-clamp-2">
+                Core នៅក្នុងអត្ថបទនេះ យើងនឹងឃើញសំណួរសម្ភាសន៍ Java
+                សម្រាប់អ្នកដែលមានបទពិសោធន៍ ៥ទៅ៦ឆ្នាំ
+              </p>
+              <div class="flex items-center justify-between text-secondary">
+                <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+                <a class="hover:underline" href="blogdetail.html"
+                  >អានបន្ថែម <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary rounded-[20px] shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-1000 ease-in-out"
+            data-aos="fade-up"
+          >
+            <div class="relative">
+              <img
+                src="../../public/blog/webpc-passthru 6.png"
+                class="rounded-t-[20px] w-full"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-3 left-4 hover:text-[#FFC107] text-[12px] hover:bg-white py-[2px] px-[10px] rounded-[20px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] text-white bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                Python
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="py-[20px] px-[20px] flex flex-col gap-[15px] text-white text-des-6"
+            >
+              <h2 class="text-heading-4 line-clamp-1">
+                បៀបបន្ថែម Array Python
+              </h2>
+              <p class="text-des-4 font-[250] l line-clamp-2">
+                នៅក្នុង python យើងមានការអនុវត្តបីនៃរចនាសម្ព័ន្ធទិន្នន័យ
+              </p>
+              <div class="flex items-center justify-between text-secondary">
+                <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+                <a class="hover:underline" href="blogdetail.html"
+                  >អានបន្ថែម <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary rounded-[20px] shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-1000 ease-in-out"
+            data-aos="fade-up"
+          >
+            <div class="relative">
+              <img
+                src="../../public/blog/webpc-passthru 5.png"
+                class="rounded-t-[20px] w-full"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-3 left-4 hover:text-[#FFC107] text-[12px] hover:bg-white py-[2px] px-[10px] rounded-[20px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] text-white bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                Java ៨
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="py-[20px] px-[20px] flex flex-col gap-[15px] text-white text-des-6"
+            >
+              <h2 class="text-heading-4 line-clamp-1">Java Parallel Stream</h2>
+              <p class="text-des-4 font-[250] l line-clamp-2">
+                នៅក្នុងការប្រកាសនេះ យើងនឹងឃើញអំពី Parallel Stream នៅក្នុង Java
+                Parallel Stream ការណែនាំ Java 8
+              </p>
+              <div class="flex items-center justify-between text-secondary">
+                <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+                <a class="hover:underline" href="blogdetail.html"
+                  >អានបន្ថែម <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary rounded-[20px] shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-1000 ease-in-out"
+            data-aos="fade-up"
+          >
+            <div class="relative">
+              <img
+                src="../../public/blog/webpc-passthru 8.png"
+                class="rounded-t-[20px] w-full"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-3 left-4 hover:text-[#FFC107] text-[12px] hover:bg-white py-[2px] px-[10px] rounded-[20px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] text-white bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                Java Web Service
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="py-[20px] px-[20px] flex flex-col gap-[15px] text-white text-des-6"
+            >
+              <h2 class="text-heading-4 line-clamp-1">
+                សំណួរសំភាសន៍ web services
+              </h2>
+              <p class="text-des-4 font-[250] l line-clamp-2">
+                Restful Web Service មានប្រជាប្រិយភាពខ្លាំងណាស់
+                នាពេលបច្ចុប្បន្ននេះ ព្រោះវាសាមញ្ញណាស់ក្នុងការអនុវត្ត
+              </p>
+              <div class="flex items-center justify-between text-secondary">
+                <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+                <a class="hover:underline" href="blogdetail.html"
+                  >អានបន្ថែម <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary rounded-[20px] shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-1000 ease-in-out"
+            data-aos="fade-up"
+          >
+            <div class="relative">
+              <img
+                src="../../public/blog/image 10.png"
+                class="rounded-t-[20px] w-full"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-3 left-4 hover:text-[#FFC107] text-[12px] hover:bg-white py-[2px] px-[10px] rounded-[20px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] text-white bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                វិទ្យាសាស្ត្រទិន្នន័យ
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="py-[20px] px-[20px] flex flex-col gap-[15px] text-white text-des-6"
+            >
+              <h2 class="text-heading-4 line-clamp-1">
+                Microsoft Data Science Internship 2025
+              </h2>
+              <p class="text-des-4 font-[250] line-clamp-2">
+                ដាក់ពាក្យសម្រាប់កម្មវិធី Microsoft Data Science Internship
+                ក្នុងខែនេះ ហើយចាប់យកឱកាសដើម្បីលើកកំពស់អាជីពរបស់អ្នក។
+                ជាមួយនឹងអ្នកជំនាញផ្នែកឧស្សាហកម្មដែលមានបទពិសោធន៍
+                និងបច្ចេកវិទ្យាទំនើបនៅ
+              </p>
+              <div class="flex items-center justify-between text-secondary">
+                <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+                <a class="hover:underline" href="blogdetail.html"
+                  >អានបន្ថែម <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary rounded-[20px] shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-1000 ease-in-out"
+            data-aos="fade-up"
+          >
+            <div class="relative">
+              <img
+                src="../../public/blog/image 10 (2).png"
+                class="rounded-t-[20px] w-full"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-3 left-4 hover:text-[#FFC107] text-[12px] hover:bg-white py-[2px] px-[10px] rounded-[20px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] text-white bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                Docker
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="py-[20px] px-[20px] flex flex-col gap-[15px] text-white text-des-6"
+            >
+              <h2 class="text-heading-4 line-clamp-1">
+                តើ Docker ជាអ្វី ហើយហេតុអ្វីបានជា Docker ត្រូវការ?
+              </h2>
+              <p class="text-des-4 font-[250] l line-clamp-2">
+                Docker គឺជាកម្មវិធីកុងតឺន័រដែលវេចខ្ចប់កម្មវិធីរបស់អ្នក
+                និងភាពអាស្រ័យទាំងអស់របស់វារួមគ្នាក្នុងទម្រង់ជា docker container
+                ដើម្បីធានាថាកម្មវិធីរបស់អ្នកដំណើរការយ៉ាងរលូនក្នុងបរិយាកាសណាមួយ។
+              </p>
+              <div class="flex items-center justify-between text-secondary">
+                <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+                <a class="hover:underline" href="blogdetail.html"
+                  >អានបន្ថែម <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary rounded-[20px] shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-1000 ease-in-out"
+            data-aos="fade-up"
+          >
+            <div class="relative">
+              <img
+                src="../../public/blog/image 11.png"
+                class="rounded-t-[20px] w-full"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-3 left-4 hover:text-[#FFC107] text-[12px] hover:bg-white py-[2px] px-[10px] rounded-[20px] border-t-[1px] border-l-[1px] border-r-[1px] border-b-[3px] border-[rgba(0,0,0,0.2)] text-white bg-[#FFC107] transition-all duration-500 ease-out"
+              >
+                React
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="py-[20px] px-[20px] flex flex-col gap-[15px] text-white text-des-6"
+            >
+              <h2 class="text-heading-4 line-clamp-1">
+                ហេតុអ្វីបានជា Redux ជាមួយនឹង React?
+              </h2>
+              <p class="text-des-4 font-[250] l line-clamp-2">
+                React គឺជាបណ្ណាល័យ JavaScript ដ៏ពេញនិយមបំផុតមួយ
+                ដែលត្រូវបានប្រើសម្រាប់ការអភិវឌ្ឍន៍ផ្នែកខាងមុខ។
+                វាបានធ្វើឱ្យការអភិវឌ្ឍន៍កម្មវិធីរបស់យើងកាន់តែងាយស្រួល
+                និងលឿនជាងមុនដោយផ្តល់នូវវិធីសាស្រ្តផ្អែកលើសមាសធាតុ។
+              </p>
+              <div class="flex items-center justify-between text-secondary">
+                <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+                <a class="hover:underline" href="blogdetail.html"
+                  >អានបន្ថែម <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-primary text-heading-5 text-white px-6 py-10">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-sm"
+      >
+        <!-- Logo Column -->
+        <div class="flex flex-col items-start">
+          <div class="flex items-center gap-2">
+            <!-- Replace with your actual logo -->
+            <img
+              src="../../public/icon/logo.png"
+              alt="logo"
+              class="w-25 h-25 rotate-[-20deg]"
+            />
+          </div>
+        </div>
+
+        <!-- Explore -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Explore
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">ទំព័រដើម</a></li>
+            <li><a href="#">អំពីយើង</a></li>
+            <li><a href="#">មេរៀន</a></li>
+            <li><a href="#">ប្លុក</a></li>
+            <li><a href="#">ទំនាក់ទំនង</a></li>
+          </ul>
+        </div>
+
+        <!-- Course -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Course
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">មេរៀនទាំងអស់</a></li>
+            <li><a href="#">មេរៀនចុងក្រោយ</a></li>
+            <li><a href="#">មេរៀនកំពុងពេញនិយម</a></li>
+          </ul>
+        </div>
+
+        <!-- Category -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Category
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">អ្នកអភិវឌ្ឍន៍វេបសាយ</a></li>
+            <li><a href="#">អ្នកអភិវឌ្ឍន៍កម្មវិធីទូរសព្ទ</a></li>
+            <li><a href="#">មើលថែ Server</a></li>
+            <li><a href="#">ប្រព័ន្ធសុវត្ថិភាព</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Contact Us
+          </h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope"></i>
+              <span>codecam@istad.tech</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>+855 23 880 880</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span>ផេក - CodeCam</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- line -->
+      <div class="border-t border-gray-600 my-6"></div>
+
+      <!-- Copyright -->
+      <p class="text-center text-xs text-gray-400">
+        Copyright © CodeCam 2025. All rights reserved
+      </p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
