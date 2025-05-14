@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="../style/output.css" rel="stylesheet">
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="max-md:pr-[24px] max-md:pl-[24px] w-full h-[100vh] pr-[160px] pl-[160px] flex justify-between max-lg:justify-center items-center bg-[url('images/nunny1.jpg')] bg-center bg-cover">
+        <div class="max-lg:hidden flex flex-col w-[300px] h-[500px] justify-between">
+            <div class="w-[48px] h-[48px] bg-[#111f5d] rounded-[8px] hover:scale-[1.5] transition duration-500 cursor-pointer">
+                <img src="images/logo.png" alt="">
+            </div>
+            <h2 class="text-[#090339] text-[32px] font-extrabold">Welcome to <br> CodeCam Online <br> Learning Platform</h2>
+            <div class="w-[250px] h-[250px]">
+                <img src="images/Group.png" alt="">
+            </div>
+        </div>
+        <div class="h-[650px] w-[500px] border-solid border-white border-[2px] rounded-[32px] bg-[rgba(255,255,255,0.2)] backdrop-blur-[10px] flex flex-col items-center justify-center gap-[14px]">
+            <h1 class="font-Bayon text-[36px]">បង្កើតគណនី</h1>
+            <p class="font-Content text-[12px] mb-[12px]">មានគណនីមួយហើយ? <a class="cursor-pointer text-[#a120d0] font-bold font-sans hover:scale-[1.1] inline-block transition duration-300" href="signin_page.html">Sign in</a></p>
+            <div class="w-[250px] h-[36px] bg-white rounded-[6px] flex items-center justify-start cursor-pointer hover:scale-[1.1] transition duration-300">
+                <div class="w-[30px] h-[30px] bg-gray-400 ml-[3px] rounded-[4px] flex items-center justify-center overflow-hidden">
+                    <img class="h-full" src="images/google.webp" alt="">
+                </div>
+                <p class="text-[#5d5a6d] text-[14px] ml-[10px]">Sign up with google</p>
+            </div>
+            <h3 class="text-[#5d5a6d] text-[14px] flex items-center gap-[10px]"><span class="h-[1px] w-[20px] bg-[#5d5a6d] inline-block"></span> Or signup with your email <span class="h-[1px] w-[20px] bg-[#5d5a6d] inline-block"></span></h3>
+            <div class="mb-[8px]">
+                <p class="mb-[4px]">Full Name</p>
+                <div class="w-[300px] h-[36px] bg-white rounded-[6px] flex items-center">
+                    <div class="w-[36px] h-[36px] flex items-center justify-center"><i class="fa-solid fa-user text-[14px]"></i></div>
+                    <input type="text" placeholder="Antony Santos" class="h-[36px] w-full outline-none text-[14px]">
+                </div>
+            </div>
+            <div class="mb-[8px]">
+                <p class="mb-[4px]">Email</p>
+                <div class="w-[300px] h-[36px] bg-white rounded-[6px] flex items-center">
+                    <div class="w-[36px] h-[36px] flex items-center justify-center"><i class="fa-solid fa-envelope text-[14px]"></i></div>
+                    <input type="email" placeholder="antony@gmail.com" class="h-[36px] w-full outline-none text-[14px]">
+                </div>
+            </div>
+            <div class="mb-[8px]">
+                <p class="mb-[4px]">Password</p>
+                <div class="w-[300px] h-[36px] bg-white rounded-[6px] flex items-center">
+                    <div class="w-[36px] h-[36px] flex items-center justify-center"><i class="fa-solid fa-lock text-[14px]"></i></div>
+                    <input id="password" type="password" placeholder="**********" class="h-[36px] w-full outline-none text-[14px]">
+                    <div class="w-[36px] h-[36px] flex items-center justify-center mr-[8px] "><i id="eye" class="fa-solid fa-eye text-[14px] cursor-pointer"></i></div>
+                </div>
+            </div>
+            <div class="flex items-center gap-[12px] w-[300px] justify-start">
+                <input type="checkbox" class="w-[16px] h-[16px] border-purple-500">
+                <h3 class="text-[#5d5a6d] text-[14px]">I agree to the <span class="text-black">Terms & Conditions</span></h3>
+            </div>
+            <div class="w-[300px] h-[40px] bg-[#9251eb] flex items-center justify-center text-white rounded-[6px] mt-[10px] cursor-pointer hover:scale-[1.1] transition duration-300">Sign Up</div>
+        </div>
+    </main>
+     <script>
+        const password = document.getElementById("password");
+        const eye = document.getElementById("eye");
+        eye.addEventListener("click", function(){
+            if(password.type === 'password'){
+                password.type = 'text';
+                eye.style.color = "green";
+            }else{
+                password.type = 'password';
+                eye.style.color = "black";
+            }
+        })
+    </script>
+</body>
+</html>

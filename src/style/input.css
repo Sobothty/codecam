@@ -45,3 +45,10 @@
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Content:wght@400;700&display=swap');
+@theme {
+  --font-Bayon: "Bayon", "sans-serif"; 
+  --font-Content: "Content", "sans-serif";
+}
