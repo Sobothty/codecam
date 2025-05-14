@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style/output.css" />
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <title>About</title>
   </head>
   <body class="font-kantumruy">
@@ -67,13 +72,13 @@
         <div class="relative w-full min-h-screen bg-primary overflow-hidden">
           <!-- developer image -->
 
-          <div class="absolute left-20 bottom-10 z-10 w-2/5 max-w-xl">
-            <img src="/asset/developer.png" />
+          <div class="absolute left-20 bottom-10 z-0 w-1/2 max-w-xl">
+            <img src="../../public/image/typing-animate.svg" />
           </div>
 
           <!-- Main Content -->
           <div class="container mx-auto px-4 py-6 relative z-0">
-            <div class="flex flex-col items-end text-white pt-45 mx-20 p-20">
+            <div class="flex flex-col items-end text-white pt-35 mx-20 p-20">
               <div class="flex flex-col items-center">
                 <!-- Khmer Title -->
                 <h1 class="text-[64px] font-semibold mb-1 text-center">
@@ -90,7 +95,7 @@
                 <p class="text-lg mb-6">developer ទាំងអស់យ៉ាងកក់ក្តៅ</p>
 
                 <!-- Buttons -->
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4 gap-4">
                   <button
                     class="bg-white text-secondary px-6 py-2 rounded-md border-2 border-gray-500 text-des-2 hover:bg-secondary hover:text-white"
                   >
@@ -98,16 +103,27 @@
                   </button>
 
                   <button class="flex items-center text-white">
-                    <div
-                      class="bg-white border-5 border-secondary border-r-transparent rounded-full p-2 mr-2"
-                    >
-                      <div class="w-8 h-8 flex items-center justify-center">
+                    <!-- Outer Border Container (Yellow Ring Effect) -->
+                    <div class="relative w-16 h-16 mr-3">
+                      <!-- Half Yellow Border -->
+                      <div
+                        class="absolute inset-0 rounded-full border-[10px] border-secondary border-r-transparent rotate"
+                      ></div>
+
+                      <!-- Inner White Circle with Play Icon -->
+                      <div
+                        class="absolute inset-1 flex items-center justify-center bg-white rounded-full"
+                      >
                         <div
-                          class="w-0 h-0 border-t-8 border-t-transparent border-l-10 border-l-black border-b-8 border-b-transparent ml-1"
+                          class="w-0 h-0 border-t-6 border-t-transparent border-l-10 border-l-black border-b-8 border-b-transparent ml-1"
                         ></div>
                       </div>
                     </div>
-                    <div class="text-des-2">ស្វែងរកបន្ថែម</div>
+
+                    <!-- Text -->
+                    <div class="text-des-2 font-semibold hover:text-secondary">
+                      ស្វែងរកបន្ថែម
+                    </div>
                   </button>
                 </div>
               </div>
@@ -117,52 +133,56 @@
           <!-- Wavy Pattern -->
           <div class="absolute z-0 bottom-0 left-0 right-0 w-full">
             <img
-              src="/asset/wavy.png"
+              src="/public/icon/wavy.png"
               class="w-full h-auto"
               alt="Wave pattern"
             />
           </div>
         </div>
       </section>
+
       <section class="m-12 py-[100px]">
-        <div
-          class="max-w-6xl mx-auto border-4 border-secondary rounded-[50px] py-16"
-        >
-          <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-start">
-              <!-- Left Section -->
-              <div
-                class="w-full text-center md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 p-12"
-              >
-                <h2 class="text-6xl font-extrabold">
-                  <span class="text-secondary">WHO</span>
-                  <span class="text-primary">WE ARE</span>
-                </h2>
-                <h3 class="text-heading-2 mt-2">
-                  <span class="text-secondary">តើ</span>
-                  <span class="text-primary">ពួកយើងជានរណា</span>
-                </h3>
-              </div>
+     
+        <!-- Outer wrapper simulates border -->
+        <div class="max-w-6xl mx-auto animated-border rounded-full p-[4px]">
+          <!-- Inner content with white background -->
+          <div class="bg-secondary rounded-[50px] py-16">
+            <div class="container mx-auto px-4">
+              <div class="flex flex-col md:flex-row items-start">
+                <!-- Left Section -->
+                <div
+                  class="w-full text-center md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 p-12"
+                >
+                  <h2 class="text-6xl font-extrabold">
+                    <span class= "text-white">WHO</span>
+                    <span class="text-primary">WE ARE</span>
+                  </h2>
+                  <h3 class="text-heading-2 mt-2">
+                    <span class="text-white">តើ</span>
+                    <span class="text-primary">ពួកយើងជានរណា</span>
+                  </h3>
+                </div>
 
-              <!-- Purple Divider (Visible on medium screens and up) -->
-              <div
-                class="hidden md:block bg-secondary w-1 mx-4 self-stretch"
-              ></div>
+                <!-- Divider -->
+                <div
+                  class="hidden md:block bg-primary w-1 mx-4 self-stretch"
+                ></div>
 
-              <!-- Right Section -->
-              <div class="w-full​ ​md:w-1/2 pl-0 md:pl-8 p-6">
-                <p class="text-des-1 text-center leading-relaxed mb-1">
-                  ពួកយើងគឺជាសិស្សមកពីវិទ្យាស្ថាន ISTAD
-                </p>
-                <p class="text-des-1 text-center leading-relaxed mb-1">
-                  ដែលបានសហការក្រុមក្នុងការធ្វើ Mini-Project
-                </p>
-                <p class="text-des-1 text-center leading-relaxed mb-1">
-                  របស់យើងឱ្យទៅជាគេហទំព័រមួយ
-                </p>
-                <p class="text-des-1 text-center leading-relaxed">
-                  សម្រាប់អ្នកចាប់ផ្តើមក្នុងវិស័យបច្ចេកវិទ្យាថ្មីៗនេះ
-                </p>
+                <!-- Right Section -->
+                <div class="w-full text-primary md:w-1/2 pl-0 md:pl-8 p-6">
+                  <p class="text-des-1 text-center leading-relaxed mb-1">
+                    ពួកយើងគឺជាសិស្សមកពីវិទ្យាស្ថាន ISTAD
+                  </p>
+                  <p class="text-des-1 text-center leading-relaxed mb-1">
+                    ដែលបានសហការក្រុមក្នុងការធ្វើ Mini-Project
+                  </p>
+                  <p class="text-des-1 text-center leading-relaxed mb-1">
+                    របស់យើងឱ្យទៅជាគេហទំព័រមួយ
+                  </p>
+                  <p class="text-des-1 text-center leading-relaxed">
+                    សម្រាប់អ្នកចាប់ផ្តើមក្នុងវិស័យបច្ចេកវិទ្យាថ្មីៗនេះ
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -174,7 +194,7 @@
             <!-- Left Card - Green -->
             <div class="rounded-xl overflow-hidden shadow-lg">
               <!-- Card Header -->
-              <div class="bg-emerald-500 p-6 flex justify-between items-center">
+              <div class="bg-[#49BBBD] p-6 flex justify-between items-center">
                 <h3 class="text-white text-2xl font-bold">គោលបំណងរបស់យើង</h3>
                 <svg
                   class="w-8 h-8 text-white"
@@ -191,7 +211,7 @@
               </div>
 
               <!-- Card Body -->
-              <div class="bg-white p-6 border-l-4 border-emerald-500">
+              <div class="bg-white p-6 border-l-4 border-[#49BBBD]">
                 <p class="text-gray-800 leading-relaxed text-des-2">
                   គោលបំណងរបស់យើងគឺបង្កើតវេទិកាមួយដែលមានអត្ថប្រយោជន៍និងងាយស្រួលប្រើដើម្បីឱ្យអ្នករៀនអាចស្វែងយល់ពីមុខងាររចនាគេហទំព័រ
                   មុខជំនាញវិទ្យាសាស្ត្រទិន្នន័យ និងជំនាញបច្ចេកវិទ្យាផ្សេងៗទៀត
@@ -204,7 +224,7 @@
             <!-- Right Card - Purple -->
             <div class="rounded-xl overflow-hidden shadow-lg">
               <!-- Card Header -->
-              <div class="bg-purple-500 p-6 flex justify-between items-center">
+              <div class="bg-secondary p-6 flex justify-between items-center">
                 <h3 class="text-white text-2xl font-bold">បេសកម្មរបស់យើង</h3>
                 <svg
                   class="w-8 h-8 text-white"
@@ -259,7 +279,7 @@
               </div>
 
               <!-- Card Body -->
-              <div class="bg-white text-des-2 p-6 border-l-4 border-purple-500">
+              <div class="bg-white text-des-2 p-6 border-l-4 border-secondary">
                 <p class="text-gray-800 leading-relaxed mb-4">
                   បេសកម្មរបស់ពួកយើងគឺជួយឱ្យអ្នកដែលចាប់ផ្តើមរៀនកូដដំបូងៗមានមូលដ្ឋានគ្រឺះរឹងមាំអំពីបច្ចេកវិទ្យាដោយផ្តល់នូវ៖
                 </p>
@@ -274,54 +294,74 @@
           </div>
         </div>
       </section>
-      <h2 class="text-center text-heading-1 font-semibold text-primary mb-6">
-        ណែនាំដោយ
-      </h2>
       <section class="py-14 px-4">
+        <h2 class="text-center text-heading-1 font-semibold text-primary mb-14">
+          ណែនាំដោយ
+        </h2>
         <div class="mx-auto max-w-6xl bg-gray-100 rounded-xl p-6">
-          <div class="w-full md:w-1/2 flex items-center space-y-6 md:space-x-8">
+          <div class="flex flex-col md:flex-row items-center gap-20 mx-20 my-6">
             <!-- Profile Image with Border -->
             <div
-              class="relative w-80 h-80 rounded-full mb-6 flex items-center justify-center border-4 border-emerald-500"
+              class="relative w-80 h-80 rounded-full ml-12 flex items-center justify-center border-4 border-[#49BBBD]"
             >
               <img
-                src="/asset/cher davan (1).png"
+                src="../../public/team/cher davan (1).png"
                 alt="Instructor Photo"
                 class="w-65 h-65 rounded-full object-cover"
               />
             </div>
 
             <!-- Info Section -->
-            <div class="text-center md:text-left flex-1">
-              <h3 class="text-2xl font-bold text-gray-800">
-                លោកគ្រូ <span class="text-emerald-500">អ៊ីង ដាវ៉ាន់</span>
+            <div class="text-center flex-1">
+              <h3 class="text-heading-2 font-bold text-gray-800">
+                លោកគ្រូ <span class="text-[#49BBBD]">អ៊ីង ដាវ៉ាន់</span>
               </h3>
-              <p class="text-gray-400 mt-1">
+              <p class="text-gray-500 text-des-2 mt-1">
                 Frontend និង Cyber Security Instructor
               </p>
-              <p class="text-gray-400">នៅ ISTAD</p>
+              <p class="text-gray-500 text-des-2">នៅ ISTAD</p>
 
               <button
-                class="mt-4 bg-emerald-400 text-white font-semibold px-6 py-2 rounded-lg hover:bg-emerald-500 transition"
+                class="mt-4 bg-white border-1 border-gray-300 text-black text-des-2 w-full py-2 rounded-lg"
               >
                 ព័ត៌មានបន្ថែម
               </button>
 
               <!-- Social Icons -->
-              <div class="flex justify-center md:justify-start space-x-4 mt-4">
-                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+              <div class="text-heading-4 flex justify-center space-x-4 mt-8">
+                <a
+                  href="https://www.facebook.com/ing.davann"
+                  target="_blank"
+                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                >
                   <i class="fab fa-facebook fa-lg"></i>
                 </a>
-                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+                <a
+                  href="https://github.com/ingdavann"
+                  target="_blank"
+                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                >
                   <i class="fab fa-github fa-lg"></i>
                 </a>
-                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+                <a
+                  href="https://www.linkedin.com/in/ing-davann-0617b32a3/?originalSubdomain=kh"
+                  target="_blank"
+                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                >
                   <i class="fab fa-linkedin fa-lg"></i>
                 </a>
-                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+                <a
+                  href="https://www.youtube.com/@ingdavann-"
+                  target="_blank"
+                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                >
                   <i class="fab fa-youtube fa-lg"></i>
                 </a>
-                <a href="#" class="text-emerald-400 hover:text-emerald-500">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                >
                   <i class="fas fa-envelope fa-lg"></i>
                 </a>
               </div>
@@ -329,8 +369,422 @@
           </div>
         </div>
       </section>
-      <section></section>
-      <section></section>
+
+      <!-- section team leader -->
+      <section class="py-14 px-4">
+        <h2 class="text-center text-heading-1 font-semibold text-primary mb-14">
+          ក្រុមរបស់យើង
+        </h2>
+
+        <div class="mx-auto max-w-6xl bg-gray-100 rounded-xl p-6">
+          <div class="flex flex-col items-center gap-5 mx-20 my-4">
+            <!-- Profile Image with Border -->
+            <div
+              class="relative w-50 h-50 flex items-center justify-center bg-gradient-to-r from-secondary to-[#49BBBD] rounded-full"
+            >
+              <div
+                class="relative w-48 h-48 rounded-full flex items-center justify-center border-4 border-white"
+              >
+                <img
+                  src="../../public/team/sambath.jpg"
+                  alt="Instructor Photo"
+                  class="w-46 h-46 rounded-full object-cover"
+                />
+              </div>
+            </div>
+            <!-- button -->
+            <button
+              class="text-white font-semibold bg-gradient-to-r from-secondary to-[#49BBBD] border-1 border-gray-300 text-black text-des-2 px-12 py-2 rounded-full"
+            >
+              ប្រធានក្រុម
+            </button>
+            <!-- Info Section -->
+            <div class="text-center">
+              <h3
+                class="text-heading-3 font-semibold bg-gradient-to-r from-secondary to-[#49BBBD] bg-clip-text text-transparent"
+              >
+                ស៊្រុន​ ឧត្តម សម្បត្តិ
+              </h3>
+              <p class="text-gray-500 text-des-2 mt-1">Frontend</p>
+              <div class="text-center relative">
+                <div
+                  class="mt-2 mx-auto w-[50px] h-[3px] bg-gradient-to-r from-secondary to-[#49BBBD] rounded"
+                ></div>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="text-des-2 flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section team all -->
+      <section
+        class="mx-auto max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-30 gap-y-10"
+      >
+        <!-- card -->
+        <div class="shadow-sm rounded-xl p-6">
+          <div class="flex flex-col items-center gap-5">
+            <!-- Profile Image with Border -->
+            <div
+              class="relative w-50 h-50 flex items-center justify-center bg-gradient-to-r from-secondary to-[#49BBBD] rounded-full"
+            >
+              <div
+                class="relative w-48 h-48 rounded-full flex items-center justify-center border-4 border-white"
+              >
+                <img
+                  src="../../public/team/rotana.JPG"
+                  alt="Instructor Photo"
+                  class="w-46 h-46 rounded-full object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="text-center">
+              <h3 class="text-heading-4 font-semibold text-black">ទូត រតនា</h3>
+              <p class="text-gray-500 text-des-3 mt-1">Frontend</p>
+              <div class="text-center relative">
+                <div
+                  class="mt-2 mx-auto w-[50px] h-[3px] bg-gradient-to-r from-secondary to-[#49BBBD] rounded"
+                ></div>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="text-des-3 flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="shadow-sm rounded-xl p-6">
+          <div class="flex flex-col items-center gap-5">
+            <!-- Profile Image with Border -->
+            <div
+              class="relative w-50 h-50 flex items-center justify-center bg-gradient-to-r from-secondary to-[#49BBBD] rounded-full"
+            >
+              <div
+                class="relative w-48 h-48 rounded-full flex items-center justify-center border-4 border-white"
+              >
+                <img
+                  src="../../public/team/phea.JPG"
+                  alt="Instructor Photo"
+                  class="w-46 h-46 rounded-full object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="text-center">
+              <h3 class="text-heading-4 font-semibold text-black">
+                លឹម អានសុលាភា
+              </h3>
+              <p class="text-gray-500 text-des-3 mt-1">Frontend</p>
+              <div class="text-center relative">
+                <div
+                  class="mt-2 mx-auto w-[50px] h-[3px] bg-gradient-to-r from-secondary to-[#49BBBD] rounded"
+                ></div>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="text-des-3 flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="shadow-sm rounded-xl p-6">
+          <div class="flex flex-col items-center gap-5">
+            <!-- Profile Image with Border -->
+            <div
+              class="relative w-50 h-50 flex items-center justify-center bg-gradient-to-r from-secondary to-[#49BBBD] rounded-full"
+            >
+              <div
+                class="relative w-48 h-48 rounded-full flex items-center justify-center border-4 border-white"
+              >
+                <img
+                  src="../../public/team/liza.jpg"
+                  alt="Instructor Photo"
+                  class="w-46 h-46 rounded-full object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="text-center">
+              <h3 class="text-heading-4 font-semibold text-black">
+                ហេង លីហ្សា
+              </h3>
+              <p class="text-gray-500 text-des-3 mt-1">Frontend</p>
+              <div class="text-center relative">
+                <div
+                  class="mt-2 mx-auto w-[50px] h-[3px] bg-gradient-to-r from-secondary to-[#49BBBD] rounded"
+                ></div>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="text-des-3 flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="shadow-sm rounded-xl p-6">
+          <div class="flex flex-col items-center gap-5">
+            <!-- Profile Image with Border -->
+            <div
+              class="relative w-50 h-50 flex items-center justify-center bg-gradient-to-r from-secondary to-[#49BBBD] rounded-full"
+            >
+              <div
+                class="relative w-48 h-48 rounded-full flex items-center justify-center border-4 border-white"
+              >
+                <img
+                  src="../../public/team/both-ty.jpg"
+                  alt="Instructor Photo"
+                  class="w-46 h-46 rounded-full object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="text-center">
+              <h3 class="text-heading-4 font-semibold text-black">
+                គ្រី សុបុត្រទី
+              </h3>
+              <p class="text-gray-500 text-des-3 mt-1">Frontend</p>
+              <div class="text-center relative">
+                <div
+                  class="mt-2 mx-auto w-[50px] h-[3px] bg-gradient-to-r from-secondary to-[#49BBBD] rounded"
+                ></div>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="text-des-3 flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="shadow-sm rounded-xl p-6">
+          <div class="flex flex-col items-center gap-5">
+            <!-- Profile Image with Border -->
+            <div
+              class="relative w-50 h-50 flex items-center justify-center bg-gradient-to-r from-secondary to-[#49BBBD] rounded-full"
+            >
+              <div
+                class="relative w-48 h-48 rounded-full flex items-center justify-center border-4 border-white"
+              >
+                <img
+                  src="../../public/team/hong-leap.jpg"
+                  alt="Instructor Photo"
+                  class="w-46 h-46 rounded-full object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="text-center">
+              <h3 class="text-heading-4 font-semibold text-black">
+                ផូ​ ហុងលៀប
+              </h3>
+              <p class="text-gray-500 text-des-3 mt-1">Frontend</p>
+              <div class="text-center relative">
+                <div
+                  class="mt-2 mx-auto w-[50px] h-[3px] bg-gradient-to-r from-secondary to-[#49BBBD] rounded"
+                ></div>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="text-des-3 flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="shadow-sm rounded-xl p-6">
+          <div class="flex flex-col items-center gap-5">
+            <!-- Profile Image with Border -->
+            <div
+              class="relative w-50 h-50 flex items-center justify-center bg-gradient-to-r from-secondary to-[#49BBBD] rounded-full"
+            >
+              <div
+                class="relative w-48 h-48 rounded-full flex items-center justify-center border-4 border-white"
+              >
+                <img
+                  src="../../public/team/rith.jpg"
+                  alt="Instructor Photo"
+                  class="w-46 h-46 rounded-full object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="text-center">
+              <h3 class="text-heading-4 font-semibold text-black">
+                វីរ៉ា វណ្ណារឹទ្ធឹ
+              </h3>
+              <p class="text-gray-500 text-des-3 mt-1">Frontend</p>
+              <div class="text-center relative">
+                <div
+                  class="mt-2 mx-auto w-[50px] h-[3px] bg-gradient-to-r from-secondary to-[#49BBBD] rounded"
+                ></div>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="text-des-3 flex justify-center space-x-4 mt-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-200 text-gray-600 hover:border-0 hover:bg-gradient-to-r from-secondary to-[#49BBBD] hover:-translate-y-1 transition"
+                >
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <!-- Font Awesome for Icons -->
