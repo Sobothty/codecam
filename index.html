@@ -1,51 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+  <head><meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="CodeCam" />
+    <meta
+      name="description"
+      content="គេហទំព័រសម្រាប់អ្នកចាប់ផ្តើមរៀនកូដ ជាភាសាខ្មែរ មានមេរៀនកូដ និងគម្រោងជាក់ស្តែង សម្រាប់សិស្សខ្មែរទាំងអស់។"
+    />
+    <meta
+      name="keywords"
+      content="Learn coding from scratch in Khmer! Explore HTML, CSS, JavaScript, React, Spring Boot, Cybersecurity, AI, Data Science, Web and Mobile Development — all tailored for Khmer beginners."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <meta
+      property="og:title"
+      content="រៀនកូដជាភាសាខ្មែរ | គេហទំព័រសម្រាប់អ្នកចាប់ផ្តើម"
+    />
+    <meta
+      property="og:description"
+      content="ស្វែងយល់ពីការអភិវឌ្ឍវេបសាយ ជាមួយមេរៀន HTML, CSS, JavaScript និង React សម្រាប់អ្នកចាប់ផ្តើមក្នុងភាសាខ្មែរ។"
+    />
+    <meta
+      property="og:image"
+      content="https://codecam.netlify.app/thumnail.png"
+    />
+    <meta property="og:url" content="https://codecam.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CodeCam | រៀនកូដជាភាសាខ្មែរ" />
+    <meta
+      name="twitter:description"
+      content="Learn coding from scratch in Khmer! Explore HTML, CSS, JavaScript, React, Spring Boot, Cybersecurity, AI, Data Science, Web and Mobile Development — all tailored for Khmer beginners."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://codecam.netlify.app/thumnail.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./public/icon/logo.png" type="image/x-icon" />
+    <title>CodeCam | រៀនកូដជាភាសាខ្មែរ</title>
+
     <title>CodeCam</title>
     <link rel="stylesheet" href="./src/style/output.css" />
     <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="font-kantumruy bg-background dark:bg-primary">
-    <header>
-      <nav class="bg-background dark:bg-primary sticky w-full h-auto z-20 top-0 start-0">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./public/icon/logo.png" class="h-20" alt="Flowbite Logo">
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button type="button" class="text-heading-5 text-secondary dark:text-primary bg-primary hover:bg-secondary hover:text-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-4 py-2 mx-2 text-center dark:bg-secondary dark:hover:bg-secondary dark:hover:text-white dark:focus:ring-primary">Log In</button>
-            <button type="button" class="text-heading-5 text-secondary dark:text-primary bg-primary hover:bg-secondary hover:text-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-4 py-2 mx-2 text-center dark:bg-secondary dark:hover:bg-secondary dark:hover:text-white dark:focus:ring-primary">Sign In</button>
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
+<header
+      id="navbar"
+      class="fixed w-full z-10 backdrop-blur-sm transition-all duration-300 px-10 xl:px-0"
+    >
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <!-- Logo + Navlist (Left) -->
+        <div class="flex items-center space-x-8">
+          <img src="../../public/icon/logo.png" alt="Logo" class="w-16 h-16" />
+          <nav
+            class="hidden md:flex items-center space-x-6 font-semibold text-lg"
+          >
+            <a href="/" class="text-yellow-500 hover:text-yellow-500"
+              >ទំព័រដើម</a
+            >
+            <a href="./src/page/index.html" class="text-white">មេរៀន</a>
+            <a href="#" class="text-white hover:text-yellow-500">ប្លុក</a>
+            <a href="#" class="text-white hover:text-yellow-500">អំពីយើង</a>
+            <a
+              href="./src/page/contact.html"
+              class="text-white hover:text-yellow-500"
+              >ទំនាក់ទំនង</a
+            >
+          </nav>
+        </div>
+
+        <!-- Right Side Login Button -->
+        <div class="hidden md:block">
+          <button
+            class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+          >
+            ចូលគណនីយ
           </button>
         </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Cousres</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
-            </li>
-            <li> 
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-            </li>
-          </ul>
-        </div>
-        </div>
-      </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl text-black">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden px-4 pb-4 space-y-2 font-semibold text-lg"
+      >
+        <a href="/" class="block">ទំព័រដើម</a>
+        <a href="./src/page/index.html" class="block text-yellow-500">មេរៀន</a>
+        <a href="#" class="block">ប្លុក</a>
+        <a href="#" class="block">អំពីយើង</a>
+        <a href="./src/page/contact.html" class="block">ទំនាក់ទំនង</a>
+        <button
+          class="w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500 transition"
+        >
+          ចូលគណនីយ
+        </button>
+      </div>
     </header>
     <!-- main -->
     <main class="max-w-screen-xl h-auto mx-auto p-4 mb-10">
@@ -511,8 +580,6 @@
     </div>
   </div>
 </footer>
-
-
 
   <script src="./node_modules/flowbite/dist/flowbite.js"></script>
   </body>
