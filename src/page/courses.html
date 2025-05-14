@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md fixed w-full z-10">
+      <div
+        class="container mx-auto flex items-center justify-between px-4 py-4"
+      >
+        <div class="flex items-center gap-2">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+            alt="Logo"
+            class="w-6 h-6"
+          />
+          <h1 class="text-lg font-bold text-yellow-500">សូមស្វាគមន៍</h1>
+        </div>
+        <nav class="hidden md:flex items-center space-x-6 font-semibold">
+          <a href="#" class="text-black hover:text-yellow-500">Home</a>
+          <a href="#" class="text-yellow-500">Courses</a>
+          <a href="#" class="text-black hover:text-yellow-500">Blog</a>
+          <a href="#" class="text-black hover:text-yellow-500">About</a>
+          <a href="#" class="text-black hover:text-yellow-500">Contact</a>
+          <div
+            class="bg-yellow-400 text-white w-8 h-8 flex items-center justify-center rounded-full"
+          >
+            <i class="fas fa-user"></i>
+          </div>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="#" class="block py-2">Home</a>
+        <a href="#" class="block py-2 text-yellow-500">Courses</a>
+        <a href="#" class="block py-2">Blog</a>
+        <a href="#" class="block py-2">About</a>
+        <a href="#" class="block py-2">Contact</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="pt-28 px-4 md:px-20 pb-16 bg-gradient-to-br from-blue-50 to-purple-50"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold text-purple-600 mb-2">
+        ស្វែងរកមុខវិជ្ជាបច្ចេកវិទ្យា
+      </h2>
+      <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">
+        សម្រាប់រៀននៅទីនេះ៖
+      </h3>
+      <p class="text-gray-700 max-w-xl mb-6 leading-relaxed">
+        យើងនឹងជួយអ្នកក្នុងការស្វែងរកមុខវិជ្ជាបច្ចេកវិទ្យាដែលសមរម្យសម្រាប់អ្នក។
+        មើលវគ្គសិក្សា ដោយផ្អែកលើគោលបំណងរបស់អ្នក។ ជាមួយនឹងសហគមន៍ធំ
+        យើងនឹងជួយអ្នកឱ្យរៀនបានល្អ។
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <input
+          type="text"
+          placeholder="Enter your site"
+          class="px-4 py-2 rounded-md border border-gray-300 w-full sm:w-80"
+        />
+        <button
+          class="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-5 py-2 rounded-md shadow"
+        >
+          Analyze Your Site
+        </button>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-4 px-6 md:px-20 pb-10">
+      <div class="flex flex-col items-center text-center">
+        <div class="bg-green-200 p-4 rounded-full mb-2">
+          <i class="fas fa-graduation-cap text-2xl text-green-600"></i>
+        </div>
+        <p class="text-lg font-bold">300</p>
+        <p class="text-gray-600">វគ្គសិក្សា</p>
+      </div>
+      <div class="flex flex-col items-center text-center">
+        <div class="bg-purple-200 p-4 rounded-full mb-2">
+          <i class="fas fa-users text-2xl text-purple-600"></i>
+        </div>
+        <p class="text-lg font-bold">20,000+</p>
+        <p class="text-gray-600">សិស្ស</p>
+      </div>
+      <div class="flex flex-col items-center text-center">
+        <div class="bg-red-200 p-4 rounded-full mb-2">
+          <i class="fas fa-video text-2xl text-red-600"></i>
+        </div>
+        <p class="text-lg font-bold">10,000+</p>
+        <p class="text-gray-600">វីដេអូ</p>
+      </div>
+      <div class="flex flex-col items-center text-center">
+        <div class="bg-blue-200 p-4 rounded-full mb-2">
+          <i class="fas fa-users-cog text-2xl text-blue-600"></i>
+        </div>
+        <p class="text-lg font-bold">1,00,000+</p>
+        <p class="text-gray-600">អ្នកប្រើប្រាស់</p>
+      </div>
+    </section>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
