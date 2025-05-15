@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
       id="navbar"
       class="fixed w-full z-10 backdrop-blur-sm transition-all duration-300 px-10 xl:px-0"
     >
-      <div class="mx-auto flex items-center justify-between py-4">
+      <div class="container mx-auto flex items-center justify-between py-4">
         <!-- Logo + Navlist (Left) -->
         <div class="flex items-center space-x-8">
           <img src="../../public/icon/logo.png" alt="Logo" class="w-16 h-16" />
@@ -30,13 +30,13 @@
             <a href="../../index.html" class="text-black hover:text-yellow-500"
               >ទំព័រដើម</a
             >
-            <a href="./index.html" class="text-yellow-500">មេរៀន</a>
+            <a href="./index.html" class="text-black hover:text-yellow-500"
+              >មេរៀន</a
+            >
             <a href="./blog.html" class="text-black hover:text-yellow-500"
               >ប្លុក</a
             >
-            <a href="./about-us.html" class="text-black hover:text-yellow-500"
-              >អំពីយើង</a
-            >
+            <a href="./about-us.html" class="text-yellow-500">អំពីយើង</a>
             <a href="./contact.html" class="text-black hover:text-yellow-500"
               >ទំនាក់ទំនង</a
             >
@@ -45,11 +45,13 @@
 
         <!-- Right Side Login Button -->
         <div class="hidden md:block">
-          <button
-            class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+          <a href="./signin.html"
+            ><button
+              class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+            >
+              ចូលគណនីយ
+            </button></a
           >
-            ចូលគណនីយ
-          </button>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -64,143 +66,155 @@
         class="md:hidden hidden px-4 pb-4 space-y-2 font-semibold text-lg"
       >
         <a href="/" class="block">ទំព័រដើម</a>
-        <a href="./index.html" class="block text-yellow-500">មេរៀន</a>
-        <a href="#" class="block">ប្លុក</a>
-        <a href="#" class="block">អំពីយើង</a>
+        <a href="./index.html" class="block">មេរៀន</a>
+        <a href="./blog.html" class="block">ប្លុក</a>
+        <a href="./about-us.html" class="block text-yellow-500">អំពីយើង</a>
         <a href="./contact.html" class="block">ទំនាក់ទំនង</a>
-        <button
-          class="w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500 transition"
+        <a href="./signin.html"
+          ><button
+            class="w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500 transition"
+          >
+            ចូលគណនីយ
+          </button></a
         >
-          ចូលគណនីយ
-        </button>
       </div>
     </header>
     <main>
       <!-- section content -->
-      <section>
-        <div class="relative w-full min-h-screen bg-primary overflow-hidden">
-          <!-- developer image -->
+      <section class="w-full">
+        <div class="max-w-screen-xl mx-auto">
+          <div class="relative w-full h-screen  bg-primary overflow-hidden">
+            <!-- developer image -->
 
-          <div class="absolute left-20 bottom-10 z-0 w-1/2 max-w-xl">
-            <img src="../../public/image/typing-animate.svg" />
-          </div>
+            <div
+              class="absolute left-4 sm:left-10 bottom-10 z-0 w-1/2 max-w-xl"
+            >
+              <img src="../../public/image/typing-animate.svg" />
+            </div>
 
-          <!-- Main Content -->
-          <div class="container mx-auto px-4 py-6 relative z-0">
-            <div class="flex flex-col items-end text-white pt-35 mx-20 p-20">
-              <div class="flex flex-col items-center">
-                <!-- Khmer Title -->
-                <h1 class="text-[64px] font-semibold mb-1 text-center">
-                  អំពីយើង
-                </h1>
+            <!-- Main Content -->
+            <div class="container mx-auto px-4 py-6 relative z-0">
+              <div
+                class="flex flex-col items-end text-white pt-35 px-4 sm:px-10 md:px-20 py-10"
+              >
+                <div class="flex flex-col items-center">
+                  <!-- Khmer Title -->
+                  <h1 class="text-[64px] font-semibold mb-1 text-center">
+                    អំពីយើង
+                  </h1>
 
-                <!-- Khmer Subtitle -->
-                <p class="text-xl items-center text-center">
-                  គេហទំព័រ
-                  <span class="text-yellow-400">កូដខេម</span> សូមស្វាគមន៍
-                </p>
+                  <!-- Khmer Subtitle -->
+                  <p class="text-xl items-center text-center">
+                    គេហទំព័រ
+                    <span class="text-yellow-400">កូដខេម</span> សូមស្វាគមន៍
+                  </p>
 
-                <!-- Developer Text -->
-                <p class="text-lg mb-6">developer ទាំងអស់យ៉ាងកក់ក្តៅ</p>
+                  <!-- Developer Text -->
+                  <p class="text-lg mb-6">developer ទាំងអស់យ៉ាងកក់ក្តៅ</p>
 
-                <!-- Buttons -->
-                <div class="flex items-center space-x-4 gap-4">
-                  <!-- <button
+                  <!-- Buttons -->
+                  <div class="flex items-center space-x-4 gap-4">
+                    <!-- <button
                     class="bg-white text-secondary px-6 py-2 rounded-md border-2 border-gray-500 text-des-2 hover:bg-secondary hover:text-white"
                   >
                     ចាប់ផ្តើមសិក្សា
                   </button> -->
-                  <a
-                    href=""
-                    class="text-[#FFC107] self-start md:self-start text-des-1 bg-white py-2.5 px-5 rounded-[10px] border-t border-l border-r border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
-                  >
-                    ចាប់ផ្តើមសិក្សា
-                  </a>
+                    <a
+                      href=""
+                      class="text-[#FFC107] self-start md:self-start text-des-1 bg-white py-2.5 px-5 rounded-[10px] border-t border-l border-r border-b-[3px] border-[rgba(0,0,0,0.2)] hover:text-white hover:bg-[#FFC107] transition-all duration-500 ease-out"
+                    >
+                      ចាប់ផ្តើមសិក្សា
+                    </a>
 
-                  <button class="flex items-center text-white">
-                    <!-- Outer Border Container (Yellow Ring Effect) -->
-                    <div class="relative w-16 h-16 mr-3">
-                      <!-- Half Yellow Border -->
-                      <div
-                        class="absolute inset-0 rounded-full border-[10px] border-secondary border-r-transparent rotate"
-                      ></div>
-
-                      <!-- Inner White Circle with Play Icon -->
-                      <div
-                        class="absolute inset-1 flex items-center justify-center bg-white rounded-full"
-                      >
+                    <button class="flex items-center text-white">
+                      <!-- Outer Border Container (Yellow Ring Effect) -->
+                      <div class="relative w-16 h-16 mr-3">
+                        <!-- Half Yellow Border -->
                         <div
-                          class="w-0 h-0 border-t-6 border-t-transparent border-l-10 border-l-black border-b-8 border-b-transparent ml-1"
+                          class="absolute inset-0 rounded-full border-[10px] border-secondary border-r-transparent rotate"
                         ></div>
-                      </div>
-                    </div>
 
-                    <!-- Text -->
-                    <div class="text-des-2 font-semibold hover:text-secondary">
-                      ស្វែងរកបន្ថែម
-                    </div>
-                  </button>
+                        <!-- Inner White Circle with Play Icon -->
+                        <div
+                          class="absolute inset-1 flex items-center justify-center bg-white rounded-full"
+                        >
+                          <div
+                            class="w-0 h-0 border-t-6 border-t-transparent border-l-10 border-l-black border-b-8 border-b-transparent ml-1"
+                          ></div>
+                        </div>
+                      </div>
+
+                      <!-- Text -->
+                      <div
+                        class="text-des-2 font-semibold hover:text-secondary"
+                      >
+                        ស្វែងរកបន្ថែម
+                      </div>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Wavy Pattern -->
-          <div class="absolute z-0 bottom-0 left-0 right-0 w-full">
-            <img
-              src="/public/icon/wavy.png"
-              class="w-full h-auto"
-              alt="Wave pattern"
-            />
+            <!-- Wavy Pattern -->
+            <div class="absolute z-0 bottom-0 left-0 right-0 w-full">
+              <img
+                src="/public/icon/wavy.png"
+                class="w-full h-auto"
+                alt="Wave pattern"
+              />
+            </div>
           </div>
         </div>
       </section>
       <!-- section who-we-are -->
-      <section class="max-w-6xl mx-auto py-[100px]">
-        <!-- Outer wrapper simulates border -->
-        <div class="animated-border rounded-full">
-          <!-- Inner content with white background -->
-          <div class="bg-white rounded-[50px] py-16">
-            <div class="container mx-auto px-4">
-              <div class="flex flex-col md:flex-row items-start">
-                <!-- Left Section -->
-                <div
-                  class="w-full text-center md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 p-12"
-                  data-aos="fade-right"
-                >
-                  <h2 class="text-6xl font-extrabold">
-                    <span class="text-secondary">WHO</span>
-                    <span class="text-primary">WE ARE</span>
-                  </h2>
-                  <h3 class="text-heading-2 mt-2">
-                    <span class="text-secondary">តើ</span>
-                    <span class="text-primary">ពួកយើងជានរណា</span>
-                  </h3>
-                </div>
+      <section class="w-ful py-14 px-4">
+        <div class="max-w-screen-xl mx-auto">
+          <!-- Outer wrapper simulates border -->
+          <div class="animated-border rounded-full">
+            <!-- Inner content with white background -->
+            <div class="bg-white rounded-[50px] py-16">
+              <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-start">
+                  <!-- Left Section -->
+                  <div
+                    class="w-full text-center md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 p-12"
+                    data-aos="fade-right"
+                  >
+                    <h2 class="text-6xl font-extrabold">
+                      <span class="text-secondary">WHO</span>
+                      <span class="text-primary">WE ARE</span>
+                    </h2>
+                    <h3 class="text-heading-2 mt-2">
+                      <span class="text-secondary">តើ</span>
+                      <span class="text-primary">ពួកយើងជានរណា</span>
+                    </h3>
+                  </div>
 
-                <!-- Divider -->
-                <div
-                  class="hidden md:block bg-secondary w-1 mx-4 self-stretch"
-                  data-aos="zoom-in"
-                ></div>
+                  <!-- Divider -->
+                  <div
+                    class="hidden md:block bg-secondary w-1 mx-4 self-stretch"
+                    data-aos="zoom-in"
+                  ></div>
 
-                <!-- Right Section -->
-                <div
-                  class="w-full text-primary md:w-1/2 pl-0 md:pl-8 p-6"
-                  data-aos="fade-left"
-                >
-                  <p class="text-des-1 text-center leading-relaxed mb-1">
-                    ពួកយើងគឺជាសិស្សមកពីវិទ្យាស្ថាន ISTAD
-                  </p>
-                  <p class="text-des-1 text-center leading-relaxed mb-1">
-                    ដែលបានសហការក្រុមក្នុងការធ្វើ Mini-Project
-                  </p>
-                  <p class="text-des-1 text-center leading-relaxed mb-1">
-                    របស់យើងឱ្យទៅជាគេហទំព័រមួយ
-                  </p>
-                  <p class="text-des-1 text-center leading-relaxed">
-                    សម្រាប់អ្នកចាប់ផ្តើមក្នុងវិស័យបច្ចេកវិទ្យាថ្មីៗនេះ
-                  </p>
+                  <!-- Right Section -->
+                  <div
+                    class="w-full text-primary md:w-1/2 pl-0 md:pl-8 p-6"
+                    data-aos="fade-left"
+                  >
+                    <p class="text-des-1 text-center leading-relaxed mb-1">
+                      ពួកយើងគឺជាសិស្សមកពីវិទ្យាស្ថាន ISTAD
+                    </p>
+                    <p class="text-des-1 text-center leading-relaxed mb-1">
+                      ដែលបានសហការក្រុមក្នុងការធ្វើ Mini-Project
+                    </p>
+                    <p class="text-des-1 text-center leading-relaxed mb-1">
+                      របស់យើងឱ្យទៅជាគេហទំព័រមួយ
+                    </p>
+                    <p class="text-des-1 text-center leading-relaxed">
+                      សម្រាប់អ្នកចាប់ផ្តើមក្នុងវិស័យបច្ចេកវិទ្យាថ្មីៗនេះ
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -216,179 +230,162 @@
           class="mx-auto"
         />
       </section>
-      <!--section out-mission -->
-      <section class="container mx-auto px-12 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!--from ai -->
-          <!-- Left Card - Green -->
-          <div
-            class="relative inline-block m-[15px] rounded-xl overflow-hidden border-2 border-[#49BBBD] transition-all duration-500 bg-[#E0F7FA] hover:bg-[#49BBBD] hover:text-white active:scale-90 group w-full max-w-xl h-[300px]"
-            data-aos="fade-down-right"
-          >
-            <!-- Absolute container for center effect -->
-            <div
-              class="absolute inset-0 flex items-center justify-center transition-all duration-500 group-hover:items-start group-hover:justify-start group-hover:p-6"
-            >
-              <h3
-                class="text-5xl text-primary font-bold text-center w-full transition-all duration-500 group-hover:text-2xl group-hover:text-left"
-              >
-                គោលបំណងរបស់យើង
-              </h3>
-            </div>
+      <!--section our-mission -->
+      <section class="w-full py-14 px-4">
+         
+        <div class="max-w-screen-xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Card - Green -->
 
-            <!-- Icon - only show on hover -->
             <div
-              class="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              class="relative inline-block m-[15px] rounded-xl overflow-hidden border-2 border-[#49BBBD] transition ease-out duration-500 bg-[#E0F7FA] hover:bg-[#49BBBD] hover:text-white active:scale-90"
+              data-aos="fade-right"
             >
-              <svg
-                class="w-8 h-8 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                />
-              </svg>
-            </div>
+              <!-- Card Header -->
+              <div class="p-6 flex justify-between items-center">
+                <h3 class="text-heading-2 font-bold">គោលបំណងរបស់យើង</h3>
+                <svg
+                  class="w-8 h-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  />
+                </svg>
+              </div>
 
-            <!-- Body content - hidden by default -->
-            <div
-              class="absolute bottom-0 left-0 right-0 opacity-0 max-h-0 overflow-hidden transition-all duration-100 group-hover:opacity-100 group-hover:max-h-[300px] group-hover:p-6"
-            >
-              <p class="leading-10 text-des-1 text-white">
-                គោលបំណងរបស់យើងគឺបង្កើតវេទិកាមួយដែលមានអត្ថប្រយោជន៍និងងាយស្រួលប្រើដើម្បីឱ្យអ្នករៀនអាចស្វែងយល់ពីមុខងាររចនាគេហទំព័រ
-                មុខជំនាញវិទ្យាសាស្ត្រទិន្នន័យ និងជំនាញបច្ចេកវិទ្យាផ្សេងៗទៀត
-                តាមរយោៈការអនុវត្តជាក់ស្តែងជាមួយនឹង modern tools ជាច្រើនចាំបាច់​
-                ។
-              </p>
+              <!-- Card Body -->
+              <div class="p-6 border-l-4 border-[#49BBBD]">
+                <p class="leading-relaxed text-des-1">
+                  គោលបំណងរបស់យើងគឺបង្កើតវេទិកាមួយដែលមានអត្ថប្រយោជន៍និងងាយស្រួលប្រើដើម្បីឱ្យអ្នករៀនអាចស្វែងយល់ពីមុខងាររចនាគេហទំព័រ
+                  មុខជំនាញវិទ្យាសាស្ត្រទិន្នន័យ និងជំនាញបច្ចេកវិទ្យាផ្សេងៗទៀត
+                  តាមរយោៈការអនុវត្តជាក់ស្តែងជាមួយនឹង modern tools
+                  ជាច្រើនចាំបាច់​ ។
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- Right Card -->
-          <div
-            class="relative inline-block m-[15px] rounded-xl overflow-hidden border-2 border-secondary transition-all duration-500 bg-[#fcde7b] hover:bg-secondary hover:text-white active:scale-90 group w-full max-w-xl h-[300px]"
-            data-aos="fade-up-left"
-          >
-            <!-- Absolute container for center effect -->
-            <div
-              class="absolute inset-0 flex items-center justify-center transition-all duration-500 group-hover:items-start group-hover:justify-start group-hover:p-6"
-            >
-              <h3
-                class="text-5xl text-primary font-bold text-center w-full transition-all duration-500 group-hover:text-2xl group-hover:text-left"
-              >
-                បេសកម្មរបស់យើង
-              </h3>
-            </div>
+            <!-- Right Card -->
 
-            <!-- Icon - only show on hover -->
             <div
-              class="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              class="relative inline-block m-[15px] rounded-xl overflow-hidden border-2 border-secondary transition ease-out duration-500 bg-[#fcde7b] hover:bg-secondary hover:text-white active:scale-90"
+              data-aos="fade-left"
             >
-              <svg
-                class="w-8 h-8 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                />
-              </svg>
-            </div>
+              <!-- Card Header -->
+              <div class="p-6 flex justify-between items-center">
+                <h3 class="text-heading-2 font-bold">បេសកម្មរបស់យើង</h3>
+                <svg
+                  class="w-8 h-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  />
+                </svg>
+              </div>
 
-            <!-- Body content - hidden by default -->
-            <div
-              class="absolute bottom-0 left-0 right-0 opacity-0 max-h-0 overflow-hidden transition-all duration-500 group-hover:opacity-100 group-hover:max-h-[300px] group-hover:p-6"
-            >
-              <p class="text-white text-des-1 leading-relaxed mt-4">
-                បេសកម្មរបស់ពួកយើងគឺជួយឱ្យអ្នកដែលចាប់ផ្តើមរៀនកូដដំបូងៗមានមូលដ្ឋានគ្រឺះរឹងមាំអំពីបច្ចេកវិទ្យាដោយផ្តល់នូវ៖
-              </p>
-              <ul class="list-disc pl-6 text-[21px] text-white">
-                <li class="mb-1">មេរៀនកូដ តាមរយៈ វីឌីដេអូ</li>
-                <li class="mb-1">Real-world Projects</li>
-                <li class="mb-1">Supportive learning environment</li>
-                <li>ឯកសារមេរៀនជាច្រើន ។</li>
-              </ul>
+              <!-- Card Body -->
+              <div class="p-6 border-l-4 border-secondary">
+                <p class="text-des-1 leading-relaxed">
+                  បេសកម្មរបស់ពួកយើងគឺជួយឱ្យអ្នកដែលចាប់ផ្តើមរៀនកូដដំបូងៗមានមូលដ្ឋានគ្រឺះរឹងមាំអំពីបច្ចេកវិទ្យាដោយផ្តល់នូវ៖
+                </p>
+                <ul class="list-disc pl-6 text-[21px]">
+                  <li class="mb-1">មេរៀនកូដ តាមរយៈ វីឌីដេអូ</li>
+                  <li class="mb-1">Real-world Projects</li>
+                  <li class="mb-1">Supportive learning environment</li>
+                  <li>ឯកសារមេរៀនជាច្រើន ។</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- section teacher-card -->
-      <section class="py-14 px-4">
-        <h2 class="text-center text-heading-1 font-semibold text-primary mb-14">
-          ណែនាំដោយ
-        </h2>
-        <div class="mx-auto max-w-6xl bg-gray-100 rounded-xl p-6">
-          <div class="flex flex-col md:flex-row items-center gap-20 mx-20 my-6">
-            <!-- Profile Image with Border -->
+      <section class="w-full py-14 px-4">
+         
+        <div class="max-w-screen-xl mx-auto">
+          <h2
+            class="text-center text-heading-1 font-semibold text-primary mb-14"
+          >
+            ណែនាំដោយ
+          </h2>
+          <div class="mx-auto max-w-6xl bg-gray-100 rounded-xl p-6">
             <div
-              class="relative w-80 h-80 rounded-full ml-12 flex items-center justify-center border-4 border-[#49BBBD]"
-              data-aos="fade-right"
+              class="flex flex-col md:flex-row items-center gap-20 mx-20 my-6"
             >
-              <img
-                src="../../public/team/cher davan (1).png"
-                alt="Instructor Photo"
-                class="w-65 h-65 rounded-full object-cover"
-              />
-            </div>
-
-            <!-- Info Section -->
-            <div class="text-center flex-1" data-aos="fade-left">
-              <h3 class="text-heading-2 font-bold text-gray-800">
-                លោកគ្រូ <span class="text-[#49BBBD]">អ៊ីង ដាវ៉ាន់</span>
-              </h3>
-              <p class="text-gray-500 text-des-2 mt-1">
-                Frontend និង Cyber Security Instructor
-              </p>
-              <p class="text-gray-500 text-des-2">នៅ ISTAD</p>
-
-              <button
-                class="mt-4 bg-white border-1 border-gray-300 text-black text-des-2 w-full py-2 rounded-lg"
+              <!-- Profile Image with Border -->
+              <div
+                class="relative w-80 h-80 rounded-full ml-12 flex items-center justify-center border-4 border-[#49BBBD]"
+                data-aos="fade-right"
               >
-                ព័ត៌មានបន្ថែម
-              </button>
+                <img
+                  src="../../public/team/cher davan (1).png"
+                  alt="Instructor Photo"
+                  class="w-65 h-65 rounded-full object-cover"
+                />
+              </div>
 
-              <!-- Social Icons -->
-              <div class="text-heading-4 flex justify-center space-x-4 mt-8">
-                <a
-                  href="https://www.facebook.com/ing.davann"
-                  target="_blank"
-                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+              <!-- Info Section -->
+              <div class="text-center flex-1" data-aos="fade-left">
+                <h3 class="text-heading-2 font-bold text-gray-800">
+                  លោកគ្រូ <span class="text-[#49BBBD]">អ៊ីង ដាវ៉ាន់</span>
+                </h3>
+                <p class="text-gray-500 text-des-2 mt-1">
+                  Frontend និង Cyber Security Instructor
+                </p>
+                <p class="text-gray-500 text-des-2">នៅ ISTAD</p>
+
+                <button
+                  class="mt-4 bg-white border-1 border-gray-300 text-black text-des-2 w-full py-2 rounded-lg"
                 >
-                  <i class="fab fa-facebook fa-lg"></i>
-                </a>
-                <a
-                  href="https://github.com/ingdavann"
-                  target="_blank"
-                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
-                >
-                  <i class="fab fa-github fa-lg"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/ing-davann-0617b32a3/?originalSubdomain=kh"
-                  target="_blank"
-                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
-                >
-                  <i class="fab fa-linkedin fa-lg"></i>
-                </a>
-                <a
-                  href="https://www.youtube.com/@ingdavann-"
-                  target="_blank"
-                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
-                >
-                  <i class="fab fa-youtube fa-lg"></i>
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
-                >
-                  <i class="fas fa-envelope fa-lg"></i>
-                </a>
+                  ព័ត៌មានបន្ថែម
+                </button>
+
+                <!-- Social Icons -->
+                <div class="text-heading-4 flex justify-center space-x-4 mt-8">
+                  <a
+                    href="https://www.facebook.com/ing.davann"
+                    target="_blank"
+                    class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                  >
+                    <i class="fab fa-facebook fa-lg"></i>
+                  </a>
+                  <a
+                    href="https://github.com/ingdavann"
+                    target="_blank"
+                    class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                  >
+                    <i class="fab fa-github fa-lg"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/ing-davann-0617b32a3/?originalSubdomain=kh"
+                    target="_blank"
+                    class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                  >
+                    <i class="fab fa-linkedin fa-lg"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@ingdavann-"
+                    target="_blank"
+                    class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                  >
+                    <i class="fab fa-youtube fa-lg"></i>
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="flex items-center justify-center w-13 h-13 rounded-full border-2 border-gray-200 text-gray-500 hover:border-0 hover:text-[#49BBBD] hover:-translate-y-1 transition"
+                  >
+                    <i class="fas fa-envelope fa-lg"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -397,8 +394,6 @@
 
       <!-- section team leader -->
       <section class="py-14 px-4">
-        >
-
         <h2 class="text-center text-heading-1 font-semibold text-primary mb-14">
           ក្រុមរបស់យើង
         </h2>
@@ -915,5 +910,6 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../util/header.js"></script>
   </body>
 </html>
