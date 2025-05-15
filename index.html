@@ -59,46 +59,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="font-kantumruy bg-background dark:bg-primary">
-    <header>
-      <nav class="bg-background dark:bg-primary sticky w-full h-auto z-20 top-0 start-0">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./public/icon/logo.png" class="h-20" alt="Flowbite Logo">
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button type="button" class="text-heading-5 text-secondary dark:text-primary bg-primary hover:bg-secondary hover:text-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-4 py-2 mx-2 text-center dark:bg-secondary dark:hover:bg-secondary dark:hover:text-white dark:focus:ring-primary">Log In</button>
-            <button type="button" class="text-heading-5 text-secondary dark:text-primary bg-primary hover:bg-secondary hover:text-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-4 py-2 mx-2 text-center dark:bg-secondary dark:hover:bg-secondary dark:hover:text-white dark:focus:ring-primary">Sign In</button>
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
-          </button>
+
+    <header
+      id="navbar"
+      class="fixed w-full z-10 backdrop-blur-sm transition-all duration-300 px-10 xl:px-0"
+    >
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <!-- Logo + Navlist (Left) -->
+        <div class="flex items-center space-x-8">
+          <img src="../../public/icon/logo.png" alt="Logo" class="w-16 h-16" />
+          <nav
+            class="hidden md:flex items-center space-x-6 font-semibold text-lg"
+          >
+            <a href="/" class="text-yellow-500 hover:text-yellow-500"
+              >ទំព័រដើម</a
+            >
+            <a href="./src/page/index.html" class="text-black dark:text-white"
+              >មេរៀន</a
+            >
+            <a
+              href="./src/page/blog.html"
+              class="text-black dark:text-white hover:text-yellow-500"
+              >ប្លុក</a
+            >
+            <a href="./src/page/about-us.html" class="text-black dark:text-white hover:text-yellow-500"
+              >អំពីយើង</a
+            >
+            <a
+              href="./src/page/contact.html"
+              class="text-black dark:text-white hover:text-yellow-500"
+              >ទំនាក់ទំនង</a
+            >
+          </nav>
         </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ទំព័រដើម</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">មេរៀន</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ប្លុក</a>
-            </li>
-            <li> 
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">អំពីយើង</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3 text-heading-5 text-primary rounded-sm hover:text-secondary hover:bg-primary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary dark:text-white dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ទំនាក់ទំនង</a>
-            </li>
-          </ul>
+
+        <!-- Right Side Login Button -->
+        <div class="hidden md:block">
+          <a href="./src/page/signin.html">
+            <button
+              class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+            >
+              ចូលគណនីយ
+            </button>
+          </a>
         </div>
-        </div>
-      </nav>
-    </header>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl text-black">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden px-4 pb-4 space-y-2 font-semibold text-lg"
+      >
+        <a href="/" class="block text-yellow-500">ទំព័រដើម</a>
+        <a href="./src/page/index.html" class="block">មេរៀន</a>
+        <a href="./src/page/blog.html" class="block">ប្លុក</a>
+        <a href="./src/page/about-us.html" class="block">អំពីយើង</a>
+        <a href="./src/page/contact.html" class="block">ទំនាក់ទំនង</a>
+        <a href="./src/page/signin.html"
+          ><button
+            class="w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500 transition"
+          >
+            ចូលគណនីយ
+          </button></a
+        >
+      </div>
+    </header> 
     <!-- main -->
-    <main class="max-w-screen-xl h-auto mx-auto p-4 mb-10">
+    <main class="max-w-screen-xl h-auto mx-auto p-4 mb-10 ">
       <div class="text-primary dark:text-background rounded-xl flex flex-col-reverse md:flex-row gap-6">
       <!-- Text Section -->
       <div class="flex-1 ">
@@ -212,7 +244,7 @@
             <a href="#">
                 <img class="rounded-t-lg h-[40%] w-full" src="./public/image/data science.jpg" alt="" />
             </a>
-            <div class="p-3 h-auto">
+            <div class="p-3 h-[60%]">
                 <a href="#">
                     <h5 class="mb-2 lg:mb-10 text-heading-3 sm:text-heading-2 lg:text-heading-4 font-bold text-primary dark:text-white">Data science</h5>
                 </a>
@@ -240,7 +272,8 @@
           មើលបន្តែម
         </button>
        </div>
-      <!-- certificat -->
+
+             <!-- certificat -->
        <div class="lg:text-heading-1 text-heading-3 my-10 mt-10  text-primary dark:text-background">
         <h5>វគ្គសិក្សាវិញ្ញាបនប័ត្រ</h5>
        </div>
@@ -249,7 +282,7 @@
         <!-- Card 1 -->
         <div class=" bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-700">
             <a href="#">
-                <img class="rounded-t-lg h-[40%] w-full" src="./public/image/data scientist.jpg" alt="" />
+                <img class="rounded-t-lg h-auto w-full" src="./public/image/data scientist.jpg" alt="" />
             </a>
             <div class="p-3 h-auto ">
                 <a href="#">
@@ -414,42 +447,42 @@
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
               <img class=" md:w-48 md:rounded-none md:rounded-s-lg w-full" src="./public/image/software engineer.jpg" alt="">
               <div class="flex flex-row md:flex-col justify-around md:items-start items-center p-4 leading-normal md:grid-cols-2 gap-6 md:gap-0">
-                  <h5 class="mb-2 text-des-1 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Software Engineer</h5>
-                  <p class="mb-3 font-semibold text-secondary">65cousres</p>
+                  <h5 class="mb-2 text-des-3 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Software Engineer</h5>
+                  <p class="mb-2 font-semibold text-secondary">65cousres</p>
               </div>
             </a>
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
               <img class=" md:w-48 md:rounded-none md:rounded-s-lg w-full" src="./public/image/Cyber security.jpg" alt="">
               <div class="flex flex-row md:flex-col justify-around md:items-start items-center p-4 leading-normal md:grid-cols-2 gap-6 md:gap-0">
-                  <h5 class="mb-2 text-des-1 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Cybersecurity</h5>
-                  <p class="mb-3 font-semibold text-secondary">65cousres</p>
+                  <h5 class="mb-2 text-des-3 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Cybersecurity</h5>
+                  <p class="mb-2 font-semibold text-secondary">65cousres</p>
               </div>
             </a>
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
               <img class=" md:w-48 md:rounded-none md:rounded-s-lg w-full" src="./public/image/network.jpg" alt="">
               <div class="flex flex-row md:flex-col justify-around md:items-start items-center p-4 leading-normal md:grid-cols-2 gap-6 md:gap-0">
-                  <h5 class="mb-2 text-des-1 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Network Engineer</h5>
+                  <h5 class="mb-2 text-des-3 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Network Engineer</h5>
                   <p class="mb-3 font-semibold text-secondary">65cousres</p>
               </div>
             </a>
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
               <img class=" md:w-48 md:rounded-none md:rounded-s-lg w-full" src="./public/image/web design.jpg" alt="">
               <div class="flex flex-row md:flex-col justify-around md:items-start items-center p-4 leading-normal md:grid-cols-2 gap-6 md:gap-0">
-                  <h5 class="mb-2 text-des-1 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Web Design</h5>
+                  <h5 class="mb-2 text-des-3 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Web Design</h5>
                   <p class="mb-3 font-semibold text-secondary">65cousres</p>
               </div>
             </a>
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
               <img class=" md:w-48 md:rounded-none md:rounded-s-lg w-full" src="./public/image/uxui.jpg" alt="">
               <div class="flex flex-row md:flex-col justify-around md:items-start items-center p-4 leading-normal md:grid-cols-2 gap-6 md:gap-0">
-                  <h5 class="mb-2 text-des-1 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">UXUI</h5>
+                  <h5 class="mb-2 text-des-3 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">UXUI</h5>
                   <p class="mb-3 font-semibold text-secondary">65cousres</p>
               </div>
             </a>
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
               <img class=" md:w-48 md:rounded-none md:rounded-s-lg w-full" src="./public/image/cloude.jpg" alt="">
               <div class="flex flex-row md:flex-col justify-around md:items-start items-center p-4 leading-normal md:grid-cols-2 gap-6 md:gap-0">
-                  <h5 class="mb-2 text-des-1 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Cloud Engineer</h5>
+                  <h5 class="mb-2 text-des-3 md:text-des-3 font-bold tracking-tight text-primary dark:text-white">Cloud Engineer</h5>
                   <p class="mb-3 font-semibold text-secondary">65cousres</p>
               </div>
             </a>
