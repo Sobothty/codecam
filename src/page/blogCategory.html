@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Blog Categories</title>
+  </head>
+  <body class="font-(family-name:--font-kantumruy)">
+    <header
+      id="navbar"
+      class="fixed w-full z-10 backdrop-blur-sm transition-all duration-300 px-10 xl:px-0"
+    >
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <!-- Logo + Navlist (Left) -->
+        <div class="flex items-center space-x-8">
+          <img src="../../public/icon/logo.png" alt="Logo" class="w-16 h-16" />
+          <nav
+            class="hidden md:flex items-center space-x-6 font-semibold text-lg"
+          >
+            <a href="../../index.html" class="text-black hover:text-yellow-500"
+              >ទំព័រដើម</a
+            >
+            <a href="./index.html" class="text-black hover:text-yellow-500"
+              >មេរៀន</a
+            >
+            <a href="./blog.html" class="text-yellow-500">ប្លុក</a>
+            <a href="./about-us.html" class="text-black hover:text-yellow-500">អំពីយើង</a>
+            <a href="./contact.html" class="text-black hover:text-yellow-500"
+              >ទំនាក់ទំនង</a
+            >
+          </nav>
+        </div>
+
+        <!-- Right Side Login Button -->
+        <div class="hidden md:block">
+          <a href="./signin.html"
+            ><button
+              class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition"
+            >
+              ចូលគណនីយ
+            </button></a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl text-black">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden px-4 pb-4 space-y-2 font-semibold text-lg"
+      >
+        <a href="/" class="block">ទំព័រដើម</a>
+        <a href="./index.html" class="block">មេរៀន</a>
+        <a href="./blog.html" class="block text-yellow-500">ប្លុក</a>
+        <a href="#" class="block">អំពីយើង</a>
+        <a href="./contact.html" class="block">ទំនាក់ទំនង</a>
+        <a href="./signin.html"
+          ><button
+            class="w-full bg-yellow-400 text-white py-2 rounded hover:bg-yellow-500 transition"
+          >
+            ចូលគណនីយ
+          </button></a
+        >
+      </div>
+    </header>
+    <main class="pt-32">
+      <section class="mx-10 md:mx-[100px]">
+        <a
+          href="./blog.html"
+          class="text-(length:--text-2xl) font-(--font-weight-medium) text-[var(--color-primary)]"
+          >ប្លុក ></a
+        >
+        <a href="#" class="text-(length:--text-2xl) text-gray-400"
+          >ប្លុកទាំងអស់</a
+        >
+      </section>
+      <h2
+        class="text-(length:--text-4xl) font-(--font-weight-semibold) text-[var(--color-primary)] mx-10 md:mx-[100px]"
+      >
+        ប្លុក<span class="text-[var(--color-secondary)]">អភិវឌ្ឍន៍កម្មវិធី</span
+        >ដែលកំពុងពេញនិយម
+      </h2>
+      <section class="relative overflow-hidden mt-10 mx-10 md:mx-[100px]">
+        <div
+          class="slide grid grid-cols-1 md:grid-cols-2 place-items-center gap-8"
+        >
+          <img src="../../public/image/image 7.png" alt="" class="w-full" />
+          <div class="space-y-2">
+            <h4 class="text-(length:--text-2xl) font-(--font-weight-medium)">
+              គម្រោង DBMS កំពូលទាំង 25នៅឆ្នាំ 2025
+            </h4>
+            <p class="text-(length:--text-lg)">
+              អ្នក​ប្រហែល​ជា​ឮ​គេ​និយាយ​ថា​វិទ្យាសាស្ត្រ​កុំព្យូទ័រ​មាន​លក្ខណៈ​ឆ្អែតឆ្អន់
+              ប៉ុន្តែ​ស្ថិតិ​បង្ហាញ​រូបភាព​ផ្សេង។នេះ​បើ​តាម​សហរដ្ឋ​អាមេរិក...
+            </p>
+            <div
+              class="md:flex items-center justify-between text[12px] text-[var(--color-secondary)]"
+            >
+              <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+              <a class="hover:underline" href="./blogdetail.html">អានបន្ថែម ></a>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                class="text-white bg-[var(--color-secondary)] border-2 py-1 px-2 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+              >
+                ការអភិវឌ្ឍន៍ក​ម្មវិធី
+              </button>
+              <button
+                class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+              >
+                Core
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide hidden grid grid-cols-1 md:grid-cols-2 place-items-center gap-8"
+        >
+          <img
+            src="../../public/image/javaCourse.png"
+            alt=""
+            class="w-full rounded-xl"
+          />
+          <div class="space-y-3">
+            <h4 class="text-(length:--text-2xl) font-(--font-weight-medium)">
+              វគ្គសិក្សាថ្មី Java Programming
+            </h4>
+            <p class="text-(length:--text-lg)">
+              សិក្សាពី Core concept ភាសា Java ពិសេសគឺ concept OOP
+            </p>
+            <div
+              class="md:flex items-center justify-between text[12px] text-[var(--color-secondary)]"
+            >
+              <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+              <a class="hover:underline" href="./blogdetail.html">អានបន្ថែម ></a>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                class="text-white bg-[var(--color-secondary)] border-2 py-1 px-2 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+              >
+                ការអភិវឌ្ឍន៍ក​ម្មវិធី
+              </button>
+              <button
+                class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+              >
+                Core
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide hidden grid grid-cols-1 md:grid-cols-2 place-items-center gap-8"
+        >
+          <img
+            src="../../public/image/web-design.jpg"
+            alt=""
+            class="w-full rounded-xl"
+          />
+          <div class="space-y-3">
+            <h4 class="text-(length:--text-2xl) font-(--font-weight-medium)">
+              វគ្គសិក្សាខ្លីអំពីការបង្កើតគេហទំព័រ
+            </h4>
+            <p class="text-(length:--text-lg)">
+              សិក្សាពីការបង្កើតនិងរចនាគេហទំព័រឳ្យបានស្អាត
+            </p>
+            <div
+              class="md:flex items-center justify-between text[12px] text-[var(--color-secondary)]"
+            >
+              <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+              <a class="hover:underline" href="./blogdetail.html">អានបន្ថែម ></a>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                class="text-white bg-[var(--color-secondary)] border-2 py-1 px-2 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+              >
+                ការអភិវឌ្ឍន៍ក​ម្មវិធី
+              </button>
+              <button
+                class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+              >
+                Core
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide hidden grid grid-cols-1 md:grid-cols-2 place-items-center gap-8"
+        >
+          <img
+            src="../../public/image/sqlcourse.jpg"
+            alt=""
+            class="w-full rounded-xl"
+          />
+          <div class="space-y-3">
+            <h4 class="text-(length:--text-2xl) font-(--font-weight-medium)">
+              វគ្គសិក្សាអំពីការគ្រប់គ្រងទិន្នន័យ
+            </h4>
+            <p class="text-(length:--text-lg)">
+              Data Modeling និង Query Language
+            </p>
+            <div
+              class="md:flex items-center justify-between text[12px] text-[var(--color-secondary)]"
+            >
+              <p>០៩ ឧសភា ២០២៥ | 13 នាទីអាន</p>
+             <a class="hover:underline" href="./blogdetail.html">អានបន្ថែម ></a>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                class="text-white bg-[var(--color-secondary)] border-2 py-1 px-2 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+              >
+                ការអភិវឌ្ឍន៍ក​ម្មវិធី
+              </button>
+              <button
+                class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+              >
+                Core
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          onclick="plusSlides(-1)"
+          class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 text-black rounded-full p-2 hover:bg-white shadow-md"
+        >
+          ❮
+        </button>
+        <button
+          onclick="plusSlides(1)"
+          class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 text-black rounded-full p-2 hover:bg-white shadow-md"
+        >
+          ❯
+        </button>
+      </section>
+      <section class="my-10 mx-10 md:mx-[100px]">
+        <div class="md:flex items-center justify-between text-center mb-5">
+          <span
+            class="text-(length:--text-4xl) font-(--font-weight-semibold) text-[var(--color-primary)]"
+            >ប្លុកទាំងអស់</span
+          >
+          <div class="relative w-full md:w-64 mt-4">
+            <input
+              type="text"
+              placeholder="Search"
+              class="w-full pl-10 pr-4 py-2 text-black border-2 border-black rounded-3xl placeholder-black focus:outline-none focus:ring focus:ring-[var(--color-primary)]"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-black"
+            ></i>
+          </div>
+        </div>
+        <div class="md:flex gap-10">
+          <div class="md:w-3/4 space-y-6">
+            <div class="lg:flex items-center gap-6">
+              <img
+                src="../../public/image/image 6.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
+              <div class="space-y-2">
+                <h5
+                  class="text-(length:--text-xl) font-(--font-weight-semibold)"
+                >
+                  កំពូល AI សរសេរកូដ៖ ហេតុអ្វីបានជា Codeium ជា ជម្រើសដ៏ល្អបំផុត?
+                </h5>
+                <p>
+                  ប្រសិនបើអ្នកជាមនុស្សថ្មីក្នុងការសរសេរកូដ
+                  ហើយកំពុងស្វែងរកវិធីដើម្បីឱ្យកាន់តែមាន ផលិតភាព
+                  អ្នកប្រហែលជាបានជួបប្រទះឧបករណ៍សរសេរកូដសិប្បនិម្មិត (AI)។ខណៈ...
+                </p>
+                <div
+                  class="md:flex items-center justify-between text[12px] text-[var(--color-secondary)]"
+                >
+                  <p>១១​ មករា ២០២៥ | ១៥ នាទីអាន</p>
+                  <a class="hover:underline" href="./blogdetail.html">អានបន្ថែម ></a>
+                </div>
+                <div>
+                  <button
+                    class="text-white bg-[var(--color-secondary)] border-2 py-1 px-2 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    បញ្ញាសិប្បនិម្មិត
+                  </button>
+                  <button
+                    class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    AI
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="lg:flex items-center gap-6">
+              <img
+                src="../../public/image/image 5.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
+              <div class="space-y-2">
+                <h5
+                  class="text-(length:--text-xl) font-(--font-weight-semibold)"
+                >
+                  តើអ្នកគួរប្រើ Java ឬ Python សម្រាប់ LeetCode?
+                </h5>
+                <p>
+                  ប្រសិនបើអ្នកកំពុងចាប់អារម្មណ៍ខ្លាំងអំពីការរៀបចំសម្ភាសន៍
+                  ឱកាសដែលអ្នកបាន សួរខ្លួនឯងនូវសំណួរនេះ៖ តើអ្នកគួរប្រើ Java ឬ
+                  Python សម្រាប់ LeetCode ...
+                </p>
+                <div
+                  class="md:flex items-center justify-between text[12px] text-[var(--color-secondary)]"
+                >
+                  <p>០៩ ឧសភា ២០២៥ | ៦ នាទីអាន</p>
+                  <a class="hover:underline" href="./blogdetail.html">អានបន្ថែម ></a>
+                </div>
+                <div>
+                  <button
+                    class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    Java
+                  </button>
+                  <button
+                    class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    Python
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="lg:flex items-center gap-6">
+              <img
+                src="../../public/image/image 4.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
+              <div class="space-y-2">
+                <h5
+                  class="text-(length:--text-xl) font-(--font-weight-semibold)"
+                >
+                  តើភាសាសរសេរកម្មវិធីមួយណាដែលល្អបំផុតសម្រាប់ការទទួលបានការងារ?
+                </h5>
+                <p>
+                  ការជ្រើសរើសភាសាសរសេរកម្មវិធីត្រឹមត្រូវអាចមានអារម្មណ៍លើសលប់
+                  ជាពិសេស ជាមួយនឹងទីផ្សារការងារមានការវិវឌ្ឍន៍យ៉ាងឆាប់រហ័ស។
+                  មិនថាអ្នកកំពុងសុបិនចង់...
+                </p>
+                <div
+                  class="md:flex items-center justify-between text[12px] text-[var(--color-secondary)]"
+                >
+                  <p>១៥​ មេសា ២០២៥ | ២៣ នាទីអាន</p>
+                  <a class="hover:underline" href="./blogdetail.html">អានបន្ថែម ></a>
+                </div>
+                <div>
+                  <button
+                    class="text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    ការអភិវឌ្ឍន៍ក​ម្មវិធី
+                  </button>
+                  <button
+                    class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    Core
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="lg:flex items-center gap-6">
+              <img
+                src="../../public/image/image 2.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
+              <div class="space-y-2">
+                <h5
+                  class="text-(length:--text-xl) font-(--font-weight-semibold)"
+                >
+                  អត្ថប្រយោជន៍នៃវិញ្ញាបនប័ត្រ AWS Cloud Practitioner (2025)
+                </h5>
+                <p>
+                  តើអ្នកធ្លាប់ឆ្ងល់ពីរបៀបចូលទៅក្នុងពិភពប្រកួតប្រជែងនៃ cloud
+                  computing ដោយ
+                  មិនចាំបាច់ចំណាយពេលរាប់ខែដើម្បីរៀនជំនាញបច្ចេកទេសស្មុគស្មាញនៅឆ្នាំ២០២៥ទេ?
+                </p>
+                <div
+                  class="md:flex items-center justify-between text[12px] text-[var(--color-secondary)]"
+                >
+                  <p>១១​ មករា ២០២៥ | ១៥ នាទីអាន</p>
+                  <a class="hover:underline" href="./blogdetail.html">អានបន្ថែម ></a>
+                </div>
+                <div>
+                  <button
+                    class="text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    ការអភិវឌ្ឍន៍ក​ម្មវិធី
+                  </button>
+                  <button
+                    class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    Core
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="lg:flex items-center gap-6">
+              <img
+                src="../../public/image/image 3.png"
+                class="w-full mb-2 lg:mb-0"
+                alt=""
+              />
+              <div class="space-y-2">
+                <h5
+                  class="text-(length:--text-xl) font-(--font-weight-semibold)"
+                >
+                  ពិនិត្យមើលប្រសិនបើ Variable គឺទទេនៅក្នុង Python
+                </h5>
+                <p>
+                  ការពិនិត្យមើលថាតើអថេរគឺទទេនៅក្នុង Python គឺជាកិច្ចការមូលដ្ឋាន
+                  ជាពិសេស នៅក្នុងសុពលភាពទិន្នន័យ ឬតក្កវិជ្ជាតាមលក្ខខណ្ឌ។
+                  ជាឧទាហរណ៍ ក្នុងទម្រង់ចុះ...
+                </p>
+                <div
+                  class="md:flex items-center justify-between text[12px] text-[var(--color-secondary)]"
+                >
+                  <p>០៩ ឧសភា ២០២៥ | ២០ នាទីអាន</p>
+                 <a class="hover:underline" href="./blogdetail.html">អានបន្ថែម ></a>
+                </div>
+                <div>
+                  <button
+                    class="text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    ការអភិវឌ្ឍន៍ក​ម្មវិធី
+                  </button>
+                  <button
+                    class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+                  >
+                    Core
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <button
+                class="font-(family-name:--font-sans) font-(--font-weight-medium) text-white bg-[var(--color-secondary)] border-2 py-1 px-4 rounded-2xl hover:bg-white hover:border-[var(--color-secondary)] hover:text-[var(--color-secondary)]"
+              >
+                Load More
+              </button>
+            </div>
+          </div>
+          <div>
+            <span
+              class="text-(length:--text-3xl) font-(--font-weight-semibold) text-[var(--color-primary)]"
+              >Discover More</span
+            >
+            <div
+              class="grid grid-cols-2 space-y-4 border-2 border-black rounded-2xl pl-4 lg:pl-8 py-6"
+            >
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/html.png"
+                  alt="html"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >HTML</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/css.png"
+                  alt="css"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >CSS</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/javascript.png"
+                  alt="js"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Java Script</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/php.png"
+                  alt="php"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >PHP</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/java.png"
+                  alt="java"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Java</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/cSharp.png"
+                  alt="c#"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >C#</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/c.png"
+                  alt="c"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >C</span
+                >
+              </div>
+              <div class="flex items-center gap-2" v>
+                <img
+                  src="../../public/image/c++.png"
+                  alt="c++"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Python</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/python.png"
+                  alt="python"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Python</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/swift.png"
+                  alt="swift"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >SWift</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/nodeJs.png"
+                  alt="nodeJs"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Node Js</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/kotlin.png"
+                  alt="kotlin"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Kotlin</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/typescript.png"
+                  alt="html"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Type Script</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/ruby.png"
+                  alt="ruby"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Ruby</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/react.png"
+                  alt="react"
+                  class="w-1/4"
+                />
+                <span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >React</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="../../public/image/Vue.png" alt="vue" class="w-1/4" />
+                <span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Vue Js</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/postgres.png"
+                  alt="postgres"
+                  class="w-1/4"
+                /><span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >Postgres</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="../../public/image/mySql.png"
+                  alt="mySql"
+                  class="w-1/4"
+                />
+                <span
+                  class="font-(--font-weight-medium) font-(family-name:--font-sans)"
+                  >MySQL</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-center gap-2 col-span-2 pr-6"
+              >
+                <span>មើលភាសាទាំងអស់់</span>
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <img
+        src="../../public/image/divi-line 1.png"
+        class="w-full mb-5"
+        alt=""
+      />
+    </main>
+    <footer class="bg-primary text-heading-5 text-white px-6 py-10">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-sm"
+      >
+        <!-- Logo Column -->
+        <div class="flex flex-col items-start">
+          <div class="flex items-center gap-2">
+            <!-- Replace with your actual logo -->
+            <img
+              src="../../public/icon/logo.png"
+              alt="logo"
+              class="w-25 h-25 rotate-[-20deg]"
+            />
+          </div>
+        </div>
+
+        <!-- Explore -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Explore
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">ទំព័រដើម</a></li>
+            <li><a href="#">អំពីយើង</a></li>
+            <li><a href="#">មេរៀន</a></li>
+            <li><a href="#">ប្លុក</a></li>
+            <li><a href="#">ទំនាក់ទំនង</a></li>
+          </ul>
+        </div>
+
+        <!-- Course -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Course
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">មេរៀនទាំងអស់</a></li>
+            <li><a href="#">មេរៀនចុងក្រោយ</a></li>
+            <li><a href="#">មេរៀនកំពុងពេញនិយម</a></li>
+          </ul>
+        </div>
+
+        <!-- Category -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Category
+          </h3>
+          <ul class="space-y-1">
+            <li><a href="#">អ្នកអភិវឌ្ឍន៍វេបសាយ</a></li>
+            <li><a href="#">អ្នកអភិវឌ្ឍន៍កម្មវិធីទូរសព្ទ</a></li>
+            <li><a href="#">មើលថែ Server</a></li>
+            <li><a href="#">ប្រព័ន្ធសុវត្ថិភាព</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div>
+          <h3 class="text-secondary text-heading-4 font-semibold mb-2">
+            Contact Us
+          </h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope"></i>
+              <span>codecam@istad.tech</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>+855 23 880 880</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span>ផេក - CodeCam</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- line -->
+      <div class="border-t border-gray-600 my-6"></div>
+
+      <!-- Copyright -->
+      <p class="text-center text-xs text-gray-400">
+        Copyright © CodeCam 2025. All rights reserved
+      </p>
+    </footer>
+    <script>
+      let slideIndex = 0;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function showSlides(n) {
+        const slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) {
+          slideIndex = 0;
+        }
+        if (n < 0) {
+          slideIndex = slides.length - 1;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.add("hidden");
+        }
+        slides[slideIndex].classList.remove("hidden");
+      }
+    </script>
+    <script src="../util/header.js"></script>
+  </body>
+</html>
